@@ -1,0 +1,659 @@
+{
+  "CLM-00001": [],
+  "CLM-00002": [
+    {
+      "claim_id": "CLM-00002",
+      "defect_type": "upcoding",
+      "line_refs": [
+        "L1"
+      ],
+      "rationale": "injected defect (ground truth)",
+      "rule_id": "R011",
+      "severity": "high"
+    }
+  ],
+  "CLM-00003": [],
+  "CLM-00004": [],
+  "CLM-00005": [],
+  "CLM-00006": [],
+  "CLM-00007": [
+    {
+      "claim_id": "CLM-00007",
+      "defect_type": "unbundling",
+      "line_refs": [
+        "L1",
+        "L2"
+      ],
+      "rationale": "injected defect (ground truth)",
+      "rule_id": "R002",
+      "severity": "high"
+    }
+  ],
+  "CLM-00008": [
+    {
+      "claim_id": "CLM-00008",
+      "defect_type": "upcoding",
+      "line_refs": [
+        "L1"
+      ],
+      "rationale": "injected defect (ground truth)",
+      "rule_id": "R011",
+      "severity": "high"
+    }
+  ],
+  "CLM-00009": [
+    {
+      "claim_id": "CLM-00009",
+      "defect_type": "unbundling",
+      "line_refs": [
+        "L1",
+        "L2"
+      ],
+      "rationale": "injected defect (ground truth)",
+      "rule_id": "R001",
+      "severity": "high"
+    }
+  ],
+  "CLM-00010": [],
+  "CLM-00011": [],
+  "CLM-00012": [],
+  "CLM-00013": [],
+  "CLM-00014": [],
+  "CLM-00015": [],
+  "CLM-00016": [],
+  "CLM-00017": [],
+  "CLM-00018": [],
+  "CLM-00019": [],
+  "CLM-00020": [],
+  "CLM-00021": [],
+  "CLM-00022": [],
+  "CLM-00023": [
+    {
+      "claim_id": "CLM-00023",
+      "defect_type": "units_exceeded",
+      "line_refs": [
+        "L1"
+      ],
+      "rationale": "injected defect (ground truth)",
+      "rule_id": "R007",
+      "severity": "high"
+    }
+  ],
+  "CLM-00024": [
+    {
+      "claim_id": "CLM-00024",
+      "defect_type": "missing_modifier",
+      "line_refs": [
+        "L1"
+      ],
+      "rationale": "injected defect (ground truth)",
+      "rule_id": "R010",
+      "severity": "medium"
+    }
+  ],
+  "CLM-00025": [],
+  "CLM-00026": [],
+  "CLM-00027": [
+    {
+      "claim_id": "CLM-00027",
+      "defect_type": "units_exceeded",
+      "line_refs": [
+        "L1"
+      ],
+      "rationale": "injected defect (ground truth)",
+      "rule_id": "R005",
+      "severity": "medium"
+    }
+  ],
+  "CLM-00028": [],
+  "CLM-00029": [
+    {
+      "claim_id": "CLM-00029",
+      "defect_type": "upcoding",
+      "line_refs": [
+        "L1"
+      ],
+      "rationale": "injected defect (ground truth)",
+      "rule_id": "R011",
+      "severity": "high"
+    }
+  ],
+  "CLM-00030": [],
+  "CLM-00031": [],
+  "CLM-00032": [],
+  "CLM-00033": [],
+  "CLM-00034": [],
+  "CLM-00035": [],
+  "CLM-00036": [
+    {
+      "claim_id": "CLM-00036",
+      "defect_type": "missing_modifier",
+      "line_refs": [
+        "L1"
+      ],
+      "rationale": "injected defect (ground truth)",
+      "rule_id": "R010",
+      "severity": "medium"
+    }
+  ],
+  "CLM-00037": [],
+  "CLM-00038": [],
+  "CLM-00039": [],
+  "CLM-00040": [
+    {
+      "claim_id": "CLM-00040",
+      "defect_type": "units_exceeded",
+      "line_refs": [
+        "L1"
+      ],
+      "rationale": "injected defect (ground truth)",
+      "rule_id": "R005",
+      "severity": "medium"
+    }
+  ],
+  "CLM-00041": [
+    {
+      "claim_id": "CLM-00041",
+      "defect_type": "unbundling",
+      "line_refs": [
+        "L1",
+        "L2"
+      ],
+      "rationale": "injected defect (ground truth)",
+      "rule_id": "R013",
+      "severity": "high"
+    }
+  ],
+  "CLM-00042": [],
+  "CLM-00043": [],
+  "CLM-00044": [],
+  "CLM-00045": [],
+  "CLM-00046": [],
+  "CLM-00047": [],
+  "CLM-00048": [],
+  "CLM-00049": [],
+  "CLM-00050": [],
+  "CLM-00051": [
+    {
+      "claim_id": "CLM-00051",
+      "defect_type": "missing_modifier",
+      "line_refs": [
+        "L1"
+      ],
+      "rationale": "injected defect (ground truth)",
+      "rule_id": "R010",
+      "severity": "medium"
+    }
+  ],
+  "CLM-00052": [],
+  "CLM-00053": [],
+  "CLM-00054": [],
+  "CLM-00055": [],
+  "CLM-00056": [
+    {
+      "claim_id": "CLM-00056",
+      "defect_type": "duplicate",
+      "line_refs": [
+        "L1",
+        "L2"
+      ],
+      "rationale": "injected defect (ground truth)",
+      "rule_id": "R009",
+      "severity": "high"
+    }
+  ],
+  "CLM-00057": [
+    {
+      "claim_id": "CLM-00057",
+      "defect_type": "units_exceeded",
+      "line_refs": [
+        "L1"
+      ],
+      "rationale": "injected defect (ground truth)",
+      "rule_id": "R007",
+      "severity": "high"
+    }
+  ],
+  "CLM-00058": [
+    {
+      "claim_id": "CLM-00058",
+      "defect_type": "upcoding",
+      "line_refs": [
+        "L1"
+      ],
+      "rationale": "injected defect (ground truth)",
+      "rule_id": "R012",
+      "severity": "medium"
+    }
+  ],
+  "CLM-00059": [],
+  "CLM-00060": [
+    {
+      "claim_id": "CLM-00060",
+      "defect_type": "duplicate",
+      "line_refs": [
+        "L1",
+        "L2"
+      ],
+      "rationale": "injected defect (ground truth)",
+      "rule_id": "R009",
+      "severity": "high"
+    }
+  ],
+  "CLM-00061": [],
+  "CLM-00062": [],
+  "CLM-00063": [
+    {
+      "claim_id": "CLM-00063",
+      "defect_type": "units_exceeded",
+      "line_refs": [
+        "L1"
+      ],
+      "rationale": "injected defect (ground truth)",
+      "rule_id": "R005",
+      "severity": "medium"
+    }
+  ],
+  "CLM-00064": [],
+  "CLM-00065": [],
+  "CLM-00066": [],
+  "CLM-00067": [],
+  "CLM-00068": [],
+  "CLM-00069": [],
+  "CLM-00070": [],
+  "CLM-00071": [
+    {
+      "claim_id": "CLM-00071",
+      "defect_type": "unbundling",
+      "line_refs": [
+        "L1",
+        "L2"
+      ],
+      "rationale": "injected defect (ground truth)",
+      "rule_id": "R001",
+      "severity": "high"
+    }
+  ],
+  "CLM-00072": [
+    {
+      "claim_id": "CLM-00072",
+      "defect_type": "unbundling",
+      "line_refs": [
+        "L1",
+        "L2"
+      ],
+      "rationale": "injected defect (ground truth)",
+      "rule_id": "R013",
+      "severity": "high"
+    }
+  ],
+  "CLM-00073": [],
+  "CLM-00074": [],
+  "CLM-00075": [],
+  "CLM-00076": [],
+  "CLM-00077": [],
+  "CLM-00078": [],
+  "CLM-00079": [],
+  "CLM-00080": [],
+  "CLM-00081": [],
+  "CLM-00082": [],
+  "CLM-00083": [],
+  "CLM-00084": [],
+  "CLM-00085": [],
+  "CLM-00086": [],
+  "CLM-00087": [
+    {
+      "claim_id": "CLM-00087",
+      "defect_type": "units_exceeded",
+      "line_refs": [
+        "L1"
+      ],
+      "rationale": "injected defect (ground truth)",
+      "rule_id": "R007",
+      "severity": "high"
+    }
+  ],
+  "CLM-00088": [
+    {
+      "claim_id": "CLM-00088",
+      "defect_type": "missing_modifier",
+      "line_refs": [
+        "L1"
+      ],
+      "rationale": "injected defect (ground truth)",
+      "rule_id": "R010",
+      "severity": "medium"
+    }
+  ],
+  "CLM-00089": [],
+  "CLM-00090": [],
+  "CLM-00091": [],
+  "CLM-00092": [],
+  "CLM-00093": [],
+  "CLM-00094": [],
+  "CLM-00095": [],
+  "CLM-00096": [],
+  "CLM-00097": [],
+  "CLM-00098": [],
+  "CLM-00099": [],
+  "CLM-00100": [],
+  "CLM-00101": [],
+  "CLM-00102": [],
+  "CLM-00103": [],
+  "CLM-00104": [],
+  "CLM-00105": [],
+  "CLM-00106": [],
+  "CLM-00107": [],
+  "CLM-00108": [
+    {
+      "claim_id": "CLM-00108",
+      "defect_type": "duplicate",
+      "line_refs": [
+        "L1",
+        "L2"
+      ],
+      "rationale": "injected defect (ground truth)",
+      "rule_id": "R009",
+      "severity": "high"
+    }
+  ],
+  "CLM-00109": [
+    {
+      "claim_id": "CLM-00109",
+      "defect_type": "upcoding",
+      "line_refs": [
+        "L1"
+      ],
+      "rationale": "injected defect (ground truth)",
+      "rule_id": "R012",
+      "severity": "medium"
+    }
+  ],
+  "CLM-00110": [],
+  "CLM-00111": [],
+  "CLM-00112": [],
+  "CLM-00113": [],
+  "CLM-00114": [],
+  "CLM-00115": [
+    {
+      "claim_id": "CLM-00115",
+      "defect_type": "duplicate",
+      "line_refs": [
+        "L1",
+        "L2"
+      ],
+      "rationale": "injected defect (ground truth)",
+      "rule_id": "R009",
+      "severity": "high"
+    }
+  ],
+  "CLM-00116": [],
+  "CLM-00117": [],
+  "CLM-00118": [],
+  "CLM-00119": [],
+  "CLM-00120": [],
+  "CLM-00121": [],
+  "CLM-00122": [],
+  "CLM-00123": [],
+  "CLM-00124": [],
+  "CLM-00125": [],
+  "CLM-00126": [],
+  "CLM-00127": [],
+  "CLM-00128": [],
+  "CLM-00129": [],
+  "CLM-00130": [
+    {
+      "claim_id": "CLM-00130",
+      "defect_type": "duplicate",
+      "line_refs": [
+        "L1",
+        "L2"
+      ],
+      "rationale": "injected defect (ground truth)",
+      "rule_id": "R009",
+      "severity": "high"
+    }
+  ],
+  "CLM-00131": [],
+  "CLM-00132": [],
+  "CLM-00133": [],
+  "CLM-00134": [],
+  "CLM-00135": [],
+  "CLM-00136": [],
+  "CLM-00137": [],
+  "CLM-00138": [],
+  "CLM-00139": [],
+  "CLM-00140": [
+    {
+      "claim_id": "CLM-00140",
+      "defect_type": "unbundling",
+      "line_refs": [
+        "L1",
+        "L2"
+      ],
+      "rationale": "injected defect (ground truth)",
+      "rule_id": "R001",
+      "severity": "high"
+    }
+  ],
+  "CLM-00141": [],
+  "CLM-00142": [],
+  "CLM-00143": [],
+  "CLM-00144": [
+    {
+      "claim_id": "CLM-00144",
+      "defect_type": "units_exceeded",
+      "line_refs": [
+        "L1"
+      ],
+      "rationale": "injected defect (ground truth)",
+      "rule_id": "R014",
+      "severity": "high"
+    }
+  ],
+  "CLM-00145": [],
+  "CLM-00146": [],
+  "CLM-00147": [],
+  "CLM-00148": [],
+  "CLM-00149": [],
+  "CLM-00150": [],
+  "CLM-00151": [
+    {
+      "claim_id": "CLM-00151",
+      "defect_type": "units_exceeded",
+      "line_refs": [
+        "L1"
+      ],
+      "rationale": "injected defect (ground truth)",
+      "rule_id": "R014",
+      "severity": "high"
+    }
+  ],
+  "CLM-00152": [
+    {
+      "claim_id": "CLM-00152",
+      "defect_type": "upcoding",
+      "line_refs": [
+        "L1"
+      ],
+      "rationale": "injected defect (ground truth)",
+      "rule_id": "R012",
+      "severity": "medium"
+    }
+  ],
+  "CLM-00153": [],
+  "CLM-00154": [],
+  "CLM-00155": [
+    {
+      "claim_id": "CLM-00155",
+      "defect_type": "unbundling",
+      "line_refs": [
+        "L1",
+        "L2"
+      ],
+      "rationale": "injected defect (ground truth)",
+      "rule_id": "R013",
+      "severity": "high"
+    }
+  ],
+  "CLM-00156": [],
+  "CLM-00157": [],
+  "CLM-00158": [],
+  "CLM-00159": [],
+  "CLM-00160": [],
+  "CLM-00161": [],
+  "CLM-00162": [],
+  "CLM-00163": [],
+  "CLM-00164": [
+    {
+      "claim_id": "CLM-00164",
+      "defect_type": "upcoding",
+      "line_refs": [
+        "L1"
+      ],
+      "rationale": "injected defect (ground truth)",
+      "rule_id": "R012",
+      "severity": "medium"
+    }
+  ],
+  "CLM-00165": [],
+  "CLM-00166": [],
+  "CLM-00167": [
+    {
+      "claim_id": "CLM-00167",
+      "defect_type": "units_exceeded",
+      "line_refs": [
+        "L1"
+      ],
+      "rationale": "injected defect (ground truth)",
+      "rule_id": "R005",
+      "severity": "medium"
+    }
+  ],
+  "CLM-00168": [],
+  "CLM-00169": [
+    {
+      "claim_id": "CLM-00169",
+      "defect_type": "unbundling",
+      "line_refs": [
+        "L1",
+        "L2"
+      ],
+      "rationale": "injected defect (ground truth)",
+      "rule_id": "R001",
+      "severity": "high"
+    }
+  ],
+  "CLM-00170": [],
+  "CLM-00171": [],
+  "CLM-00172": [],
+  "CLM-00173": [],
+  "CLM-00174": [
+    {
+      "claim_id": "CLM-00174",
+      "defect_type": "upcoding",
+      "line_refs": [
+        "L1"
+      ],
+      "rationale": "injected defect (ground truth)",
+      "rule_id": "R012",
+      "severity": "medium"
+    }
+  ],
+  "CLM-00175": [],
+  "CLM-00176": [],
+  "CLM-00177": [],
+  "CLM-00178": [],
+  "CLM-00179": [],
+  "CLM-00180": [],
+  "CLM-00181": [],
+  "CLM-00182": [
+    {
+      "claim_id": "CLM-00182",
+      "defect_type": "missing_modifier",
+      "line_refs": [
+        "L1"
+      ],
+      "rationale": "injected defect (ground truth)",
+      "rule_id": "R010",
+      "severity": "medium"
+    }
+  ],
+  "CLM-00183": [],
+  "CLM-00184": [],
+  "CLM-00185": [],
+  "CLM-00186": [
+    {
+      "claim_id": "CLM-00186",
+      "defect_type": "duplicate",
+      "line_refs": [
+        "L1",
+        "L2"
+      ],
+      "rationale": "injected defect (ground truth)",
+      "rule_id": "R009",
+      "severity": "high"
+    }
+  ],
+  "CLM-00187": [],
+  "CLM-00188": [],
+  "CLM-00189": [
+    {
+      "claim_id": "CLM-00189",
+      "defect_type": "missing_modifier",
+      "line_refs": [
+        "L1"
+      ],
+      "rationale": "injected defect (ground truth)",
+      "rule_id": "R010",
+      "severity": "medium"
+    }
+  ],
+  "CLM-00190": [
+    {
+      "claim_id": "CLM-00190",
+      "defect_type": "duplicate",
+      "line_refs": [
+        "L1",
+        "L2"
+      ],
+      "rationale": "injected defect (ground truth)",
+      "rule_id": "R009",
+      "severity": "high"
+    }
+  ],
+  "CLM-00191": [],
+  "CLM-00192": [
+    {
+      "claim_id": "CLM-00192",
+      "defect_type": "unbundling",
+      "line_refs": [
+        "L1",
+        "L2"
+      ],
+      "rationale": "injected defect (ground truth)",
+      "rule_id": "R013",
+      "severity": "high"
+    }
+  ],
+  "CLM-00193": [],
+  "CLM-00194": [],
+  "CLM-00195": [],
+  "CLM-00196": [],
+  "CLM-00197": [],
+  "CLM-00198": [
+    {
+      "claim_id": "CLM-00198",
+      "defect_type": "unbundling",
+      "line_refs": [
+        "L1",
+        "L2"
+      ],
+      "rationale": "injected defect (ground truth)",
+      "rule_id": "R013",
+      "severity": "high"
+    }
+  ],
+  "CLM-00199": [],
+  "CLM-00200": []
+}

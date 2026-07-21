@@ -1,0 +1,184 @@
+# Simplified, NCCI-style medical-claims audit rules.
+#
+# These are ILLUSTRATIVE and self-contained: every code relationship the engine
+# needs is defined here. No AMA CPT descriptor data or proprietary NCCI edit
+# tables are bundled — code numbers appear only as opaque identifiers whose
+# meaning, for this project, is fully defined by these rules. This mirrors the
+# way a statute-compliance engine encodes law as machine-readable data.
+#
+# Rule types:
+#   ncci_pair          two codes may not be billed together on the same DOS
+#                      unless an override modifier is present (unbundling)
+#   mue_units          a code may not exceed a per-day unit ceiling
+#   duplicate          the same code+modifiers may not appear twice on one DOS
+#   modifier_required  an E/M code billed with a procedure needs modifier 25
+#   upcoding_em        a high-level E/M code needs supporting note documentation
+
+rules:
+  # ---- Unbundling (NCCI pair edits) ------------------------------------
+  - id: R001
+    type: ncci_pair
+    defect_type: unbundling
+    severity: high
+    description: >-
+      Basic metabolic panel (80048) is a component of the comprehensive
+      metabolic panel (80053) and may not be billed together on the same date
+      of service unless a distinct-service modifier (59) is appended.
+    params:
+      code_a: "80048"
+      code_b: "80053"
+      override_modifiers: ["59"]
+
+  - id: R002
+    type: ncci_pair
+    defect_type: unbundling
+    severity: high
+    description: >-
+      EKG tracing only (93005) is a component of the complete EKG (93000) and
+      may not be separately billed with it on the same date of service.
+    params:
+      code_a: "93005"
+      code_b: "93000"
+      override_modifiers: ["59"]
+
+  - id: R003
+    type: ncci_pair
+    defect_type: unbundling
+    severity: high
+    description: >-
+      EKG interpretation only (93010) is a component of the complete EKG
+      (93000) and may not be separately billed with it on the same DOS.
+    params:
+      code_a: "93010"
+      code_b: "93000"
+      override_modifiers: ["59"]
+
+  - id: R004
+    type: ncci_pair
+    defect_type: unbundling
+    severity: medium
+    description: >-
+      Manual therapy (97140) and therapeutic exercise (97110) performed in the
+      same session are bundled; billing both requires a distinct-service
+      modifier (59) on one line.
+    params:
+      code_a: "97140"
+      code_b: "97110"
+      override_modifiers: ["59"]
+
+  - id: R013
+    type: ncci_pair
+    defect_type: unbundling
+    severity: high
+    description: >-
+      A therapeutic injection (96372) into the same joint as an arthrocentesis
+      (20610) is bundled into the arthrocentesis and requires modifier 59 to be
+      separately payable.
+    params:
+      code_a: "96372"
+      code_b: "20610"
+      override_modifiers: ["59"]
+
+  # ---- Units exceeding policy limit (MUE) ------------------------------
+  - id: R005
+    type: mue_units
+    defect_type: units_exceeded
+    severity: medium
+    description: "Therapeutic exercise (97110) is limited to 4 units per day."
+    params:
+      code: "97110"
+      max_units_per_day: 4
+
+  - id: R006
+    type: mue_units
+    defect_type: units_exceeded
+    severity: medium
+    description: "Manual therapy (97140) is limited to 4 units per day."
+    params:
+      code: "97140"
+      max_units_per_day: 4
+
+  - id: R007
+    type: mue_units
+    defect_type: units_exceeded
+    severity: high
+    description: "Ketorolac injection (J1885) is limited to 2 units per day."
+    params:
+      code: "J1885"
+      max_units_per_day: 2
+
+  - id: R008
+    type: mue_units
+    defect_type: units_exceeded
+    severity: medium
+    description: "Therapeutic injection administration (96372) is limited to 4 units per day."
+    params:
+      code: "96372"
+      max_units_per_day: 4
+
+  - id: R014
+    type: mue_units
+    defect_type: units_exceeded
+    severity: high
+    description: "Arthrocentesis of a major joint (20610) is limited to 2 units per day."
+    params:
+      code: "20610"
+      max_units_per_day: 2
+
+  - id: R015
+    type: mue_units
+    defect_type: units_exceeded
+    severity: low
+    description: "Routine venipuncture (36415) is limited to 1 unit per day."
+    params:
+      code: "36415"
+      max_units_per_day: 1
+
+  # ---- Duplicate lines --------------------------------------------------
+  - id: R009
+    type: duplicate
+    defect_type: duplicate
+    severity: high
+    description: >-
+      The same procedure code with the same modifiers may not appear on more
+      than one line for the same date of service. Repeat/distinct-service
+      modifiers (76, 77, 59, 91) legitimately distinguish repeat services.
+    params:
+      distinguishing_modifiers: ["76", "77", "59", "91"]
+
+  # ---- Missing modifier -------------------------------------------------
+  - id: R010
+    type: modifier_required
+    defect_type: missing_modifier
+    severity: medium
+    description: >-
+      An evaluation-and-management visit (99213-99215) billed on the same date
+      of service as a procedure must carry modifier 25 to signify a separately
+      identifiable service.
+    params:
+      em_codes: ["99213", "99214", "99215"]
+      procedure_codes: ["96372", "20610", "11042"]
+      required_modifier: "25"
+
+  # ---- Upcoding (note-supported E/M level) -----------------------------
+  - id: R011
+    type: upcoding_em
+    defect_type: upcoding
+    severity: high
+    description: >-
+      A high-complexity established-patient visit (99215) requires the note to
+      document high medical decision-making or total time >= 40 minutes.
+    params:
+      code: "99215"
+      required_keywords: ["high complexity", "high medical decision", "40 min"]
+
+  - id: R012
+    type: upcoding_em
+    defect_type: upcoding
+    severity: medium
+    description: >-
+      A moderate-complexity established-patient visit (99214) requires the note
+      to document moderate medical decision-making or total time >= 30 minutes.
+    params:
+      code: "99214"
+      required_keywords: ["moderate complexity", "moderate medical decision", "30 min"]

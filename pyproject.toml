@@ -1,0 +1,58 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "claims-audit-agent"
+version = "0.1.0"
+description = "A medical-claims line-item auditing agent, built eval-first, implemented on claude-agent-sdk and LangGraph."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Sheldon" }]
+keywords = ["claims", "audit", "agent", "eval", "healthcare", "ncci"]
+
+# Core is intentionally light: pure-Python engine + eval + CI gate run with no
+# LLM SDKs and no API key. This is what the CI regression gate exercises.
+dependencies = [
+    "pydantic>=2.6",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+# Agent v1 orchestration. Falls back cleanly if not installed.
+sdk = ["claude-agent-sdk>=0.1.0", "anthropic>=0.40.0"]
+# Agent v2 orchestration.
+graph = ["langgraph>=0.2.0", "langchain-core>=0.3.0", "langchain-anthropic>=0.2.0", "anthropic>=0.40.0"]
+# Everything, plus test + lint tooling.
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.23",
+    "ruff>=0.5.0",
+]
+# Rendering the terminal demo GIF.
+demo = ["pillow>=10.0"]
+
+[project.scripts]
+claims-generate = "data.generate:main"
+claims-eval = "evals.run_eval:main"
+
+[tool.setuptools]
+packages = ["claims_audit", "data", "rules", "evals", "agent_sdk", "agent_graph"]
+
+[tool.setuptools.package-data]
+rules = ["*.yaml"]
+data = ["*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = ["E501"]

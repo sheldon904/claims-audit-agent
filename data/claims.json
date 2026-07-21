@@ -1,0 +1,7518 @@
+[
+  {
+    "claim_id": "CLM-00001",
+    "date_of_service": "2025-08-13",
+    "diagnoses": [
+      "E78.5",
+      "R51.9"
+    ],
+    "lines": [
+      {
+        "charge": 168.0,
+        "cpt": "97110",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 4
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0041",
+      "sex": "F",
+      "year_of_birth": 1966
+    },
+    "provider": {
+      "name": "Lakeside Internal Medicine",
+      "npi": "1013002223",
+      "specialty": "internal_medicine"
+    },
+    "provider_notes": "Return visit for ongoing management. Procedure performed as documented; patient tolerated well."
+  },
+  {
+    "claim_id": "CLM-00002",
+    "date_of_service": "2025-05-03",
+    "diagnoses": [
+      "R07.9"
+    ],
+    "lines": [
+      {
+        "charge": 235.0,
+        "cpt": "99215",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0053",
+      "sex": "M",
+      "year_of_birth": 1949
+    },
+    "provider": {
+      "name": "Summit Orthopedics",
+      "npi": "1013004445",
+      "specialty": "orthopedics"
+    },
+    "provider_notes": "Return visit for ongoing management. Short visit for a single stable issue. No new problems, straightforward."
+  },
+  {
+    "claim_id": "CLM-00003",
+    "date_of_service": "2025-03-08",
+    "diagnoses": [
+      "R07.9",
+      "M25.561"
+    ],
+    "lines": [
+      {
+        "charge": 235.0,
+        "cpt": "99215",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0026",
+      "sex": "F",
+      "year_of_birth": 2003
+    },
+    "provider": {
+      "name": "Harbor Cardiology",
+      "npi": "1013003334",
+      "specialty": "cardiology"
+    },
+    "provider_notes": "Scheduled follow-up appointment. Extensive review; high medical decision making with new prescription drug management, 40 min spent."
+  },
+  {
+    "claim_id": "CLM-00004",
+    "date_of_service": "2025-01-28",
+    "diagnoses": [
+      "M54.50"
+    ],
+    "lines": [
+      {
+        "charge": 118.0,
+        "cpt": "99213",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 55.0,
+        "cpt": "93000",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0009",
+      "sex": "M",
+      "year_of_birth": 2010
+    },
+    "provider": {
+      "name": "Cedar Family Medicine",
+      "npi": "1013001112",
+      "specialty": "family_medicine"
+    },
+    "provider_notes": "Patient seen in clinic today. Doing well overall. Routine check, self-limited issue reviewed."
+  },
+  {
+    "claim_id": "CLM-00005",
+    "date_of_service": "2025-10-15",
+    "diagnoses": [
+      "E78.5",
+      "E11.9"
+    ],
+    "lines": [
+      {
+        "charge": 118.0,
+        "cpt": "99213",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [
+          "25"
+        ],
+        "units": 1
+      },
+      {
+        "charge": 128.0,
+        "cpt": "20610",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0039",
+      "sex": "M",
+      "year_of_birth": 1953
+    },
+    "provider": {
+      "name": "Summit Orthopedics",
+      "npi": "1013004445",
+      "specialty": "orthopedics"
+    },
+    "provider_notes": "Established patient presents for follow-up. Diagnostics obtained and reviewed with patient."
+  },
+  {
+    "claim_id": "CLM-00006",
+    "date_of_service": "2025-05-14",
+    "diagnoses": [
+      "M17.11"
+    ],
+    "lines": [
+      {
+        "charge": 176.0,
+        "cpt": "99214",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0049",
+      "sex": "M",
+      "year_of_birth": 1979
+    },
+    "provider": {
+      "name": "Cedar Family Medicine",
+      "npi": "1013001112",
+      "specialty": "family_medicine"
+    },
+    "provider_notes": "Established patient presents for follow-up. Moderate medical decision making today; medication titrated and labs ordered."
+  },
+  {
+    "claim_id": "CLM-00007",
+    "date_of_service": "2025-10-07",
+    "diagnoses": [
+      "J06.9"
+    ],
+    "lines": [
+      {
+        "charge": 55.0,
+        "cpt": "93000",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 30.0,
+        "cpt": "93005",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0033",
+      "sex": "M",
+      "year_of_birth": 1958
+    },
+    "provider": {
+      "name": "Rivertown Physical Therapy",
+      "npi": "1013005556",
+      "specialty": "physical_therapy"
+    },
+    "provider_notes": "Patient seen in clinic today. Diagnostics obtained and reviewed with patient."
+  },
+  {
+    "claim_id": "CLM-00008",
+    "date_of_service": "2025-02-12",
+    "diagnoses": [
+      "R51.9",
+      "E11.9"
+    ],
+    "lines": [
+      {
+        "charge": 235.0,
+        "cpt": "99215",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0039",
+      "sex": "M",
+      "year_of_birth": 1986
+    },
+    "provider": {
+      "name": "Cedar Family Medicine",
+      "npi": "1013001112",
+      "specialty": "family_medicine"
+    },
+    "provider_notes": "Patient seen in clinic today. Short visit for a single stable issue. No new problems, straightforward."
+  },
+  {
+    "claim_id": "CLM-00009",
+    "date_of_service": "2025-03-05",
+    "diagnoses": [
+      "E78.5",
+      "M54.50"
+    ],
+    "lines": [
+      {
+        "charge": 38.0,
+        "cpt": "80053",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 24.0,
+        "cpt": "80048",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 21.0,
+        "cpt": "85025",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L3",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0047",
+      "sex": "F",
+      "year_of_birth": 2007
+    },
+    "provider": {
+      "name": "Rivertown Physical Therapy",
+      "npi": "1013005556",
+      "specialty": "physical_therapy"
+    },
+    "provider_notes": "Return visit for ongoing management. Diagnostics obtained and reviewed with patient."
+  },
+  {
+    "claim_id": "CLM-00010",
+    "date_of_service": "2025-07-22",
+    "diagnoses": [
+      "M17.11",
+      "E78.5"
+    ],
+    "lines": [
+      {
+        "charge": 168.0,
+        "cpt": "97110",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 4
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0028",
+      "sex": "F",
+      "year_of_birth": 1972
+    },
+    "provider": {
+      "name": "Harbor Cardiology",
+      "npi": "1013003334",
+      "specialty": "cardiology"
+    },
+    "provider_notes": "Scheduled follow-up appointment. Procedure performed as documented; patient tolerated well."
+  },
+  {
+    "claim_id": "CLM-00011",
+    "date_of_service": "2025-10-18",
+    "diagnoses": [
+      "R07.9"
+    ],
+    "lines": [
+      {
+        "charge": 118.0,
+        "cpt": "99213",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 55.0,
+        "cpt": "93000",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0015",
+      "sex": "M",
+      "year_of_birth": 1953
+    },
+    "provider": {
+      "name": "Cedar Family Medicine",
+      "npi": "1013001112",
+      "specialty": "family_medicine"
+    },
+    "provider_notes": "Patient seen in clinic today. Stable on current regimen. Straightforward, low complexity. No new concerns."
+  },
+  {
+    "claim_id": "CLM-00012",
+    "date_of_service": "2025-01-28",
+    "diagnoses": [
+      "I10",
+      "E78.5"
+    ],
+    "lines": [
+      {
+        "charge": 118.0,
+        "cpt": "99213",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [
+          "25"
+        ],
+        "units": 1
+      },
+      {
+        "charge": 34.0,
+        "cpt": "96372",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 18.0,
+        "cpt": "J1885",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L3",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0046",
+      "sex": "F",
+      "year_of_birth": 1952
+    },
+    "provider": {
+      "name": "Cedar Family Medicine",
+      "npi": "1013001112",
+      "specialty": "family_medicine"
+    },
+    "provider_notes": "Patient seen in clinic today. Specimen collected and sent to lab. No complications."
+  },
+  {
+    "claim_id": "CLM-00013",
+    "date_of_service": "2025-08-26",
+    "diagnoses": [
+      "R51.9",
+      "I10"
+    ],
+    "lines": [
+      {
+        "charge": 235.0,
+        "cpt": "99215",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0014",
+      "sex": "M",
+      "year_of_birth": 1961
+    },
+    "provider": {
+      "name": "Lakeside Internal Medicine",
+      "npi": "1013002223",
+      "specialty": "internal_medicine"
+    },
+    "provider_notes": "Established patient presents for follow-up. Extensive review; high medical decision making with new prescription drug management, 40 min spent."
+  },
+  {
+    "claim_id": "CLM-00014",
+    "date_of_service": "2025-11-21",
+    "diagnoses": [
+      "E11.9"
+    ],
+    "lines": [
+      {
+        "charge": 84.0,
+        "cpt": "97110",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 2
+      },
+      {
+        "charge": 90.0,
+        "cpt": "97140",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [
+          "59"
+        ],
+        "units": 2
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0028",
+      "sex": "M",
+      "year_of_birth": 1997
+    },
+    "provider": {
+      "name": "Cedar Family Medicine",
+      "npi": "1013001112",
+      "specialty": "family_medicine"
+    },
+    "provider_notes": "Scheduled follow-up appointment. Diagnostics obtained and reviewed with patient."
+  },
+  {
+    "claim_id": "CLM-00015",
+    "date_of_service": "2025-04-18",
+    "diagnoses": [
+      "M54.50",
+      "M25.561"
+    ],
+    "lines": [
+      {
+        "charge": 84.0,
+        "cpt": "97110",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 2
+      },
+      {
+        "charge": 90.0,
+        "cpt": "97140",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [
+          "59"
+        ],
+        "units": 2
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0052",
+      "sex": "F",
+      "year_of_birth": 1958
+    },
+    "provider": {
+      "name": "Lakeside Internal Medicine",
+      "npi": "1013002223",
+      "specialty": "internal_medicine"
+    },
+    "provider_notes": "Patient seen in clinic today. Specimen collected and sent to lab. No complications."
+  },
+  {
+    "claim_id": "CLM-00016",
+    "date_of_service": "2025-02-02",
+    "diagnoses": [
+      "I10"
+    ],
+    "lines": [
+      {
+        "charge": 235.0,
+        "cpt": "99215",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0016",
+      "sex": "M",
+      "year_of_birth": 1954
+    },
+    "provider": {
+      "name": "Rivertown Physical Therapy",
+      "npi": "1013005556",
+      "specialty": "physical_therapy"
+    },
+    "provider_notes": "Patient seen in clinic today. Multiple chronic conditions poorly controlled; high complexity decision-making, total time 45 min."
+  },
+  {
+    "claim_id": "CLM-00017",
+    "date_of_service": "2025-01-06",
+    "diagnoses": [
+      "E11.9",
+      "M25.561"
+    ],
+    "lines": [
+      {
+        "charge": 118.0,
+        "cpt": "99213",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [
+          "25"
+        ],
+        "units": 1
+      },
+      {
+        "charge": 128.0,
+        "cpt": "20610",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0032",
+      "sex": "F",
+      "year_of_birth": 2006
+    },
+    "provider": {
+      "name": "Summit Orthopedics",
+      "npi": "1013004445",
+      "specialty": "orthopedics"
+    },
+    "provider_notes": "Return visit for ongoing management. Specimen collected and sent to lab. No complications."
+  },
+  {
+    "claim_id": "CLM-00018",
+    "date_of_service": "2025-05-07",
+    "diagnoses": [
+      "R07.9"
+    ],
+    "lines": [
+      {
+        "charge": 168.0,
+        "cpt": "97110",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 4
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0045",
+      "sex": "F",
+      "year_of_birth": 2007
+    },
+    "provider": {
+      "name": "Lakeside Internal Medicine",
+      "npi": "1013002223",
+      "specialty": "internal_medicine"
+    },
+    "provider_notes": "Established patient presents for follow-up. Diagnostics obtained and reviewed with patient."
+  },
+  {
+    "claim_id": "CLM-00019",
+    "date_of_service": "2025-09-06",
+    "diagnoses": [
+      "E78.5"
+    ],
+    "lines": [
+      {
+        "charge": 84.0,
+        "cpt": "97110",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 2
+      },
+      {
+        "charge": 90.0,
+        "cpt": "97140",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [
+          "59"
+        ],
+        "units": 2
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0004",
+      "sex": "M",
+      "year_of_birth": 1951
+    },
+    "provider": {
+      "name": "Rivertown Physical Therapy",
+      "npi": "1013005556",
+      "specialty": "physical_therapy"
+    },
+    "provider_notes": "Established patient presents for follow-up. Procedure performed as documented; patient tolerated well."
+  },
+  {
+    "claim_id": "CLM-00020",
+    "date_of_service": "2025-02-19",
+    "diagnoses": [
+      "R07.9"
+    ],
+    "lines": [
+      {
+        "charge": 118.0,
+        "cpt": "99213",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [
+          "25"
+        ],
+        "units": 1
+      },
+      {
+        "charge": 34.0,
+        "cpt": "96372",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 18.0,
+        "cpt": "J1885",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L3",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0039",
+      "sex": "F",
+      "year_of_birth": 1953
+    },
+    "provider": {
+      "name": "Summit Orthopedics",
+      "npi": "1013004445",
+      "specialty": "orthopedics"
+    },
+    "provider_notes": "Established patient presents for follow-up. Diagnostics obtained and reviewed with patient."
+  },
+  {
+    "claim_id": "CLM-00021",
+    "date_of_service": "2025-11-23",
+    "diagnoses": [
+      "R51.9",
+      "Z00.00"
+    ],
+    "lines": [
+      {
+        "charge": 118.0,
+        "cpt": "99213",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [
+          "25"
+        ],
+        "units": 1
+      },
+      {
+        "charge": 34.0,
+        "cpt": "96372",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 18.0,
+        "cpt": "J1885",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L3",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0027",
+      "sex": "M",
+      "year_of_birth": 1985
+    },
+    "provider": {
+      "name": "Lakeside Internal Medicine",
+      "npi": "1013002223",
+      "specialty": "internal_medicine"
+    },
+    "provider_notes": "Scheduled follow-up appointment. Procedure performed as documented; patient tolerated well."
+  },
+  {
+    "claim_id": "CLM-00022",
+    "date_of_service": "2025-10-19",
+    "diagnoses": [
+      "I10"
+    ],
+    "lines": [
+      {
+        "charge": 168.0,
+        "cpt": "97110",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 4
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0021",
+      "sex": "F",
+      "year_of_birth": 1954
+    },
+    "provider": {
+      "name": "Summit Orthopedics",
+      "npi": "1013004445",
+      "specialty": "orthopedics"
+    },
+    "provider_notes": "Patient seen in clinic today. Diagnostics obtained and reviewed with patient."
+  },
+  {
+    "claim_id": "CLM-00023",
+    "date_of_service": "2025-06-10",
+    "diagnoses": [
+      "M17.11"
+    ],
+    "lines": [
+      {
+        "charge": 54.0,
+        "cpt": "J1885",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 3
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0060",
+      "sex": "F",
+      "year_of_birth": 1989
+    },
+    "provider": {
+      "name": "Lakeside Internal Medicine",
+      "npi": "1013002223",
+      "specialty": "internal_medicine"
+    },
+    "provider_notes": "Return visit for ongoing management. Diagnostics obtained and reviewed with patient."
+  },
+  {
+    "claim_id": "CLM-00024",
+    "date_of_service": "2025-05-04",
+    "diagnoses": [
+      "E78.5"
+    ],
+    "lines": [
+      {
+        "charge": 118.0,
+        "cpt": "99213",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 34.0,
+        "cpt": "96372",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0043",
+      "sex": "F",
+      "year_of_birth": 1983
+    },
+    "provider": {
+      "name": "Lakeside Internal Medicine",
+      "npi": "1013002223",
+      "specialty": "internal_medicine"
+    },
+    "provider_notes": "Patient seen in clinic today. Brief visit for medication refill. Stable, minimal problem addressed."
+  },
+  {
+    "claim_id": "CLM-00025",
+    "date_of_service": "2025-09-16",
+    "diagnoses": [
+      "E11.9",
+      "I10"
+    ],
+    "lines": [
+      {
+        "charge": 84.0,
+        "cpt": "97110",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 2
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0046",
+      "sex": "F",
+      "year_of_birth": 1988
+    },
+    "provider": {
+      "name": "Harbor Cardiology",
+      "npi": "1013003334",
+      "specialty": "cardiology"
+    },
+    "provider_notes": "Scheduled follow-up appointment. Specimen collected and sent to lab. No complications."
+  },
+  {
+    "claim_id": "CLM-00026",
+    "date_of_service": "2025-03-24",
+    "diagnoses": [
+      "E78.5",
+      "M25.561"
+    ],
+    "lines": [
+      {
+        "charge": 118.0,
+        "cpt": "99213",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0001",
+      "sex": "F",
+      "year_of_birth": 1987
+    },
+    "provider": {
+      "name": "Harbor Cardiology",
+      "npi": "1013003334",
+      "specialty": "cardiology"
+    },
+    "provider_notes": "Established patient presents for follow-up. Stable on current regimen. Straightforward, low complexity. No new concerns."
+  },
+  {
+    "claim_id": "CLM-00027",
+    "date_of_service": "2025-09-05",
+    "diagnoses": [
+      "M54.50",
+      "E11.9"
+    ],
+    "lines": [
+      {
+        "charge": 252.0,
+        "cpt": "97110",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 6
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0035",
+      "sex": "M",
+      "year_of_birth": 1949
+    },
+    "provider": {
+      "name": "Rivertown Physical Therapy",
+      "npi": "1013005556",
+      "specialty": "physical_therapy"
+    },
+    "provider_notes": "Return visit for ongoing management. Specimen collected and sent to lab. No complications."
+  },
+  {
+    "claim_id": "CLM-00028",
+    "date_of_service": "2025-11-04",
+    "diagnoses": [
+      "E78.5",
+      "M25.561"
+    ],
+    "lines": [
+      {
+        "charge": 118.0,
+        "cpt": "99213",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0058",
+      "sex": "F",
+      "year_of_birth": 1990
+    },
+    "provider": {
+      "name": "Lakeside Internal Medicine",
+      "npi": "1013002223",
+      "specialty": "internal_medicine"
+    },
+    "provider_notes": "Patient seen in clinic today. Stable on current regimen. Straightforward, low complexity. No new concerns."
+  },
+  {
+    "claim_id": "CLM-00029",
+    "date_of_service": "2025-03-24",
+    "diagnoses": [
+      "M25.561",
+      "R51.9"
+    ],
+    "lines": [
+      {
+        "charge": 235.0,
+        "cpt": "99215",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0052",
+      "sex": "M",
+      "year_of_birth": 1967
+    },
+    "provider": {
+      "name": "Cedar Family Medicine",
+      "npi": "1013001112",
+      "specialty": "family_medicine"
+    },
+    "provider_notes": "Return visit for ongoing management. Short visit for a single stable issue. No new problems, straightforward."
+  },
+  {
+    "claim_id": "CLM-00030",
+    "date_of_service": "2025-04-27",
+    "diagnoses": [
+      "J06.9",
+      "Z00.00"
+    ],
+    "lines": [
+      {
+        "charge": 118.0,
+        "cpt": "99213",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [
+          "25"
+        ],
+        "units": 1
+      },
+      {
+        "charge": 34.0,
+        "cpt": "96372",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 18.0,
+        "cpt": "J1885",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L3",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0025",
+      "sex": "M",
+      "year_of_birth": 1949
+    },
+    "provider": {
+      "name": "Lakeside Internal Medicine",
+      "npi": "1013002223",
+      "specialty": "internal_medicine"
+    },
+    "provider_notes": "Patient seen in clinic today. Procedure performed as documented; patient tolerated well."
+  },
+  {
+    "claim_id": "CLM-00031",
+    "date_of_service": "2025-05-28",
+    "diagnoses": [
+      "Z00.00"
+    ],
+    "lines": [
+      {
+        "charge": 118.0,
+        "cpt": "99213",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0043",
+      "sex": "M",
+      "year_of_birth": 1969
+    },
+    "provider": {
+      "name": "Harbor Cardiology",
+      "npi": "1013003334",
+      "specialty": "cardiology"
+    },
+    "provider_notes": "Return visit for ongoing management. Doing well overall. Routine check, self-limited issue reviewed."
+  },
+  {
+    "claim_id": "CLM-00032",
+    "date_of_service": "2025-05-06",
+    "diagnoses": [
+      "E11.9",
+      "I10"
+    ],
+    "lines": [
+      {
+        "charge": 176.0,
+        "cpt": "99214",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0026",
+      "sex": "F",
+      "year_of_birth": 1987
+    },
+    "provider": {
+      "name": "Cedar Family Medicine",
+      "npi": "1013001112",
+      "specialty": "family_medicine"
+    },
+    "provider_notes": "Scheduled follow-up appointment. Moderate medical decision making today; medication titrated and labs ordered."
+  },
+  {
+    "claim_id": "CLM-00033",
+    "date_of_service": "2025-10-07",
+    "diagnoses": [
+      "E11.9",
+      "M25.561"
+    ],
+    "lines": [
+      {
+        "charge": 84.0,
+        "cpt": "97110",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 2
+      },
+      {
+        "charge": 90.0,
+        "cpt": "97140",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [
+          "59"
+        ],
+        "units": 2
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0028",
+      "sex": "F",
+      "year_of_birth": 2010
+    },
+    "provider": {
+      "name": "Summit Orthopedics",
+      "npi": "1013004445",
+      "specialty": "orthopedics"
+    },
+    "provider_notes": "Established patient presents for follow-up. Diagnostics obtained and reviewed with patient."
+  },
+  {
+    "claim_id": "CLM-00034",
+    "date_of_service": "2025-02-22",
+    "diagnoses": [
+      "R07.9",
+      "J06.9"
+    ],
+    "lines": [
+      {
+        "charge": 176.0,
+        "cpt": "99214",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0044",
+      "sex": "M",
+      "year_of_birth": 1970
+    },
+    "provider": {
+      "name": "Summit Orthopedics",
+      "npi": "1013004445",
+      "specialty": "orthopedics"
+    },
+    "provider_notes": "Established patient presents for follow-up. Moderate medical decision making today; medication titrated and labs ordered."
+  },
+  {
+    "claim_id": "CLM-00035",
+    "date_of_service": "2025-12-10",
+    "diagnoses": [
+      "R51.9"
+    ],
+    "lines": [
+      {
+        "charge": 176.0,
+        "cpt": "99214",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0020",
+      "sex": "M",
+      "year_of_birth": 1997
+    },
+    "provider": {
+      "name": "Summit Orthopedics",
+      "npi": "1013004445",
+      "specialty": "orthopedics"
+    },
+    "provider_notes": "Scheduled follow-up appointment. Moderate medical decision making today; medication titrated and labs ordered."
+  },
+  {
+    "claim_id": "CLM-00036",
+    "date_of_service": "2025-01-10",
+    "diagnoses": [
+      "R51.9",
+      "M25.561"
+    ],
+    "lines": [
+      {
+        "charge": 118.0,
+        "cpt": "99213",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 34.0,
+        "cpt": "96372",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0040",
+      "sex": "M",
+      "year_of_birth": 1983
+    },
+    "provider": {
+      "name": "Rivertown Physical Therapy",
+      "npi": "1013005556",
+      "specialty": "physical_therapy"
+    },
+    "provider_notes": "Return visit for ongoing management. Brief visit for medication refill. Stable, minimal problem addressed."
+  },
+  {
+    "claim_id": "CLM-00037",
+    "date_of_service": "2025-11-03",
+    "diagnoses": [
+      "E78.5",
+      "J06.9"
+    ],
+    "lines": [
+      {
+        "charge": 235.0,
+        "cpt": "99215",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0029",
+      "sex": "M",
+      "year_of_birth": 1972
+    },
+    "provider": {
+      "name": "Lakeside Internal Medicine",
+      "npi": "1013002223",
+      "specialty": "internal_medicine"
+    },
+    "provider_notes": "Established patient presents for follow-up. Multiple chronic conditions poorly controlled; high complexity decision-making, total time 45 min."
+  },
+  {
+    "claim_id": "CLM-00038",
+    "date_of_service": "2025-01-08",
+    "diagnoses": [
+      "R07.9",
+      "I10"
+    ],
+    "lines": [
+      {
+        "charge": 84.0,
+        "cpt": "97110",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 2
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0052",
+      "sex": "F",
+      "year_of_birth": 1970
+    },
+    "provider": {
+      "name": "Cedar Family Medicine",
+      "npi": "1013001112",
+      "specialty": "family_medicine"
+    },
+    "provider_notes": "Scheduled follow-up appointment. Specimen collected and sent to lab. No complications."
+  },
+  {
+    "claim_id": "CLM-00039",
+    "date_of_service": "2025-04-05",
+    "diagnoses": [
+      "I10"
+    ],
+    "lines": [
+      {
+        "charge": 168.0,
+        "cpt": "97110",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 4
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0013",
+      "sex": "M",
+      "year_of_birth": 1994
+    },
+    "provider": {
+      "name": "Summit Orthopedics",
+      "npi": "1013004445",
+      "specialty": "orthopedics"
+    },
+    "provider_notes": "Scheduled follow-up appointment. Procedure performed as documented; patient tolerated well."
+  },
+  {
+    "claim_id": "CLM-00040",
+    "date_of_service": "2025-03-26",
+    "diagnoses": [
+      "E78.5",
+      "R07.9"
+    ],
+    "lines": [
+      {
+        "charge": 336.0,
+        "cpt": "97110",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 8
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0004",
+      "sex": "F",
+      "year_of_birth": 1976
+    },
+    "provider": {
+      "name": "Summit Orthopedics",
+      "npi": "1013004445",
+      "specialty": "orthopedics"
+    },
+    "provider_notes": "Return visit for ongoing management. Specimen collected and sent to lab. No complications."
+  },
+  {
+    "claim_id": "CLM-00041",
+    "date_of_service": "2025-08-09",
+    "diagnoses": [
+      "Z00.00"
+    ],
+    "lines": [
+      {
+        "charge": 128.0,
+        "cpt": "20610",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 34.0,
+        "cpt": "96372",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0054",
+      "sex": "F",
+      "year_of_birth": 2002
+    },
+    "provider": {
+      "name": "Summit Orthopedics",
+      "npi": "1013004445",
+      "specialty": "orthopedics"
+    },
+    "provider_notes": "Scheduled follow-up appointment. Diagnostics obtained and reviewed with patient."
+  },
+  {
+    "claim_id": "CLM-00042",
+    "date_of_service": "2025-04-09",
+    "diagnoses": [
+      "J06.9",
+      "E78.5"
+    ],
+    "lines": [
+      {
+        "charge": 118.0,
+        "cpt": "99213",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 55.0,
+        "cpt": "93000",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0018",
+      "sex": "F",
+      "year_of_birth": 2001
+    },
+    "provider": {
+      "name": "Harbor Cardiology",
+      "npi": "1013003334",
+      "specialty": "cardiology"
+    },
+    "provider_notes": "Established patient presents for follow-up. Stable on current regimen. Straightforward, low complexity. No new concerns."
+  },
+  {
+    "claim_id": "CLM-00043",
+    "date_of_service": "2025-02-14",
+    "diagnoses": [
+      "J06.9",
+      "E78.5"
+    ],
+    "lines": [
+      {
+        "charge": 38.0,
+        "cpt": "80053",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 21.0,
+        "cpt": "85025",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 12.0,
+        "cpt": "36415",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L3",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0015",
+      "sex": "F",
+      "year_of_birth": 1994
+    },
+    "provider": {
+      "name": "Lakeside Internal Medicine",
+      "npi": "1013002223",
+      "specialty": "internal_medicine"
+    },
+    "provider_notes": "Scheduled follow-up appointment. Specimen collected and sent to lab. No complications."
+  },
+  {
+    "claim_id": "CLM-00044",
+    "date_of_service": "2025-12-01",
+    "diagnoses": [
+      "M17.11",
+      "E11.9"
+    ],
+    "lines": [
+      {
+        "charge": 118.0,
+        "cpt": "99213",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0014",
+      "sex": "M",
+      "year_of_birth": 1998
+    },
+    "provider": {
+      "name": "Rivertown Physical Therapy",
+      "npi": "1013005556",
+      "specialty": "physical_therapy"
+    },
+    "provider_notes": "Return visit for ongoing management. Brief visit for medication refill. Stable, minimal problem addressed."
+  },
+  {
+    "claim_id": "CLM-00045",
+    "date_of_service": "2025-04-09",
+    "diagnoses": [
+      "M17.11",
+      "E11.9"
+    ],
+    "lines": [
+      {
+        "charge": 118.0,
+        "cpt": "99213",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [
+          "25"
+        ],
+        "units": 1
+      },
+      {
+        "charge": 128.0,
+        "cpt": "20610",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0055",
+      "sex": "F",
+      "year_of_birth": 1998
+    },
+    "provider": {
+      "name": "Summit Orthopedics",
+      "npi": "1013004445",
+      "specialty": "orthopedics"
+    },
+    "provider_notes": "Scheduled follow-up appointment. Specimen collected and sent to lab. No complications."
+  },
+  {
+    "claim_id": "CLM-00046",
+    "date_of_service": "2025-10-18",
+    "diagnoses": [
+      "M25.561"
+    ],
+    "lines": [
+      {
+        "charge": 118.0,
+        "cpt": "99213",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [
+          "25"
+        ],
+        "units": 1
+      },
+      {
+        "charge": 128.0,
+        "cpt": "20610",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0047",
+      "sex": "M",
+      "year_of_birth": 1966
+    },
+    "provider": {
+      "name": "Lakeside Internal Medicine",
+      "npi": "1013002223",
+      "specialty": "internal_medicine"
+    },
+    "provider_notes": "Established patient presents for follow-up. Procedure performed as documented; patient tolerated well."
+  },
+  {
+    "claim_id": "CLM-00047",
+    "date_of_service": "2025-05-13",
+    "diagnoses": [
+      "R51.9",
+      "M17.11"
+    ],
+    "lines": [
+      {
+        "charge": 118.0,
+        "cpt": "99213",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [
+          "25"
+        ],
+        "units": 1
+      },
+      {
+        "charge": 128.0,
+        "cpt": "20610",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0009",
+      "sex": "F",
+      "year_of_birth": 2004
+    },
+    "provider": {
+      "name": "Cedar Family Medicine",
+      "npi": "1013001112",
+      "specialty": "family_medicine"
+    },
+    "provider_notes": "Return visit for ongoing management. Specimen collected and sent to lab. No complications."
+  },
+  {
+    "claim_id": "CLM-00048",
+    "date_of_service": "2025-08-01",
+    "diagnoses": [
+      "J06.9"
+    ],
+    "lines": [
+      {
+        "charge": 118.0,
+        "cpt": "99213",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [
+          "25"
+        ],
+        "units": 1
+      },
+      {
+        "charge": 128.0,
+        "cpt": "20610",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0018",
+      "sex": "M",
+      "year_of_birth": 1998
+    },
+    "provider": {
+      "name": "Cedar Family Medicine",
+      "npi": "1013001112",
+      "specialty": "family_medicine"
+    },
+    "provider_notes": "Patient seen in clinic today. Diagnostics obtained and reviewed with patient."
+  },
+  {
+    "claim_id": "CLM-00049",
+    "date_of_service": "2025-04-27",
+    "diagnoses": [
+      "R07.9"
+    ],
+    "lines": [
+      {
+        "charge": 118.0,
+        "cpt": "99213",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [
+          "25"
+        ],
+        "units": 1
+      },
+      {
+        "charge": 34.0,
+        "cpt": "96372",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 18.0,
+        "cpt": "J1885",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L3",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0050",
+      "sex": "F",
+      "year_of_birth": 1950
+    },
+    "provider": {
+      "name": "Lakeside Internal Medicine",
+      "npi": "1013002223",
+      "specialty": "internal_medicine"
+    },
+    "provider_notes": "Patient seen in clinic today. Procedure performed as documented; patient tolerated well."
+  },
+  {
+    "claim_id": "CLM-00050",
+    "date_of_service": "2025-12-09",
+    "diagnoses": [
+      "M54.50",
+      "I10"
+    ],
+    "lines": [
+      {
+        "charge": 38.0,
+        "cpt": "80053",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 21.0,
+        "cpt": "85025",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 12.0,
+        "cpt": "36415",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L3",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0031",
+      "sex": "F",
+      "year_of_birth": 1959
+    },
+    "provider": {
+      "name": "Summit Orthopedics",
+      "npi": "1013004445",
+      "specialty": "orthopedics"
+    },
+    "provider_notes": "Patient seen in clinic today. Specimen collected and sent to lab. No complications."
+  },
+  {
+    "claim_id": "CLM-00051",
+    "date_of_service": "2025-11-13",
+    "diagnoses": [
+      "R51.9",
+      "I10"
+    ],
+    "lines": [
+      {
+        "charge": 118.0,
+        "cpt": "99213",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 34.0,
+        "cpt": "96372",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0038",
+      "sex": "M",
+      "year_of_birth": 1948
+    },
+    "provider": {
+      "name": "Rivertown Physical Therapy",
+      "npi": "1013005556",
+      "specialty": "physical_therapy"
+    },
+    "provider_notes": "Patient seen in clinic today. Stable on current regimen. Straightforward, low complexity. No new concerns."
+  },
+  {
+    "claim_id": "CLM-00052",
+    "date_of_service": "2025-07-22",
+    "diagnoses": [
+      "I10",
+      "E78.5"
+    ],
+    "lines": [
+      {
+        "charge": 42.0,
+        "cpt": "97110",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0051",
+      "sex": "M",
+      "year_of_birth": 1950
+    },
+    "provider": {
+      "name": "Rivertown Physical Therapy",
+      "npi": "1013005556",
+      "specialty": "physical_therapy"
+    },
+    "provider_notes": "Return visit for ongoing management. Procedure performed as documented; patient tolerated well."
+  },
+  {
+    "claim_id": "CLM-00053",
+    "date_of_service": "2025-06-21",
+    "diagnoses": [
+      "M54.50",
+      "M25.561"
+    ],
+    "lines": [
+      {
+        "charge": 118.0,
+        "cpt": "99213",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [
+          "25"
+        ],
+        "units": 1
+      },
+      {
+        "charge": 128.0,
+        "cpt": "20610",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0053",
+      "sex": "F",
+      "year_of_birth": 2007
+    },
+    "provider": {
+      "name": "Summit Orthopedics",
+      "npi": "1013004445",
+      "specialty": "orthopedics"
+    },
+    "provider_notes": "Patient seen in clinic today. Diagnostics obtained and reviewed with patient."
+  },
+  {
+    "claim_id": "CLM-00054",
+    "date_of_service": "2025-07-27",
+    "diagnoses": [
+      "J06.9",
+      "R51.9"
+    ],
+    "lines": [
+      {
+        "charge": 176.0,
+        "cpt": "99214",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0042",
+      "sex": "M",
+      "year_of_birth": 1979
+    },
+    "provider": {
+      "name": "Summit Orthopedics",
+      "npi": "1013004445",
+      "specialty": "orthopedics"
+    },
+    "provider_notes": "Established patient presents for follow-up. Moderate medical decision making today; medication titrated and labs ordered."
+  },
+  {
+    "claim_id": "CLM-00055",
+    "date_of_service": "2025-01-16",
+    "diagnoses": [
+      "M54.50",
+      "M17.11"
+    ],
+    "lines": [
+      {
+        "charge": 235.0,
+        "cpt": "99215",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0016",
+      "sex": "M",
+      "year_of_birth": 2004
+    },
+    "provider": {
+      "name": "Harbor Cardiology",
+      "npi": "1013003334",
+      "specialty": "cardiology"
+    },
+    "provider_notes": "Patient seen in clinic today. Extensive review; high medical decision making with new prescription drug management, 40 min spent."
+  },
+  {
+    "claim_id": "CLM-00056",
+    "date_of_service": "2025-01-17",
+    "diagnoses": [
+      "I10"
+    ],
+    "lines": [
+      {
+        "charge": 34.0,
+        "cpt": "96372",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 34.0,
+        "cpt": "96372",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0022",
+      "sex": "M",
+      "year_of_birth": 1980
+    },
+    "provider": {
+      "name": "Rivertown Physical Therapy",
+      "npi": "1013005556",
+      "specialty": "physical_therapy"
+    },
+    "provider_notes": "Patient seen in clinic today. Diagnostics obtained and reviewed with patient."
+  },
+  {
+    "claim_id": "CLM-00057",
+    "date_of_service": "2025-08-26",
+    "diagnoses": [
+      "I10"
+    ],
+    "lines": [
+      {
+        "charge": 72.0,
+        "cpt": "J1885",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 4
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0036",
+      "sex": "M",
+      "year_of_birth": 1975
+    },
+    "provider": {
+      "name": "Summit Orthopedics",
+      "npi": "1013004445",
+      "specialty": "orthopedics"
+    },
+    "provider_notes": "Return visit for ongoing management. Procedure performed as documented; patient tolerated well."
+  },
+  {
+    "claim_id": "CLM-00058",
+    "date_of_service": "2025-06-16",
+    "diagnoses": [
+      "M25.561",
+      "E78.5"
+    ],
+    "lines": [
+      {
+        "charge": 176.0,
+        "cpt": "99214",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0045",
+      "sex": "M",
+      "year_of_birth": 1976
+    },
+    "provider": {
+      "name": "Rivertown Physical Therapy",
+      "npi": "1013005556",
+      "specialty": "physical_therapy"
+    },
+    "provider_notes": "Return visit for ongoing management. Brief refill visit, one stable problem, minimal exam."
+  },
+  {
+    "claim_id": "CLM-00059",
+    "date_of_service": "2025-02-24",
+    "diagnoses": [
+      "J06.9"
+    ],
+    "lines": [
+      {
+        "charge": 235.0,
+        "cpt": "99215",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0018",
+      "sex": "M",
+      "year_of_birth": 1984
+    },
+    "provider": {
+      "name": "Lakeside Internal Medicine",
+      "npi": "1013002223",
+      "specialty": "internal_medicine"
+    },
+    "provider_notes": "Established patient presents for follow-up. Multiple chronic conditions poorly controlled; high complexity decision-making, total time 45 min."
+  },
+  {
+    "claim_id": "CLM-00060",
+    "date_of_service": "2025-09-20",
+    "diagnoses": [
+      "I10",
+      "R51.9"
+    ],
+    "lines": [
+      {
+        "charge": 34.0,
+        "cpt": "96372",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 34.0,
+        "cpt": "96372",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0014",
+      "sex": "M",
+      "year_of_birth": 2006
+    },
+    "provider": {
+      "name": "Rivertown Physical Therapy",
+      "npi": "1013005556",
+      "specialty": "physical_therapy"
+    },
+    "provider_notes": "Return visit for ongoing management. Procedure performed as documented; patient tolerated well."
+  },
+  {
+    "claim_id": "CLM-00061",
+    "date_of_service": "2025-03-09",
+    "diagnoses": [
+      "E11.9"
+    ],
+    "lines": [
+      {
+        "charge": 84.0,
+        "cpt": "97110",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 2
+      },
+      {
+        "charge": 90.0,
+        "cpt": "97140",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [
+          "59"
+        ],
+        "units": 2
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0012",
+      "sex": "F",
+      "year_of_birth": 1983
+    },
+    "provider": {
+      "name": "Rivertown Physical Therapy",
+      "npi": "1013005556",
+      "specialty": "physical_therapy"
+    },
+    "provider_notes": "Return visit for ongoing management. Diagnostics obtained and reviewed with patient."
+  },
+  {
+    "claim_id": "CLM-00062",
+    "date_of_service": "2025-10-10",
+    "diagnoses": [
+      "M17.11",
+      "R07.9"
+    ],
+    "lines": [
+      {
+        "charge": 38.0,
+        "cpt": "80053",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 21.0,
+        "cpt": "85025",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 12.0,
+        "cpt": "36415",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L3",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0041",
+      "sex": "F",
+      "year_of_birth": 2007
+    },
+    "provider": {
+      "name": "Cedar Family Medicine",
+      "npi": "1013001112",
+      "specialty": "family_medicine"
+    },
+    "provider_notes": "Return visit for ongoing management. Procedure performed as documented; patient tolerated well."
+  },
+  {
+    "claim_id": "CLM-00063",
+    "date_of_service": "2025-07-16",
+    "diagnoses": [
+      "R07.9"
+    ],
+    "lines": [
+      {
+        "charge": 294.0,
+        "cpt": "97110",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 7
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0056",
+      "sex": "F",
+      "year_of_birth": 2006
+    },
+    "provider": {
+      "name": "Cedar Family Medicine",
+      "npi": "1013001112",
+      "specialty": "family_medicine"
+    },
+    "provider_notes": "Established patient presents for follow-up. Procedure performed as documented; patient tolerated well."
+  },
+  {
+    "claim_id": "CLM-00064",
+    "date_of_service": "2025-02-18",
+    "diagnoses": [
+      "R07.9",
+      "R51.9"
+    ],
+    "lines": [
+      {
+        "charge": 38.0,
+        "cpt": "80053",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 21.0,
+        "cpt": "85025",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 12.0,
+        "cpt": "36415",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L3",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0052",
+      "sex": "F",
+      "year_of_birth": 1983
+    },
+    "provider": {
+      "name": "Lakeside Internal Medicine",
+      "npi": "1013002223",
+      "specialty": "internal_medicine"
+    },
+    "provider_notes": "Scheduled follow-up appointment. Specimen collected and sent to lab. No complications."
+  },
+  {
+    "claim_id": "CLM-00065",
+    "date_of_service": "2025-10-02",
+    "diagnoses": [
+      "R51.9"
+    ],
+    "lines": [
+      {
+        "charge": 235.0,
+        "cpt": "99215",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0020",
+      "sex": "M",
+      "year_of_birth": 1999
+    },
+    "provider": {
+      "name": "Rivertown Physical Therapy",
+      "npi": "1013005556",
+      "specialty": "physical_therapy"
+    },
+    "provider_notes": "Patient seen in clinic today. Extensive review; high medical decision making with new prescription drug management, 40 min spent."
+  },
+  {
+    "claim_id": "CLM-00066",
+    "date_of_service": "2025-02-06",
+    "diagnoses": [
+      "M25.561"
+    ],
+    "lines": [
+      {
+        "charge": 118.0,
+        "cpt": "99213",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [
+          "25"
+        ],
+        "units": 1
+      },
+      {
+        "charge": 34.0,
+        "cpt": "96372",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 18.0,
+        "cpt": "J1885",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L3",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0011",
+      "sex": "F",
+      "year_of_birth": 1975
+    },
+    "provider": {
+      "name": "Rivertown Physical Therapy",
+      "npi": "1013005556",
+      "specialty": "physical_therapy"
+    },
+    "provider_notes": "Scheduled follow-up appointment. Diagnostics obtained and reviewed with patient."
+  },
+  {
+    "claim_id": "CLM-00067",
+    "date_of_service": "2025-05-23",
+    "diagnoses": [
+      "M17.11",
+      "I10"
+    ],
+    "lines": [
+      {
+        "charge": 168.0,
+        "cpt": "97110",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 4
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0031",
+      "sex": "F",
+      "year_of_birth": 1982
+    },
+    "provider": {
+      "name": "Lakeside Internal Medicine",
+      "npi": "1013002223",
+      "specialty": "internal_medicine"
+    },
+    "provider_notes": "Patient seen in clinic today. Specimen collected and sent to lab. No complications."
+  },
+  {
+    "claim_id": "CLM-00068",
+    "date_of_service": "2025-09-08",
+    "diagnoses": [
+      "Z00.00"
+    ],
+    "lines": [
+      {
+        "charge": 168.0,
+        "cpt": "97110",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 4
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0043",
+      "sex": "M",
+      "year_of_birth": 1970
+    },
+    "provider": {
+      "name": "Cedar Family Medicine",
+      "npi": "1013001112",
+      "specialty": "family_medicine"
+    },
+    "provider_notes": "Patient seen in clinic today. Procedure performed as documented; patient tolerated well."
+  },
+  {
+    "claim_id": "CLM-00069",
+    "date_of_service": "2025-02-15",
+    "diagnoses": [
+      "M25.561",
+      "Z00.00"
+    ],
+    "lines": [
+      {
+        "charge": 118.0,
+        "cpt": "99213",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0011",
+      "sex": "M",
+      "year_of_birth": 1984
+    },
+    "provider": {
+      "name": "Summit Orthopedics",
+      "npi": "1013004445",
+      "specialty": "orthopedics"
+    },
+    "provider_notes": "Scheduled follow-up appointment. Brief visit for medication refill. Stable, minimal problem addressed."
+  },
+  {
+    "claim_id": "CLM-00070",
+    "date_of_service": "2025-10-09",
+    "diagnoses": [
+      "I10"
+    ],
+    "lines": [
+      {
+        "charge": 118.0,
+        "cpt": "99213",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [
+          "25"
+        ],
+        "units": 1
+      },
+      {
+        "charge": 34.0,
+        "cpt": "96372",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 18.0,
+        "cpt": "J1885",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L3",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0039",
+      "sex": "M",
+      "year_of_birth": 1950
+    },
+    "provider": {
+      "name": "Harbor Cardiology",
+      "npi": "1013003334",
+      "specialty": "cardiology"
+    },
+    "provider_notes": "Patient seen in clinic today. Diagnostics obtained and reviewed with patient."
+  },
+  {
+    "claim_id": "CLM-00071",
+    "date_of_service": "2025-08-17",
+    "diagnoses": [
+      "Z00.00",
+      "M54.50"
+    ],
+    "lines": [
+      {
+        "charge": 38.0,
+        "cpt": "80053",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 24.0,
+        "cpt": "80048",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 21.0,
+        "cpt": "85025",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L3",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0049",
+      "sex": "F",
+      "year_of_birth": 1979
+    },
+    "provider": {
+      "name": "Lakeside Internal Medicine",
+      "npi": "1013002223",
+      "specialty": "internal_medicine"
+    },
+    "provider_notes": "Scheduled follow-up appointment. Diagnostics obtained and reviewed with patient."
+  },
+  {
+    "claim_id": "CLM-00072",
+    "date_of_service": "2025-06-11",
+    "diagnoses": [
+      "M54.50"
+    ],
+    "lines": [
+      {
+        "charge": 128.0,
+        "cpt": "20610",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 34.0,
+        "cpt": "96372",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0006",
+      "sex": "M",
+      "year_of_birth": 2005
+    },
+    "provider": {
+      "name": "Summit Orthopedics",
+      "npi": "1013004445",
+      "specialty": "orthopedics"
+    },
+    "provider_notes": "Return visit for ongoing management. Specimen collected and sent to lab. No complications."
+  },
+  {
+    "claim_id": "CLM-00073",
+    "date_of_service": "2025-02-11",
+    "diagnoses": [
+      "J06.9",
+      "I10"
+    ],
+    "lines": [
+      {
+        "charge": 235.0,
+        "cpt": "99215",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0019",
+      "sex": "F",
+      "year_of_birth": 1996
+    },
+    "provider": {
+      "name": "Summit Orthopedics",
+      "npi": "1013004445",
+      "specialty": "orthopedics"
+    },
+    "provider_notes": "Scheduled follow-up appointment. Multiple chronic conditions poorly controlled; high complexity decision-making, total time 45 min."
+  },
+  {
+    "claim_id": "CLM-00074",
+    "date_of_service": "2025-09-12",
+    "diagnoses": [
+      "M17.11",
+      "E11.9"
+    ],
+    "lines": [
+      {
+        "charge": 176.0,
+        "cpt": "99214",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0030",
+      "sex": "F",
+      "year_of_birth": 1997
+    },
+    "provider": {
+      "name": "Lakeside Internal Medicine",
+      "npi": "1013002223",
+      "specialty": "internal_medicine"
+    },
+    "provider_notes": "Patient seen in clinic today. Moderate medical decision making today; medication titrated and labs ordered."
+  },
+  {
+    "claim_id": "CLM-00075",
+    "date_of_service": "2025-02-01",
+    "diagnoses": [
+      "M54.50"
+    ],
+    "lines": [
+      {
+        "charge": 176.0,
+        "cpt": "99214",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0009",
+      "sex": "M",
+      "year_of_birth": 1981
+    },
+    "provider": {
+      "name": "Summit Orthopedics",
+      "npi": "1013004445",
+      "specialty": "orthopedics"
+    },
+    "provider_notes": "Return visit for ongoing management. Two chronic problems reviewed with adjustment; moderate complexity decision-making, total time 30 min."
+  },
+  {
+    "claim_id": "CLM-00076",
+    "date_of_service": "2025-08-04",
+    "diagnoses": [
+      "M17.11"
+    ],
+    "lines": [
+      {
+        "charge": 176.0,
+        "cpt": "99214",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0027",
+      "sex": "F",
+      "year_of_birth": 1956
+    },
+    "provider": {
+      "name": "Cedar Family Medicine",
+      "npi": "1013001112",
+      "specialty": "family_medicine"
+    },
+    "provider_notes": "Return visit for ongoing management. Moderate medical decision making today; medication titrated and labs ordered."
+  },
+  {
+    "claim_id": "CLM-00077",
+    "date_of_service": "2025-08-18",
+    "diagnoses": [
+      "M25.561"
+    ],
+    "lines": [
+      {
+        "charge": 118.0,
+        "cpt": "99213",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [
+          "25"
+        ],
+        "units": 1
+      },
+      {
+        "charge": 128.0,
+        "cpt": "20610",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0054",
+      "sex": "M",
+      "year_of_birth": 2006
+    },
+    "provider": {
+      "name": "Lakeside Internal Medicine",
+      "npi": "1013002223",
+      "specialty": "internal_medicine"
+    },
+    "provider_notes": "Patient seen in clinic today. Diagnostics obtained and reviewed with patient."
+  },
+  {
+    "claim_id": "CLM-00078",
+    "date_of_service": "2025-07-11",
+    "diagnoses": [
+      "E11.9",
+      "Z00.00"
+    ],
+    "lines": [
+      {
+        "charge": 176.0,
+        "cpt": "99214",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0048",
+      "sex": "F",
+      "year_of_birth": 1962
+    },
+    "provider": {
+      "name": "Harbor Cardiology",
+      "npi": "1013003334",
+      "specialty": "cardiology"
+    },
+    "provider_notes": "Return visit for ongoing management. Moderate medical decision making today; medication titrated and labs ordered."
+  },
+  {
+    "claim_id": "CLM-00079",
+    "date_of_service": "2025-09-25",
+    "diagnoses": [
+      "M17.11",
+      "J06.9"
+    ],
+    "lines": [
+      {
+        "charge": 38.0,
+        "cpt": "80053",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 21.0,
+        "cpt": "85025",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 12.0,
+        "cpt": "36415",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L3",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0029",
+      "sex": "M",
+      "year_of_birth": 2006
+    },
+    "provider": {
+      "name": "Harbor Cardiology",
+      "npi": "1013003334",
+      "specialty": "cardiology"
+    },
+    "provider_notes": "Patient seen in clinic today. Diagnostics obtained and reviewed with patient."
+  },
+  {
+    "claim_id": "CLM-00080",
+    "date_of_service": "2025-01-11",
+    "diagnoses": [
+      "M25.561",
+      "R07.9"
+    ],
+    "lines": [
+      {
+        "charge": 118.0,
+        "cpt": "99213",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 55.0,
+        "cpt": "93000",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0037",
+      "sex": "F",
+      "year_of_birth": 1994
+    },
+    "provider": {
+      "name": "Summit Orthopedics",
+      "npi": "1013004445",
+      "specialty": "orthopedics"
+    },
+    "provider_notes": "Patient seen in clinic today. Brief visit for medication refill. Stable, minimal problem addressed."
+  },
+  {
+    "claim_id": "CLM-00081",
+    "date_of_service": "2025-08-04",
+    "diagnoses": [
+      "E11.9",
+      "M54.50"
+    ],
+    "lines": [
+      {
+        "charge": 118.0,
+        "cpt": "99213",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0009",
+      "sex": "M",
+      "year_of_birth": 2009
+    },
+    "provider": {
+      "name": "Cedar Family Medicine",
+      "npi": "1013001112",
+      "specialty": "family_medicine"
+    },
+    "provider_notes": "Scheduled follow-up appointment. Doing well overall. Routine check, self-limited issue reviewed."
+  },
+  {
+    "claim_id": "CLM-00082",
+    "date_of_service": "2025-10-23",
+    "diagnoses": [
+      "I10",
+      "J06.9"
+    ],
+    "lines": [
+      {
+        "charge": 38.0,
+        "cpt": "80053",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 21.0,
+        "cpt": "85025",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 12.0,
+        "cpt": "36415",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L3",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0005",
+      "sex": "M",
+      "year_of_birth": 2005
+    },
+    "provider": {
+      "name": "Harbor Cardiology",
+      "npi": "1013003334",
+      "specialty": "cardiology"
+    },
+    "provider_notes": "Scheduled follow-up appointment. Specimen collected and sent to lab. No complications."
+  },
+  {
+    "claim_id": "CLM-00083",
+    "date_of_service": "2025-11-22",
+    "diagnoses": [
+      "R51.9",
+      "I10"
+    ],
+    "lines": [
+      {
+        "charge": 235.0,
+        "cpt": "99215",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0056",
+      "sex": "F",
+      "year_of_birth": 1949
+    },
+    "provider": {
+      "name": "Lakeside Internal Medicine",
+      "npi": "1013002223",
+      "specialty": "internal_medicine"
+    },
+    "provider_notes": "Scheduled follow-up appointment. Multiple chronic conditions poorly controlled; high complexity decision-making, total time 45 min."
+  },
+  {
+    "claim_id": "CLM-00084",
+    "date_of_service": "2025-01-11",
+    "diagnoses": [
+      "Z00.00"
+    ],
+    "lines": [
+      {
+        "charge": 118.0,
+        "cpt": "99213",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [
+          "25"
+        ],
+        "units": 1
+      },
+      {
+        "charge": 34.0,
+        "cpt": "96372",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 18.0,
+        "cpt": "J1885",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L3",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0029",
+      "sex": "M",
+      "year_of_birth": 1966
+    },
+    "provider": {
+      "name": "Cedar Family Medicine",
+      "npi": "1013001112",
+      "specialty": "family_medicine"
+    },
+    "provider_notes": "Return visit for ongoing management. Specimen collected and sent to lab. No complications."
+  },
+  {
+    "claim_id": "CLM-00085",
+    "date_of_service": "2025-11-26",
+    "diagnoses": [
+      "M54.50"
+    ],
+    "lines": [
+      {
+        "charge": 118.0,
+        "cpt": "99213",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [
+          "25"
+        ],
+        "units": 1
+      },
+      {
+        "charge": 128.0,
+        "cpt": "20610",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0010",
+      "sex": "M",
+      "year_of_birth": 1976
+    },
+    "provider": {
+      "name": "Rivertown Physical Therapy",
+      "npi": "1013005556",
+      "specialty": "physical_therapy"
+    },
+    "provider_notes": "Patient seen in clinic today. Procedure performed as documented; patient tolerated well."
+  },
+  {
+    "claim_id": "CLM-00086",
+    "date_of_service": "2025-10-05",
+    "diagnoses": [
+      "M17.11"
+    ],
+    "lines": [
+      {
+        "charge": 168.0,
+        "cpt": "97110",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 4
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0056",
+      "sex": "F",
+      "year_of_birth": 1993
+    },
+    "provider": {
+      "name": "Summit Orthopedics",
+      "npi": "1013004445",
+      "specialty": "orthopedics"
+    },
+    "provider_notes": "Return visit for ongoing management. Specimen collected and sent to lab. No complications."
+  },
+  {
+    "claim_id": "CLM-00087",
+    "date_of_service": "2025-03-03",
+    "diagnoses": [
+      "J06.9",
+      "Z00.00"
+    ],
+    "lines": [
+      {
+        "charge": 90.0,
+        "cpt": "J1885",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 5
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0001",
+      "sex": "M",
+      "year_of_birth": 2004
+    },
+    "provider": {
+      "name": "Rivertown Physical Therapy",
+      "npi": "1013005556",
+      "specialty": "physical_therapy"
+    },
+    "provider_notes": "Scheduled follow-up appointment. Diagnostics obtained and reviewed with patient."
+  },
+  {
+    "claim_id": "CLM-00088",
+    "date_of_service": "2025-08-04",
+    "diagnoses": [
+      "M25.561"
+    ],
+    "lines": [
+      {
+        "charge": 118.0,
+        "cpt": "99213",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 34.0,
+        "cpt": "96372",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0030",
+      "sex": "F",
+      "year_of_birth": 1983
+    },
+    "provider": {
+      "name": "Summit Orthopedics",
+      "npi": "1013004445",
+      "specialty": "orthopedics"
+    },
+    "provider_notes": "Return visit for ongoing management. Doing well overall. Routine check, self-limited issue reviewed."
+  },
+  {
+    "claim_id": "CLM-00089",
+    "date_of_service": "2025-10-28",
+    "diagnoses": [
+      "R07.9"
+    ],
+    "lines": [
+      {
+        "charge": 126.0,
+        "cpt": "97110",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 3
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0002",
+      "sex": "M",
+      "year_of_birth": 1995
+    },
+    "provider": {
+      "name": "Cedar Family Medicine",
+      "npi": "1013001112",
+      "specialty": "family_medicine"
+    },
+    "provider_notes": "Scheduled follow-up appointment. Specimen collected and sent to lab. No complications."
+  },
+  {
+    "claim_id": "CLM-00090",
+    "date_of_service": "2025-10-09",
+    "diagnoses": [
+      "I10"
+    ],
+    "lines": [
+      {
+        "charge": 118.0,
+        "cpt": "99213",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 55.0,
+        "cpt": "93000",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0039",
+      "sex": "F",
+      "year_of_birth": 1990
+    },
+    "provider": {
+      "name": "Lakeside Internal Medicine",
+      "npi": "1013002223",
+      "specialty": "internal_medicine"
+    },
+    "provider_notes": "Established patient presents for follow-up. Brief visit for medication refill. Stable, minimal problem addressed."
+  },
+  {
+    "claim_id": "CLM-00091",
+    "date_of_service": "2025-05-11",
+    "diagnoses": [
+      "M54.50",
+      "R51.9"
+    ],
+    "lines": [
+      {
+        "charge": 235.0,
+        "cpt": "99215",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0003",
+      "sex": "F",
+      "year_of_birth": 1991
+    },
+    "provider": {
+      "name": "Cedar Family Medicine",
+      "npi": "1013001112",
+      "specialty": "family_medicine"
+    },
+    "provider_notes": "Patient seen in clinic today. Extensive review; high medical decision making with new prescription drug management, 40 min spent."
+  },
+  {
+    "claim_id": "CLM-00092",
+    "date_of_service": "2025-08-26",
+    "diagnoses": [
+      "J06.9",
+      "I10"
+    ],
+    "lines": [
+      {
+        "charge": 176.0,
+        "cpt": "99214",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0033",
+      "sex": "F",
+      "year_of_birth": 1979
+    },
+    "provider": {
+      "name": "Harbor Cardiology",
+      "npi": "1013003334",
+      "specialty": "cardiology"
+    },
+    "provider_notes": "Scheduled follow-up appointment. Two chronic problems reviewed with adjustment; moderate complexity decision-making, total time 30 min."
+  },
+  {
+    "claim_id": "CLM-00093",
+    "date_of_service": "2025-06-03",
+    "diagnoses": [
+      "E11.9",
+      "Z00.00"
+    ],
+    "lines": [
+      {
+        "charge": 38.0,
+        "cpt": "80053",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 21.0,
+        "cpt": "85025",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 12.0,
+        "cpt": "36415",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L3",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0049",
+      "sex": "M",
+      "year_of_birth": 1973
+    },
+    "provider": {
+      "name": "Rivertown Physical Therapy",
+      "npi": "1013005556",
+      "specialty": "physical_therapy"
+    },
+    "provider_notes": "Established patient presents for follow-up. Specimen collected and sent to lab. No complications."
+  },
+  {
+    "claim_id": "CLM-00094",
+    "date_of_service": "2025-02-22",
+    "diagnoses": [
+      "M17.11"
+    ],
+    "lines": [
+      {
+        "charge": 84.0,
+        "cpt": "97110",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 2
+      },
+      {
+        "charge": 90.0,
+        "cpt": "97140",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [
+          "59"
+        ],
+        "units": 2
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0044",
+      "sex": "M",
+      "year_of_birth": 1978
+    },
+    "provider": {
+      "name": "Harbor Cardiology",
+      "npi": "1013003334",
+      "specialty": "cardiology"
+    },
+    "provider_notes": "Established patient presents for follow-up. Diagnostics obtained and reviewed with patient."
+  },
+  {
+    "claim_id": "CLM-00095",
+    "date_of_service": "2025-12-10",
+    "diagnoses": [
+      "I10",
+      "M54.50"
+    ],
+    "lines": [
+      {
+        "charge": 176.0,
+        "cpt": "99214",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0021",
+      "sex": "F",
+      "year_of_birth": 1973
+    },
+    "provider": {
+      "name": "Summit Orthopedics",
+      "npi": "1013004445",
+      "specialty": "orthopedics"
+    },
+    "provider_notes": "Established patient presents for follow-up. Two chronic problems reviewed with adjustment; moderate complexity decision-making, total time 30 min."
+  },
+  {
+    "claim_id": "CLM-00096",
+    "date_of_service": "2025-03-13",
+    "diagnoses": [
+      "J06.9",
+      "E78.5"
+    ],
+    "lines": [
+      {
+        "charge": 168.0,
+        "cpt": "97110",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 4
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0008",
+      "sex": "F",
+      "year_of_birth": 1957
+    },
+    "provider": {
+      "name": "Rivertown Physical Therapy",
+      "npi": "1013005556",
+      "specialty": "physical_therapy"
+    },
+    "provider_notes": "Scheduled follow-up appointment. Diagnostics obtained and reviewed with patient."
+  },
+  {
+    "claim_id": "CLM-00097",
+    "date_of_service": "2025-10-14",
+    "diagnoses": [
+      "E11.9",
+      "J06.9"
+    ],
+    "lines": [
+      {
+        "charge": 38.0,
+        "cpt": "80053",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 21.0,
+        "cpt": "85025",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 12.0,
+        "cpt": "36415",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L3",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0057",
+      "sex": "F",
+      "year_of_birth": 1998
+    },
+    "provider": {
+      "name": "Summit Orthopedics",
+      "npi": "1013004445",
+      "specialty": "orthopedics"
+    },
+    "provider_notes": "Patient seen in clinic today. Specimen collected and sent to lab. No complications."
+  },
+  {
+    "claim_id": "CLM-00098",
+    "date_of_service": "2025-09-21",
+    "diagnoses": [
+      "E11.9",
+      "M25.561"
+    ],
+    "lines": [
+      {
+        "charge": 235.0,
+        "cpt": "99215",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0016",
+      "sex": "F",
+      "year_of_birth": 1991
+    },
+    "provider": {
+      "name": "Harbor Cardiology",
+      "npi": "1013003334",
+      "specialty": "cardiology"
+    },
+    "provider_notes": "Return visit for ongoing management. Multiple chronic conditions poorly controlled; high complexity decision-making, total time 45 min."
+  },
+  {
+    "claim_id": "CLM-00099",
+    "date_of_service": "2025-11-21",
+    "diagnoses": [
+      "E11.9"
+    ],
+    "lines": [
+      {
+        "charge": 118.0,
+        "cpt": "99213",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [
+          "25"
+        ],
+        "units": 1
+      },
+      {
+        "charge": 34.0,
+        "cpt": "96372",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 18.0,
+        "cpt": "J1885",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L3",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0055",
+      "sex": "F",
+      "year_of_birth": 2003
+    },
+    "provider": {
+      "name": "Lakeside Internal Medicine",
+      "npi": "1013002223",
+      "specialty": "internal_medicine"
+    },
+    "provider_notes": "Return visit for ongoing management. Procedure performed as documented; patient tolerated well."
+  },
+  {
+    "claim_id": "CLM-00100",
+    "date_of_service": "2025-04-19",
+    "diagnoses": [
+      "R51.9"
+    ],
+    "lines": [
+      {
+        "charge": 38.0,
+        "cpt": "80053",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 21.0,
+        "cpt": "85025",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 12.0,
+        "cpt": "36415",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L3",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0051",
+      "sex": "F",
+      "year_of_birth": 1971
+    },
+    "provider": {
+      "name": "Rivertown Physical Therapy",
+      "npi": "1013005556",
+      "specialty": "physical_therapy"
+    },
+    "provider_notes": "Return visit for ongoing management. Procedure performed as documented; patient tolerated well."
+  },
+  {
+    "claim_id": "CLM-00101",
+    "date_of_service": "2025-09-09",
+    "diagnoses": [
+      "I10"
+    ],
+    "lines": [
+      {
+        "charge": 168.0,
+        "cpt": "97110",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 4
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0001",
+      "sex": "F",
+      "year_of_birth": 1980
+    },
+    "provider": {
+      "name": "Lakeside Internal Medicine",
+      "npi": "1013002223",
+      "specialty": "internal_medicine"
+    },
+    "provider_notes": "Established patient presents for follow-up. Procedure performed as documented; patient tolerated well."
+  },
+  {
+    "claim_id": "CLM-00102",
+    "date_of_service": "2025-03-09",
+    "diagnoses": [
+      "M54.50"
+    ],
+    "lines": [
+      {
+        "charge": 118.0,
+        "cpt": "99213",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0023",
+      "sex": "M",
+      "year_of_birth": 1975
+    },
+    "provider": {
+      "name": "Cedar Family Medicine",
+      "npi": "1013001112",
+      "specialty": "family_medicine"
+    },
+    "provider_notes": "Scheduled follow-up appointment. Doing well overall. Routine check, self-limited issue reviewed."
+  },
+  {
+    "claim_id": "CLM-00103",
+    "date_of_service": "2025-06-17",
+    "diagnoses": [
+      "M17.11"
+    ],
+    "lines": [
+      {
+        "charge": 118.0,
+        "cpt": "99213",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [
+          "25"
+        ],
+        "units": 1
+      },
+      {
+        "charge": 34.0,
+        "cpt": "96372",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 18.0,
+        "cpt": "J1885",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L3",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0048",
+      "sex": "M",
+      "year_of_birth": 1953
+    },
+    "provider": {
+      "name": "Summit Orthopedics",
+      "npi": "1013004445",
+      "specialty": "orthopedics"
+    },
+    "provider_notes": "Patient seen in clinic today. Diagnostics obtained and reviewed with patient."
+  },
+  {
+    "claim_id": "CLM-00104",
+    "date_of_service": "2025-01-16",
+    "diagnoses": [
+      "M25.561",
+      "I10"
+    ],
+    "lines": [
+      {
+        "charge": 118.0,
+        "cpt": "99213",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0047",
+      "sex": "M",
+      "year_of_birth": 1983
+    },
+    "provider": {
+      "name": "Cedar Family Medicine",
+      "npi": "1013001112",
+      "specialty": "family_medicine"
+    },
+    "provider_notes": "Scheduled follow-up appointment. Doing well overall. Routine check, self-limited issue reviewed."
+  },
+  {
+    "claim_id": "CLM-00105",
+    "date_of_service": "2025-03-03",
+    "diagnoses": [
+      "Z00.00"
+    ],
+    "lines": [
+      {
+        "charge": 235.0,
+        "cpt": "99215",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0005",
+      "sex": "M",
+      "year_of_birth": 1955
+    },
+    "provider": {
+      "name": "Rivertown Physical Therapy",
+      "npi": "1013005556",
+      "specialty": "physical_therapy"
+    },
+    "provider_notes": "Return visit for ongoing management. Extensive review; high medical decision making with new prescription drug management, 40 min spent."
+  },
+  {
+    "claim_id": "CLM-00106",
+    "date_of_service": "2025-10-14",
+    "diagnoses": [
+      "I10"
+    ],
+    "lines": [
+      {
+        "charge": 168.0,
+        "cpt": "97110",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 4
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0034",
+      "sex": "M",
+      "year_of_birth": 1982
+    },
+    "provider": {
+      "name": "Rivertown Physical Therapy",
+      "npi": "1013005556",
+      "specialty": "physical_therapy"
+    },
+    "provider_notes": "Patient seen in clinic today. Specimen collected and sent to lab. No complications."
+  },
+  {
+    "claim_id": "CLM-00107",
+    "date_of_service": "2025-08-13",
+    "diagnoses": [
+      "I10",
+      "J06.9"
+    ],
+    "lines": [
+      {
+        "charge": 235.0,
+        "cpt": "99215",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0057",
+      "sex": "M",
+      "year_of_birth": 1974
+    },
+    "provider": {
+      "name": "Harbor Cardiology",
+      "npi": "1013003334",
+      "specialty": "cardiology"
+    },
+    "provider_notes": "Scheduled follow-up appointment. Extensive review; high medical decision making with new prescription drug management, 40 min spent."
+  },
+  {
+    "claim_id": "CLM-00108",
+    "date_of_service": "2025-02-27",
+    "diagnoses": [
+      "I10"
+    ],
+    "lines": [
+      {
+        "charge": 34.0,
+        "cpt": "96372",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 34.0,
+        "cpt": "96372",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0024",
+      "sex": "M",
+      "year_of_birth": 1964
+    },
+    "provider": {
+      "name": "Cedar Family Medicine",
+      "npi": "1013001112",
+      "specialty": "family_medicine"
+    },
+    "provider_notes": "Scheduled follow-up appointment. Procedure performed as documented; patient tolerated well."
+  },
+  {
+    "claim_id": "CLM-00109",
+    "date_of_service": "2025-09-18",
+    "diagnoses": [
+      "I10",
+      "M25.561"
+    ],
+    "lines": [
+      {
+        "charge": 176.0,
+        "cpt": "99214",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0052",
+      "sex": "F",
+      "year_of_birth": 1961
+    },
+    "provider": {
+      "name": "Rivertown Physical Therapy",
+      "npi": "1013005556",
+      "specialty": "physical_therapy"
+    },
+    "provider_notes": "Return visit for ongoing management. Brief refill visit, one stable problem, minimal exam."
+  },
+  {
+    "claim_id": "CLM-00110",
+    "date_of_service": "2025-10-17",
+    "diagnoses": [
+      "M54.50"
+    ],
+    "lines": [
+      {
+        "charge": 118.0,
+        "cpt": "99213",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0019",
+      "sex": "M",
+      "year_of_birth": 1984
+    },
+    "provider": {
+      "name": "Cedar Family Medicine",
+      "npi": "1013001112",
+      "specialty": "family_medicine"
+    },
+    "provider_notes": "Scheduled follow-up appointment. Stable on current regimen. Straightforward, low complexity. No new concerns."
+  },
+  {
+    "claim_id": "CLM-00111",
+    "date_of_service": "2025-10-08",
+    "diagnoses": [
+      "E78.5",
+      "R07.9"
+    ],
+    "lines": [
+      {
+        "charge": 118.0,
+        "cpt": "99213",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [
+          "25"
+        ],
+        "units": 1
+      },
+      {
+        "charge": 34.0,
+        "cpt": "96372",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 18.0,
+        "cpt": "J1885",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L3",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0023",
+      "sex": "F",
+      "year_of_birth": 1992
+    },
+    "provider": {
+      "name": "Harbor Cardiology",
+      "npi": "1013003334",
+      "specialty": "cardiology"
+    },
+    "provider_notes": "Established patient presents for follow-up. Diagnostics obtained and reviewed with patient."
+  },
+  {
+    "claim_id": "CLM-00112",
+    "date_of_service": "2025-06-01",
+    "diagnoses": [
+      "M54.50"
+    ],
+    "lines": [
+      {
+        "charge": 42.0,
+        "cpt": "97110",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0012",
+      "sex": "M",
+      "year_of_birth": 1979
+    },
+    "provider": {
+      "name": "Harbor Cardiology",
+      "npi": "1013003334",
+      "specialty": "cardiology"
+    },
+    "provider_notes": "Scheduled follow-up appointment. Procedure performed as documented; patient tolerated well."
+  },
+  {
+    "claim_id": "CLM-00113",
+    "date_of_service": "2025-04-13",
+    "diagnoses": [
+      "M17.11",
+      "J06.9"
+    ],
+    "lines": [
+      {
+        "charge": 38.0,
+        "cpt": "80053",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 21.0,
+        "cpt": "85025",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 12.0,
+        "cpt": "36415",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L3",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0048",
+      "sex": "F",
+      "year_of_birth": 1948
+    },
+    "provider": {
+      "name": "Rivertown Physical Therapy",
+      "npi": "1013005556",
+      "specialty": "physical_therapy"
+    },
+    "provider_notes": "Patient seen in clinic today. Specimen collected and sent to lab. No complications."
+  },
+  {
+    "claim_id": "CLM-00114",
+    "date_of_service": "2025-03-25",
+    "diagnoses": [
+      "I10"
+    ],
+    "lines": [
+      {
+        "charge": 126.0,
+        "cpt": "97110",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 3
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0050",
+      "sex": "F",
+      "year_of_birth": 1955
+    },
+    "provider": {
+      "name": "Lakeside Internal Medicine",
+      "npi": "1013002223",
+      "specialty": "internal_medicine"
+    },
+    "provider_notes": "Return visit for ongoing management. Specimen collected and sent to lab. No complications."
+  },
+  {
+    "claim_id": "CLM-00115",
+    "date_of_service": "2025-04-25",
+    "diagnoses": [
+      "J06.9"
+    ],
+    "lines": [
+      {
+        "charge": 34.0,
+        "cpt": "96372",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 34.0,
+        "cpt": "96372",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0032",
+      "sex": "M",
+      "year_of_birth": 2001
+    },
+    "provider": {
+      "name": "Harbor Cardiology",
+      "npi": "1013003334",
+      "specialty": "cardiology"
+    },
+    "provider_notes": "Scheduled follow-up appointment. Procedure performed as documented; patient tolerated well."
+  },
+  {
+    "claim_id": "CLM-00116",
+    "date_of_service": "2025-07-20",
+    "diagnoses": [
+      "E11.9"
+    ],
+    "lines": [
+      {
+        "charge": 168.0,
+        "cpt": "97110",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 4
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0034",
+      "sex": "F",
+      "year_of_birth": 1984
+    },
+    "provider": {
+      "name": "Lakeside Internal Medicine",
+      "npi": "1013002223",
+      "specialty": "internal_medicine"
+    },
+    "provider_notes": "Patient seen in clinic today. Specimen collected and sent to lab. No complications."
+  },
+  {
+    "claim_id": "CLM-00117",
+    "date_of_service": "2025-06-04",
+    "diagnoses": [
+      "M17.11"
+    ],
+    "lines": [
+      {
+        "charge": 118.0,
+        "cpt": "99213",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 55.0,
+        "cpt": "93000",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0050",
+      "sex": "M",
+      "year_of_birth": 1962
+    },
+    "provider": {
+      "name": "Harbor Cardiology",
+      "npi": "1013003334",
+      "specialty": "cardiology"
+    },
+    "provider_notes": "Scheduled follow-up appointment. Stable on current regimen. Straightforward, low complexity. No new concerns."
+  },
+  {
+    "claim_id": "CLM-00118",
+    "date_of_service": "2025-07-28",
+    "diagnoses": [
+      "M25.561"
+    ],
+    "lines": [
+      {
+        "charge": 38.0,
+        "cpt": "80053",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 21.0,
+        "cpt": "85025",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 12.0,
+        "cpt": "36415",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L3",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0025",
+      "sex": "M",
+      "year_of_birth": 1974
+    },
+    "provider": {
+      "name": "Cedar Family Medicine",
+      "npi": "1013001112",
+      "specialty": "family_medicine"
+    },
+    "provider_notes": "Established patient presents for follow-up. Specimen collected and sent to lab. No complications."
+  },
+  {
+    "claim_id": "CLM-00119",
+    "date_of_service": "2025-07-23",
+    "diagnoses": [
+      "Z00.00",
+      "I10"
+    ],
+    "lines": [
+      {
+        "charge": 118.0,
+        "cpt": "99213",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [
+          "25"
+        ],
+        "units": 1
+      },
+      {
+        "charge": 34.0,
+        "cpt": "96372",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 18.0,
+        "cpt": "J1885",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L3",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0056",
+      "sex": "M",
+      "year_of_birth": 1985
+    },
+    "provider": {
+      "name": "Rivertown Physical Therapy",
+      "npi": "1013005556",
+      "specialty": "physical_therapy"
+    },
+    "provider_notes": "Scheduled follow-up appointment. Procedure performed as documented; patient tolerated well."
+  },
+  {
+    "claim_id": "CLM-00120",
+    "date_of_service": "2025-07-28",
+    "diagnoses": [
+      "R51.9"
+    ],
+    "lines": [
+      {
+        "charge": 84.0,
+        "cpt": "97110",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 2
+      },
+      {
+        "charge": 90.0,
+        "cpt": "97140",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [
+          "59"
+        ],
+        "units": 2
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0011",
+      "sex": "M",
+      "year_of_birth": 2003
+    },
+    "provider": {
+      "name": "Cedar Family Medicine",
+      "npi": "1013001112",
+      "specialty": "family_medicine"
+    },
+    "provider_notes": "Scheduled follow-up appointment. Diagnostics obtained and reviewed with patient."
+  },
+  {
+    "claim_id": "CLM-00121",
+    "date_of_service": "2025-12-11",
+    "diagnoses": [
+      "J06.9"
+    ],
+    "lines": [
+      {
+        "charge": 118.0,
+        "cpt": "99213",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [
+          "25"
+        ],
+        "units": 1
+      },
+      {
+        "charge": 128.0,
+        "cpt": "20610",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0034",
+      "sex": "M",
+      "year_of_birth": 1955
+    },
+    "provider": {
+      "name": "Harbor Cardiology",
+      "npi": "1013003334",
+      "specialty": "cardiology"
+    },
+    "provider_notes": "Patient seen in clinic today. Procedure performed as documented; patient tolerated well."
+  },
+  {
+    "claim_id": "CLM-00122",
+    "date_of_service": "2025-06-24",
+    "diagnoses": [
+      "R51.9"
+    ],
+    "lines": [
+      {
+        "charge": 176.0,
+        "cpt": "99214",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0041",
+      "sex": "F",
+      "year_of_birth": 1959
+    },
+    "provider": {
+      "name": "Harbor Cardiology",
+      "npi": "1013003334",
+      "specialty": "cardiology"
+    },
+    "provider_notes": "Established patient presents for follow-up. Two chronic problems reviewed with adjustment; moderate complexity decision-making, total time 30 min."
+  },
+  {
+    "claim_id": "CLM-00123",
+    "date_of_service": "2025-11-16",
+    "diagnoses": [
+      "R07.9",
+      "M17.11"
+    ],
+    "lines": [
+      {
+        "charge": 84.0,
+        "cpt": "97110",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 2
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0012",
+      "sex": "F",
+      "year_of_birth": 1964
+    },
+    "provider": {
+      "name": "Lakeside Internal Medicine",
+      "npi": "1013002223",
+      "specialty": "internal_medicine"
+    },
+    "provider_notes": "Return visit for ongoing management. Diagnostics obtained and reviewed with patient."
+  },
+  {
+    "claim_id": "CLM-00124",
+    "date_of_service": "2025-08-21",
+    "diagnoses": [
+      "Z00.00",
+      "E11.9"
+    ],
+    "lines": [
+      {
+        "charge": 84.0,
+        "cpt": "97110",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 2
+      },
+      {
+        "charge": 90.0,
+        "cpt": "97140",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [
+          "59"
+        ],
+        "units": 2
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0010",
+      "sex": "F",
+      "year_of_birth": 2001
+    },
+    "provider": {
+      "name": "Summit Orthopedics",
+      "npi": "1013004445",
+      "specialty": "orthopedics"
+    },
+    "provider_notes": "Return visit for ongoing management. Diagnostics obtained and reviewed with patient."
+  },
+  {
+    "claim_id": "CLM-00125",
+    "date_of_service": "2025-01-12",
+    "diagnoses": [
+      "I10",
+      "R07.9"
+    ],
+    "lines": [
+      {
+        "charge": 118.0,
+        "cpt": "99213",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [
+          "25"
+        ],
+        "units": 1
+      },
+      {
+        "charge": 34.0,
+        "cpt": "96372",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 18.0,
+        "cpt": "J1885",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L3",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0020",
+      "sex": "M",
+      "year_of_birth": 2004
+    },
+    "provider": {
+      "name": "Cedar Family Medicine",
+      "npi": "1013001112",
+      "specialty": "family_medicine"
+    },
+    "provider_notes": "Scheduled follow-up appointment. Specimen collected and sent to lab. No complications."
+  },
+  {
+    "claim_id": "CLM-00126",
+    "date_of_service": "2025-11-07",
+    "diagnoses": [
+      "R07.9",
+      "M17.11"
+    ],
+    "lines": [
+      {
+        "charge": 168.0,
+        "cpt": "97110",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 4
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0036",
+      "sex": "M",
+      "year_of_birth": 1950
+    },
+    "provider": {
+      "name": "Rivertown Physical Therapy",
+      "npi": "1013005556",
+      "specialty": "physical_therapy"
+    },
+    "provider_notes": "Patient seen in clinic today. Procedure performed as documented; patient tolerated well."
+  },
+  {
+    "claim_id": "CLM-00127",
+    "date_of_service": "2025-11-06",
+    "diagnoses": [
+      "R51.9"
+    ],
+    "lines": [
+      {
+        "charge": 235.0,
+        "cpt": "99215",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0007",
+      "sex": "F",
+      "year_of_birth": 1988
+    },
+    "provider": {
+      "name": "Rivertown Physical Therapy",
+      "npi": "1013005556",
+      "specialty": "physical_therapy"
+    },
+    "provider_notes": "Scheduled follow-up appointment. Extensive review; high medical decision making with new prescription drug management, 40 min spent."
+  },
+  {
+    "claim_id": "CLM-00128",
+    "date_of_service": "2025-05-13",
+    "diagnoses": [
+      "J06.9",
+      "E11.9"
+    ],
+    "lines": [
+      {
+        "charge": 176.0,
+        "cpt": "99214",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0034",
+      "sex": "M",
+      "year_of_birth": 1965
+    },
+    "provider": {
+      "name": "Harbor Cardiology",
+      "npi": "1013003334",
+      "specialty": "cardiology"
+    },
+    "provider_notes": "Return visit for ongoing management. Two chronic problems reviewed with adjustment; moderate complexity decision-making, total time 30 min."
+  },
+  {
+    "claim_id": "CLM-00129",
+    "date_of_service": "2025-12-28",
+    "diagnoses": [
+      "J06.9"
+    ],
+    "lines": [
+      {
+        "charge": 84.0,
+        "cpt": "97110",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 2
+      },
+      {
+        "charge": 90.0,
+        "cpt": "97140",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [
+          "59"
+        ],
+        "units": 2
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0007",
+      "sex": "M",
+      "year_of_birth": 1994
+    },
+    "provider": {
+      "name": "Harbor Cardiology",
+      "npi": "1013003334",
+      "specialty": "cardiology"
+    },
+    "provider_notes": "Established patient presents for follow-up. Diagnostics obtained and reviewed with patient."
+  },
+  {
+    "claim_id": "CLM-00130",
+    "date_of_service": "2025-03-20",
+    "diagnoses": [
+      "Z00.00"
+    ],
+    "lines": [
+      {
+        "charge": 34.0,
+        "cpt": "96372",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 34.0,
+        "cpt": "96372",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0059",
+      "sex": "M",
+      "year_of_birth": 1989
+    },
+    "provider": {
+      "name": "Summit Orthopedics",
+      "npi": "1013004445",
+      "specialty": "orthopedics"
+    },
+    "provider_notes": "Scheduled follow-up appointment. Diagnostics obtained and reviewed with patient."
+  },
+  {
+    "claim_id": "CLM-00131",
+    "date_of_service": "2025-09-12",
+    "diagnoses": [
+      "J06.9"
+    ],
+    "lines": [
+      {
+        "charge": 84.0,
+        "cpt": "97110",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 2
+      },
+      {
+        "charge": 90.0,
+        "cpt": "97140",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [
+          "59"
+        ],
+        "units": 2
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0053",
+      "sex": "F",
+      "year_of_birth": 1961
+    },
+    "provider": {
+      "name": "Summit Orthopedics",
+      "npi": "1013004445",
+      "specialty": "orthopedics"
+    },
+    "provider_notes": "Return visit for ongoing management. Procedure performed as documented; patient tolerated well."
+  },
+  {
+    "claim_id": "CLM-00132",
+    "date_of_service": "2025-03-05",
+    "diagnoses": [
+      "Z00.00"
+    ],
+    "lines": [
+      {
+        "charge": 118.0,
+        "cpt": "99213",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 55.0,
+        "cpt": "93000",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0022",
+      "sex": "F",
+      "year_of_birth": 2007
+    },
+    "provider": {
+      "name": "Lakeside Internal Medicine",
+      "npi": "1013002223",
+      "specialty": "internal_medicine"
+    },
+    "provider_notes": "Established patient presents for follow-up. Doing well overall. Routine check, self-limited issue reviewed."
+  },
+  {
+    "claim_id": "CLM-00133",
+    "date_of_service": "2025-03-20",
+    "diagnoses": [
+      "M54.50",
+      "R07.9"
+    ],
+    "lines": [
+      {
+        "charge": 176.0,
+        "cpt": "99214",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0054",
+      "sex": "M",
+      "year_of_birth": 1949
+    },
+    "provider": {
+      "name": "Rivertown Physical Therapy",
+      "npi": "1013005556",
+      "specialty": "physical_therapy"
+    },
+    "provider_notes": "Patient seen in clinic today. Two chronic problems reviewed with adjustment; moderate complexity decision-making, total time 30 min."
+  },
+  {
+    "claim_id": "CLM-00134",
+    "date_of_service": "2025-08-20",
+    "diagnoses": [
+      "M17.11",
+      "R51.9"
+    ],
+    "lines": [
+      {
+        "charge": 235.0,
+        "cpt": "99215",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0003",
+      "sex": "M",
+      "year_of_birth": 1997
+    },
+    "provider": {
+      "name": "Lakeside Internal Medicine",
+      "npi": "1013002223",
+      "specialty": "internal_medicine"
+    },
+    "provider_notes": "Patient seen in clinic today. Extensive review; high medical decision making with new prescription drug management, 40 min spent."
+  },
+  {
+    "claim_id": "CLM-00135",
+    "date_of_service": "2025-08-15",
+    "diagnoses": [
+      "M25.561",
+      "E78.5"
+    ],
+    "lines": [
+      {
+        "charge": 235.0,
+        "cpt": "99215",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0058",
+      "sex": "M",
+      "year_of_birth": 1969
+    },
+    "provider": {
+      "name": "Rivertown Physical Therapy",
+      "npi": "1013005556",
+      "specialty": "physical_therapy"
+    },
+    "provider_notes": "Scheduled follow-up appointment. Multiple chronic conditions poorly controlled; high complexity decision-making, total time 45 min."
+  },
+  {
+    "claim_id": "CLM-00136",
+    "date_of_service": "2025-11-16",
+    "diagnoses": [
+      "E78.5",
+      "I10"
+    ],
+    "lines": [
+      {
+        "charge": 118.0,
+        "cpt": "99213",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 55.0,
+        "cpt": "93000",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0052",
+      "sex": "M",
+      "year_of_birth": 1962
+    },
+    "provider": {
+      "name": "Cedar Family Medicine",
+      "npi": "1013001112",
+      "specialty": "family_medicine"
+    },
+    "provider_notes": "Established patient presents for follow-up. Brief visit for medication refill. Stable, minimal problem addressed."
+  },
+  {
+    "claim_id": "CLM-00137",
+    "date_of_service": "2025-09-05",
+    "diagnoses": [
+      "I10",
+      "R51.9"
+    ],
+    "lines": [
+      {
+        "charge": 118.0,
+        "cpt": "99213",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [
+          "25"
+        ],
+        "units": 1
+      },
+      {
+        "charge": 34.0,
+        "cpt": "96372",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 18.0,
+        "cpt": "J1885",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L3",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0049",
+      "sex": "M",
+      "year_of_birth": 1965
+    },
+    "provider": {
+      "name": "Summit Orthopedics",
+      "npi": "1013004445",
+      "specialty": "orthopedics"
+    },
+    "provider_notes": "Scheduled follow-up appointment. Specimen collected and sent to lab. No complications."
+  },
+  {
+    "claim_id": "CLM-00138",
+    "date_of_service": "2025-06-08",
+    "diagnoses": [
+      "I10",
+      "J06.9"
+    ],
+    "lines": [
+      {
+        "charge": 118.0,
+        "cpt": "99213",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0027",
+      "sex": "M",
+      "year_of_birth": 1951
+    },
+    "provider": {
+      "name": "Rivertown Physical Therapy",
+      "npi": "1013005556",
+      "specialty": "physical_therapy"
+    },
+    "provider_notes": "Patient seen in clinic today. Stable on current regimen. Straightforward, low complexity. No new concerns."
+  },
+  {
+    "claim_id": "CLM-00139",
+    "date_of_service": "2025-03-02",
+    "diagnoses": [
+      "M17.11",
+      "M54.50"
+    ],
+    "lines": [
+      {
+        "charge": 84.0,
+        "cpt": "97110",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 2
+      },
+      {
+        "charge": 90.0,
+        "cpt": "97140",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [
+          "59"
+        ],
+        "units": 2
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0060",
+      "sex": "M",
+      "year_of_birth": 1957
+    },
+    "provider": {
+      "name": "Lakeside Internal Medicine",
+      "npi": "1013002223",
+      "specialty": "internal_medicine"
+    },
+    "provider_notes": "Scheduled follow-up appointment. Specimen collected and sent to lab. No complications."
+  },
+  {
+    "claim_id": "CLM-00140",
+    "date_of_service": "2025-04-27",
+    "diagnoses": [
+      "E78.5"
+    ],
+    "lines": [
+      {
+        "charge": 38.0,
+        "cpt": "80053",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 24.0,
+        "cpt": "80048",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 21.0,
+        "cpt": "85025",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L3",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0058",
+      "sex": "F",
+      "year_of_birth": 1955
+    },
+    "provider": {
+      "name": "Harbor Cardiology",
+      "npi": "1013003334",
+      "specialty": "cardiology"
+    },
+    "provider_notes": "Scheduled follow-up appointment. Procedure performed as documented; patient tolerated well."
+  },
+  {
+    "claim_id": "CLM-00141",
+    "date_of_service": "2025-07-21",
+    "diagnoses": [
+      "I10",
+      "R07.9"
+    ],
+    "lines": [
+      {
+        "charge": 84.0,
+        "cpt": "97110",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 2
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0020",
+      "sex": "F",
+      "year_of_birth": 1960
+    },
+    "provider": {
+      "name": "Lakeside Internal Medicine",
+      "npi": "1013002223",
+      "specialty": "internal_medicine"
+    },
+    "provider_notes": "Scheduled follow-up appointment. Diagnostics obtained and reviewed with patient."
+  },
+  {
+    "claim_id": "CLM-00142",
+    "date_of_service": "2025-05-14",
+    "diagnoses": [
+      "R07.9"
+    ],
+    "lines": [
+      {
+        "charge": 176.0,
+        "cpt": "99214",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0002",
+      "sex": "F",
+      "year_of_birth": 2010
+    },
+    "provider": {
+      "name": "Lakeside Internal Medicine",
+      "npi": "1013002223",
+      "specialty": "internal_medicine"
+    },
+    "provider_notes": "Return visit for ongoing management. Two chronic problems reviewed with adjustment; moderate complexity decision-making, total time 30 min."
+  },
+  {
+    "claim_id": "CLM-00143",
+    "date_of_service": "2025-06-03",
+    "diagnoses": [
+      "M25.561"
+    ],
+    "lines": [
+      {
+        "charge": 168.0,
+        "cpt": "97110",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 4
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0027",
+      "sex": "F",
+      "year_of_birth": 1968
+    },
+    "provider": {
+      "name": "Rivertown Physical Therapy",
+      "npi": "1013005556",
+      "specialty": "physical_therapy"
+    },
+    "provider_notes": "Scheduled follow-up appointment. Procedure performed as documented; patient tolerated well."
+  },
+  {
+    "claim_id": "CLM-00144",
+    "date_of_service": "2025-02-12",
+    "diagnoses": [
+      "I10"
+    ],
+    "lines": [
+      {
+        "charge": 512.0,
+        "cpt": "20610",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 4
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0024",
+      "sex": "F",
+      "year_of_birth": 1977
+    },
+    "provider": {
+      "name": "Harbor Cardiology",
+      "npi": "1013003334",
+      "specialty": "cardiology"
+    },
+    "provider_notes": "Return visit for ongoing management. Procedure performed as documented; patient tolerated well."
+  },
+  {
+    "claim_id": "CLM-00145",
+    "date_of_service": "2025-12-16",
+    "diagnoses": [
+      "M54.50"
+    ],
+    "lines": [
+      {
+        "charge": 118.0,
+        "cpt": "99213",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0023",
+      "sex": "F",
+      "year_of_birth": 1988
+    },
+    "provider": {
+      "name": "Summit Orthopedics",
+      "npi": "1013004445",
+      "specialty": "orthopedics"
+    },
+    "provider_notes": "Established patient presents for follow-up. Doing well overall. Routine check, self-limited issue reviewed."
+  },
+  {
+    "claim_id": "CLM-00146",
+    "date_of_service": "2025-04-02",
+    "diagnoses": [
+      "Z00.00",
+      "E78.5"
+    ],
+    "lines": [
+      {
+        "charge": 235.0,
+        "cpt": "99215",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0003",
+      "sex": "F",
+      "year_of_birth": 1982
+    },
+    "provider": {
+      "name": "Cedar Family Medicine",
+      "npi": "1013001112",
+      "specialty": "family_medicine"
+    },
+    "provider_notes": "Scheduled follow-up appointment. Extensive review; high medical decision making with new prescription drug management, 40 min spent."
+  },
+  {
+    "claim_id": "CLM-00147",
+    "date_of_service": "2025-01-28",
+    "diagnoses": [
+      "Z00.00",
+      "I10"
+    ],
+    "lines": [
+      {
+        "charge": 42.0,
+        "cpt": "97110",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0049",
+      "sex": "M",
+      "year_of_birth": 1969
+    },
+    "provider": {
+      "name": "Harbor Cardiology",
+      "npi": "1013003334",
+      "specialty": "cardiology"
+    },
+    "provider_notes": "Return visit for ongoing management. Specimen collected and sent to lab. No complications."
+  },
+  {
+    "claim_id": "CLM-00148",
+    "date_of_service": "2025-03-16",
+    "diagnoses": [
+      "J06.9",
+      "E78.5"
+    ],
+    "lines": [
+      {
+        "charge": 118.0,
+        "cpt": "99213",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [
+          "25"
+        ],
+        "units": 1
+      },
+      {
+        "charge": 128.0,
+        "cpt": "20610",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0048",
+      "sex": "M",
+      "year_of_birth": 2001
+    },
+    "provider": {
+      "name": "Harbor Cardiology",
+      "npi": "1013003334",
+      "specialty": "cardiology"
+    },
+    "provider_notes": "Return visit for ongoing management. Procedure performed as documented; patient tolerated well."
+  },
+  {
+    "claim_id": "CLM-00149",
+    "date_of_service": "2025-05-11",
+    "diagnoses": [
+      "I10"
+    ],
+    "lines": [
+      {
+        "charge": 118.0,
+        "cpt": "99213",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [
+          "25"
+        ],
+        "units": 1
+      },
+      {
+        "charge": 128.0,
+        "cpt": "20610",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0006",
+      "sex": "F",
+      "year_of_birth": 2000
+    },
+    "provider": {
+      "name": "Rivertown Physical Therapy",
+      "npi": "1013005556",
+      "specialty": "physical_therapy"
+    },
+    "provider_notes": "Return visit for ongoing management. Diagnostics obtained and reviewed with patient."
+  },
+  {
+    "claim_id": "CLM-00150",
+    "date_of_service": "2025-06-15",
+    "diagnoses": [
+      "J06.9"
+    ],
+    "lines": [
+      {
+        "charge": 126.0,
+        "cpt": "97110",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 3
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0029",
+      "sex": "F",
+      "year_of_birth": 1999
+    },
+    "provider": {
+      "name": "Summit Orthopedics",
+      "npi": "1013004445",
+      "specialty": "orthopedics"
+    },
+    "provider_notes": "Scheduled follow-up appointment. Specimen collected and sent to lab. No complications."
+  },
+  {
+    "claim_id": "CLM-00151",
+    "date_of_service": "2025-12-22",
+    "diagnoses": [
+      "E11.9"
+    ],
+    "lines": [
+      {
+        "charge": 384.0,
+        "cpt": "20610",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 3
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0005",
+      "sex": "M",
+      "year_of_birth": 1996
+    },
+    "provider": {
+      "name": "Rivertown Physical Therapy",
+      "npi": "1013005556",
+      "specialty": "physical_therapy"
+    },
+    "provider_notes": "Patient seen in clinic today. Diagnostics obtained and reviewed with patient."
+  },
+  {
+    "claim_id": "CLM-00152",
+    "date_of_service": "2025-11-12",
+    "diagnoses": [
+      "M25.561",
+      "E11.9"
+    ],
+    "lines": [
+      {
+        "charge": 176.0,
+        "cpt": "99214",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0003",
+      "sex": "F",
+      "year_of_birth": 1961
+    },
+    "provider": {
+      "name": "Lakeside Internal Medicine",
+      "npi": "1013002223",
+      "specialty": "internal_medicine"
+    },
+    "provider_notes": "Patient seen in clinic today. Brief refill visit, one stable problem, minimal exam."
+  },
+  {
+    "claim_id": "CLM-00153",
+    "date_of_service": "2025-03-17",
+    "diagnoses": [
+      "M25.561",
+      "J06.9"
+    ],
+    "lines": [
+      {
+        "charge": 84.0,
+        "cpt": "97110",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 2
+      },
+      {
+        "charge": 90.0,
+        "cpt": "97140",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [
+          "59"
+        ],
+        "units": 2
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0024",
+      "sex": "F",
+      "year_of_birth": 2001
+    },
+    "provider": {
+      "name": "Rivertown Physical Therapy",
+      "npi": "1013005556",
+      "specialty": "physical_therapy"
+    },
+    "provider_notes": "Return visit for ongoing management. Procedure performed as documented; patient tolerated well."
+  },
+  {
+    "claim_id": "CLM-00154",
+    "date_of_service": "2025-07-18",
+    "diagnoses": [
+      "Z00.00"
+    ],
+    "lines": [
+      {
+        "charge": 118.0,
+        "cpt": "99213",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [
+          "25"
+        ],
+        "units": 1
+      },
+      {
+        "charge": 34.0,
+        "cpt": "96372",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 18.0,
+        "cpt": "J1885",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L3",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0002",
+      "sex": "M",
+      "year_of_birth": 1968
+    },
+    "provider": {
+      "name": "Rivertown Physical Therapy",
+      "npi": "1013005556",
+      "specialty": "physical_therapy"
+    },
+    "provider_notes": "Return visit for ongoing management. Diagnostics obtained and reviewed with patient."
+  },
+  {
+    "claim_id": "CLM-00155",
+    "date_of_service": "2025-02-05",
+    "diagnoses": [
+      "M17.11"
+    ],
+    "lines": [
+      {
+        "charge": 128.0,
+        "cpt": "20610",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 34.0,
+        "cpt": "96372",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0014",
+      "sex": "M",
+      "year_of_birth": 1981
+    },
+    "provider": {
+      "name": "Lakeside Internal Medicine",
+      "npi": "1013002223",
+      "specialty": "internal_medicine"
+    },
+    "provider_notes": "Patient seen in clinic today. Diagnostics obtained and reviewed with patient."
+  },
+  {
+    "claim_id": "CLM-00156",
+    "date_of_service": "2025-09-18",
+    "diagnoses": [
+      "Z00.00",
+      "M54.50"
+    ],
+    "lines": [
+      {
+        "charge": 235.0,
+        "cpt": "99215",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0006",
+      "sex": "M",
+      "year_of_birth": 1985
+    },
+    "provider": {
+      "name": "Cedar Family Medicine",
+      "npi": "1013001112",
+      "specialty": "family_medicine"
+    },
+    "provider_notes": "Patient seen in clinic today. Extensive review; high medical decision making with new prescription drug management, 40 min spent."
+  },
+  {
+    "claim_id": "CLM-00157",
+    "date_of_service": "2025-04-26",
+    "diagnoses": [
+      "E11.9",
+      "J06.9"
+    ],
+    "lines": [
+      {
+        "charge": 176.0,
+        "cpt": "99214",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0015",
+      "sex": "F",
+      "year_of_birth": 1960
+    },
+    "provider": {
+      "name": "Lakeside Internal Medicine",
+      "npi": "1013002223",
+      "specialty": "internal_medicine"
+    },
+    "provider_notes": "Return visit for ongoing management. Moderate medical decision making today; medication titrated and labs ordered."
+  },
+  {
+    "claim_id": "CLM-00158",
+    "date_of_service": "2025-07-23",
+    "diagnoses": [
+      "E78.5",
+      "M25.561"
+    ],
+    "lines": [
+      {
+        "charge": 176.0,
+        "cpt": "99214",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0009",
+      "sex": "F",
+      "year_of_birth": 1956
+    },
+    "provider": {
+      "name": "Harbor Cardiology",
+      "npi": "1013003334",
+      "specialty": "cardiology"
+    },
+    "provider_notes": "Scheduled follow-up appointment. Two chronic problems reviewed with adjustment; moderate complexity decision-making, total time 30 min."
+  },
+  {
+    "claim_id": "CLM-00159",
+    "date_of_service": "2025-11-17",
+    "diagnoses": [
+      "M54.50",
+      "E78.5"
+    ],
+    "lines": [
+      {
+        "charge": 38.0,
+        "cpt": "80053",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 21.0,
+        "cpt": "85025",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 12.0,
+        "cpt": "36415",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L3",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0021",
+      "sex": "M",
+      "year_of_birth": 1954
+    },
+    "provider": {
+      "name": "Summit Orthopedics",
+      "npi": "1013004445",
+      "specialty": "orthopedics"
+    },
+    "provider_notes": "Patient seen in clinic today. Procedure performed as documented; patient tolerated well."
+  },
+  {
+    "claim_id": "CLM-00160",
+    "date_of_service": "2025-03-10",
+    "diagnoses": [
+      "M54.50"
+    ],
+    "lines": [
+      {
+        "charge": 118.0,
+        "cpt": "99213",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [
+          "25"
+        ],
+        "units": 1
+      },
+      {
+        "charge": 128.0,
+        "cpt": "20610",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0033",
+      "sex": "F",
+      "year_of_birth": 1952
+    },
+    "provider": {
+      "name": "Rivertown Physical Therapy",
+      "npi": "1013005556",
+      "specialty": "physical_therapy"
+    },
+    "provider_notes": "Return visit for ongoing management. Diagnostics obtained and reviewed with patient."
+  },
+  {
+    "claim_id": "CLM-00161",
+    "date_of_service": "2025-04-21",
+    "diagnoses": [
+      "M54.50",
+      "Z00.00"
+    ],
+    "lines": [
+      {
+        "charge": 118.0,
+        "cpt": "99213",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 55.0,
+        "cpt": "93000",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0023",
+      "sex": "F",
+      "year_of_birth": 1981
+    },
+    "provider": {
+      "name": "Harbor Cardiology",
+      "npi": "1013003334",
+      "specialty": "cardiology"
+    },
+    "provider_notes": "Established patient presents for follow-up. Doing well overall. Routine check, self-limited issue reviewed."
+  },
+  {
+    "claim_id": "CLM-00162",
+    "date_of_service": "2025-12-20",
+    "diagnoses": [
+      "R07.9",
+      "E11.9"
+    ],
+    "lines": [
+      {
+        "charge": 38.0,
+        "cpt": "80053",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 21.0,
+        "cpt": "85025",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 12.0,
+        "cpt": "36415",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L3",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0038",
+      "sex": "F",
+      "year_of_birth": 1964
+    },
+    "provider": {
+      "name": "Rivertown Physical Therapy",
+      "npi": "1013005556",
+      "specialty": "physical_therapy"
+    },
+    "provider_notes": "Established patient presents for follow-up. Procedure performed as documented; patient tolerated well."
+  },
+  {
+    "claim_id": "CLM-00163",
+    "date_of_service": "2025-07-20",
+    "diagnoses": [
+      "M17.11"
+    ],
+    "lines": [
+      {
+        "charge": 118.0,
+        "cpt": "99213",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0042",
+      "sex": "F",
+      "year_of_birth": 1978
+    },
+    "provider": {
+      "name": "Rivertown Physical Therapy",
+      "npi": "1013005556",
+      "specialty": "physical_therapy"
+    },
+    "provider_notes": "Return visit for ongoing management. Doing well overall. Routine check, self-limited issue reviewed."
+  },
+  {
+    "claim_id": "CLM-00164",
+    "date_of_service": "2025-08-03",
+    "diagnoses": [
+      "M54.50"
+    ],
+    "lines": [
+      {
+        "charge": 176.0,
+        "cpt": "99214",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0031",
+      "sex": "M",
+      "year_of_birth": 1976
+    },
+    "provider": {
+      "name": "Harbor Cardiology",
+      "npi": "1013003334",
+      "specialty": "cardiology"
+    },
+    "provider_notes": "Scheduled follow-up appointment. Brief refill visit, one stable problem, minimal exam."
+  },
+  {
+    "claim_id": "CLM-00165",
+    "date_of_service": "2025-03-11",
+    "diagnoses": [
+      "J06.9",
+      "M25.561"
+    ],
+    "lines": [
+      {
+        "charge": 235.0,
+        "cpt": "99215",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0030",
+      "sex": "M",
+      "year_of_birth": 1971
+    },
+    "provider": {
+      "name": "Rivertown Physical Therapy",
+      "npi": "1013005556",
+      "specialty": "physical_therapy"
+    },
+    "provider_notes": "Patient seen in clinic today. Extensive review; high medical decision making with new prescription drug management, 40 min spent."
+  },
+  {
+    "claim_id": "CLM-00166",
+    "date_of_service": "2025-08-04",
+    "diagnoses": [
+      "M17.11",
+      "R51.9"
+    ],
+    "lines": [
+      {
+        "charge": 176.0,
+        "cpt": "99214",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0036",
+      "sex": "M",
+      "year_of_birth": 1958
+    },
+    "provider": {
+      "name": "Lakeside Internal Medicine",
+      "npi": "1013002223",
+      "specialty": "internal_medicine"
+    },
+    "provider_notes": "Patient seen in clinic today. Two chronic problems reviewed with adjustment; moderate complexity decision-making, total time 30 min."
+  },
+  {
+    "claim_id": "CLM-00167",
+    "date_of_service": "2025-06-19",
+    "diagnoses": [
+      "R51.9",
+      "M54.50"
+    ],
+    "lines": [
+      {
+        "charge": 294.0,
+        "cpt": "97110",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 7
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0025",
+      "sex": "F",
+      "year_of_birth": 1998
+    },
+    "provider": {
+      "name": "Lakeside Internal Medicine",
+      "npi": "1013002223",
+      "specialty": "internal_medicine"
+    },
+    "provider_notes": "Scheduled follow-up appointment. Diagnostics obtained and reviewed with patient."
+  },
+  {
+    "claim_id": "CLM-00168",
+    "date_of_service": "2025-02-13",
+    "diagnoses": [
+      "R51.9",
+      "R07.9"
+    ],
+    "lines": [
+      {
+        "charge": 235.0,
+        "cpt": "99215",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0032",
+      "sex": "M",
+      "year_of_birth": 1984
+    },
+    "provider": {
+      "name": "Cedar Family Medicine",
+      "npi": "1013001112",
+      "specialty": "family_medicine"
+    },
+    "provider_notes": "Return visit for ongoing management. Multiple chronic conditions poorly controlled; high complexity decision-making, total time 45 min."
+  },
+  {
+    "claim_id": "CLM-00169",
+    "date_of_service": "2025-09-01",
+    "diagnoses": [
+      "M25.561"
+    ],
+    "lines": [
+      {
+        "charge": 38.0,
+        "cpt": "80053",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 24.0,
+        "cpt": "80048",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 21.0,
+        "cpt": "85025",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L3",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0019",
+      "sex": "M",
+      "year_of_birth": 2008
+    },
+    "provider": {
+      "name": "Harbor Cardiology",
+      "npi": "1013003334",
+      "specialty": "cardiology"
+    },
+    "provider_notes": "Patient seen in clinic today. Specimen collected and sent to lab. No complications."
+  },
+  {
+    "claim_id": "CLM-00170",
+    "date_of_service": "2025-07-02",
+    "diagnoses": [
+      "J06.9"
+    ],
+    "lines": [
+      {
+        "charge": 84.0,
+        "cpt": "97110",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 2
+      },
+      {
+        "charge": 90.0,
+        "cpt": "97140",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [
+          "59"
+        ],
+        "units": 2
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0049",
+      "sex": "M",
+      "year_of_birth": 1996
+    },
+    "provider": {
+      "name": "Cedar Family Medicine",
+      "npi": "1013001112",
+      "specialty": "family_medicine"
+    },
+    "provider_notes": "Return visit for ongoing management. Procedure performed as documented; patient tolerated well."
+  },
+  {
+    "claim_id": "CLM-00171",
+    "date_of_service": "2025-11-20",
+    "diagnoses": [
+      "M54.50"
+    ],
+    "lines": [
+      {
+        "charge": 118.0,
+        "cpt": "99213",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [
+          "25"
+        ],
+        "units": 1
+      },
+      {
+        "charge": 128.0,
+        "cpt": "20610",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0033",
+      "sex": "M",
+      "year_of_birth": 2002
+    },
+    "provider": {
+      "name": "Rivertown Physical Therapy",
+      "npi": "1013005556",
+      "specialty": "physical_therapy"
+    },
+    "provider_notes": "Established patient presents for follow-up. Specimen collected and sent to lab. No complications."
+  },
+  {
+    "claim_id": "CLM-00172",
+    "date_of_service": "2025-04-20",
+    "diagnoses": [
+      "E78.5",
+      "E11.9"
+    ],
+    "lines": [
+      {
+        "charge": 84.0,
+        "cpt": "97110",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 2
+      },
+      {
+        "charge": 90.0,
+        "cpt": "97140",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [
+          "59"
+        ],
+        "units": 2
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0051",
+      "sex": "M",
+      "year_of_birth": 1988
+    },
+    "provider": {
+      "name": "Lakeside Internal Medicine",
+      "npi": "1013002223",
+      "specialty": "internal_medicine"
+    },
+    "provider_notes": "Established patient presents for follow-up. Procedure performed as documented; patient tolerated well."
+  },
+  {
+    "claim_id": "CLM-00173",
+    "date_of_service": "2025-08-05",
+    "diagnoses": [
+      "J06.9"
+    ],
+    "lines": [
+      {
+        "charge": 38.0,
+        "cpt": "80053",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 21.0,
+        "cpt": "85025",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 12.0,
+        "cpt": "36415",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L3",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0046",
+      "sex": "M",
+      "year_of_birth": 1987
+    },
+    "provider": {
+      "name": "Rivertown Physical Therapy",
+      "npi": "1013005556",
+      "specialty": "physical_therapy"
+    },
+    "provider_notes": "Return visit for ongoing management. Procedure performed as documented; patient tolerated well."
+  },
+  {
+    "claim_id": "CLM-00174",
+    "date_of_service": "2025-09-18",
+    "diagnoses": [
+      "R07.9",
+      "Z00.00"
+    ],
+    "lines": [
+      {
+        "charge": 176.0,
+        "cpt": "99214",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0040",
+      "sex": "M",
+      "year_of_birth": 1983
+    },
+    "provider": {
+      "name": "Rivertown Physical Therapy",
+      "npi": "1013005556",
+      "specialty": "physical_therapy"
+    },
+    "provider_notes": "Scheduled follow-up appointment. Quick check-in, patient stable, no changes made. Straightforward."
+  },
+  {
+    "claim_id": "CLM-00175",
+    "date_of_service": "2025-05-26",
+    "diagnoses": [
+      "R07.9"
+    ],
+    "lines": [
+      {
+        "charge": 84.0,
+        "cpt": "97110",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 2
+      },
+      {
+        "charge": 90.0,
+        "cpt": "97140",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [
+          "59"
+        ],
+        "units": 2
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0022",
+      "sex": "M",
+      "year_of_birth": 1959
+    },
+    "provider": {
+      "name": "Rivertown Physical Therapy",
+      "npi": "1013005556",
+      "specialty": "physical_therapy"
+    },
+    "provider_notes": "Scheduled follow-up appointment. Specimen collected and sent to lab. No complications."
+  },
+  {
+    "claim_id": "CLM-00176",
+    "date_of_service": "2025-08-06",
+    "diagnoses": [
+      "M54.50",
+      "R51.9"
+    ],
+    "lines": [
+      {
+        "charge": 168.0,
+        "cpt": "97110",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 4
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0037",
+      "sex": "F",
+      "year_of_birth": 1974
+    },
+    "provider": {
+      "name": "Rivertown Physical Therapy",
+      "npi": "1013005556",
+      "specialty": "physical_therapy"
+    },
+    "provider_notes": "Established patient presents for follow-up. Diagnostics obtained and reviewed with patient."
+  },
+  {
+    "claim_id": "CLM-00177",
+    "date_of_service": "2025-07-05",
+    "diagnoses": [
+      "R51.9",
+      "M25.561"
+    ],
+    "lines": [
+      {
+        "charge": 118.0,
+        "cpt": "99213",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [
+          "25"
+        ],
+        "units": 1
+      },
+      {
+        "charge": 34.0,
+        "cpt": "96372",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 18.0,
+        "cpt": "J1885",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L3",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0013",
+      "sex": "M",
+      "year_of_birth": 1947
+    },
+    "provider": {
+      "name": "Harbor Cardiology",
+      "npi": "1013003334",
+      "specialty": "cardiology"
+    },
+    "provider_notes": "Scheduled follow-up appointment. Diagnostics obtained and reviewed with patient."
+  },
+  {
+    "claim_id": "CLM-00178",
+    "date_of_service": "2025-06-22",
+    "diagnoses": [
+      "E78.5",
+      "M25.561"
+    ],
+    "lines": [
+      {
+        "charge": 118.0,
+        "cpt": "99213",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0046",
+      "sex": "F",
+      "year_of_birth": 1962
+    },
+    "provider": {
+      "name": "Rivertown Physical Therapy",
+      "npi": "1013005556",
+      "specialty": "physical_therapy"
+    },
+    "provider_notes": "Return visit for ongoing management. Stable on current regimen. Straightforward, low complexity. No new concerns."
+  },
+  {
+    "claim_id": "CLM-00179",
+    "date_of_service": "2025-10-16",
+    "diagnoses": [
+      "R51.9"
+    ],
+    "lines": [
+      {
+        "charge": 235.0,
+        "cpt": "99215",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0059",
+      "sex": "M",
+      "year_of_birth": 1988
+    },
+    "provider": {
+      "name": "Harbor Cardiology",
+      "npi": "1013003334",
+      "specialty": "cardiology"
+    },
+    "provider_notes": "Return visit for ongoing management. Extensive review; high medical decision making with new prescription drug management, 40 min spent."
+  },
+  {
+    "claim_id": "CLM-00180",
+    "date_of_service": "2025-06-16",
+    "diagnoses": [
+      "E78.5",
+      "Z00.00"
+    ],
+    "lines": [
+      {
+        "charge": 118.0,
+        "cpt": "99213",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 55.0,
+        "cpt": "93000",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0020",
+      "sex": "F",
+      "year_of_birth": 1981
+    },
+    "provider": {
+      "name": "Summit Orthopedics",
+      "npi": "1013004445",
+      "specialty": "orthopedics"
+    },
+    "provider_notes": "Return visit for ongoing management. Stable on current regimen. Straightforward, low complexity. No new concerns."
+  },
+  {
+    "claim_id": "CLM-00181",
+    "date_of_service": "2025-03-10",
+    "diagnoses": [
+      "Z00.00"
+    ],
+    "lines": [
+      {
+        "charge": 168.0,
+        "cpt": "97110",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 4
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0044",
+      "sex": "M",
+      "year_of_birth": 1993
+    },
+    "provider": {
+      "name": "Harbor Cardiology",
+      "npi": "1013003334",
+      "specialty": "cardiology"
+    },
+    "provider_notes": "Established patient presents for follow-up. Specimen collected and sent to lab. No complications."
+  },
+  {
+    "claim_id": "CLM-00182",
+    "date_of_service": "2025-04-27",
+    "diagnoses": [
+      "E78.5",
+      "Z00.00"
+    ],
+    "lines": [
+      {
+        "charge": 118.0,
+        "cpt": "99213",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 34.0,
+        "cpt": "96372",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0042",
+      "sex": "M",
+      "year_of_birth": 1977
+    },
+    "provider": {
+      "name": "Lakeside Internal Medicine",
+      "npi": "1013002223",
+      "specialty": "internal_medicine"
+    },
+    "provider_notes": "Patient seen in clinic today. Stable on current regimen. Straightforward, low complexity. No new concerns."
+  },
+  {
+    "claim_id": "CLM-00183",
+    "date_of_service": "2025-11-17",
+    "diagnoses": [
+      "R51.9"
+    ],
+    "lines": [
+      {
+        "charge": 168.0,
+        "cpt": "97110",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 4
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0048",
+      "sex": "F",
+      "year_of_birth": 1975
+    },
+    "provider": {
+      "name": "Cedar Family Medicine",
+      "npi": "1013001112",
+      "specialty": "family_medicine"
+    },
+    "provider_notes": "Established patient presents for follow-up. Procedure performed as documented; patient tolerated well."
+  },
+  {
+    "claim_id": "CLM-00184",
+    "date_of_service": "2025-01-18",
+    "diagnoses": [
+      "M25.561"
+    ],
+    "lines": [
+      {
+        "charge": 118.0,
+        "cpt": "99213",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [
+          "25"
+        ],
+        "units": 1
+      },
+      {
+        "charge": 128.0,
+        "cpt": "20610",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0022",
+      "sex": "F",
+      "year_of_birth": 2005
+    },
+    "provider": {
+      "name": "Lakeside Internal Medicine",
+      "npi": "1013002223",
+      "specialty": "internal_medicine"
+    },
+    "provider_notes": "Scheduled follow-up appointment. Specimen collected and sent to lab. No complications."
+  },
+  {
+    "claim_id": "CLM-00185",
+    "date_of_service": "2025-11-02",
+    "diagnoses": [
+      "R07.9"
+    ],
+    "lines": [
+      {
+        "charge": 118.0,
+        "cpt": "99213",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 55.0,
+        "cpt": "93000",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0049",
+      "sex": "M",
+      "year_of_birth": 1981
+    },
+    "provider": {
+      "name": "Harbor Cardiology",
+      "npi": "1013003334",
+      "specialty": "cardiology"
+    },
+    "provider_notes": "Patient seen in clinic today. Doing well overall. Routine check, self-limited issue reviewed."
+  },
+  {
+    "claim_id": "CLM-00186",
+    "date_of_service": "2025-01-27",
+    "diagnoses": [
+      "M17.11",
+      "M54.50"
+    ],
+    "lines": [
+      {
+        "charge": 34.0,
+        "cpt": "96372",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 34.0,
+        "cpt": "96372",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0059",
+      "sex": "M",
+      "year_of_birth": 1967
+    },
+    "provider": {
+      "name": "Lakeside Internal Medicine",
+      "npi": "1013002223",
+      "specialty": "internal_medicine"
+    },
+    "provider_notes": "Return visit for ongoing management. Procedure performed as documented; patient tolerated well."
+  },
+  {
+    "claim_id": "CLM-00187",
+    "date_of_service": "2025-08-21",
+    "diagnoses": [
+      "M54.50",
+      "E78.5"
+    ],
+    "lines": [
+      {
+        "charge": 118.0,
+        "cpt": "99213",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0020",
+      "sex": "M",
+      "year_of_birth": 1958
+    },
+    "provider": {
+      "name": "Harbor Cardiology",
+      "npi": "1013003334",
+      "specialty": "cardiology"
+    },
+    "provider_notes": "Scheduled follow-up appointment. Brief visit for medication refill. Stable, minimal problem addressed."
+  },
+  {
+    "claim_id": "CLM-00188",
+    "date_of_service": "2025-12-15",
+    "diagnoses": [
+      "M54.50",
+      "E11.9"
+    ],
+    "lines": [
+      {
+        "charge": 118.0,
+        "cpt": "99213",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 55.0,
+        "cpt": "93000",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0052",
+      "sex": "M",
+      "year_of_birth": 1959
+    },
+    "provider": {
+      "name": "Lakeside Internal Medicine",
+      "npi": "1013002223",
+      "specialty": "internal_medicine"
+    },
+    "provider_notes": "Return visit for ongoing management. Brief visit for medication refill. Stable, minimal problem addressed."
+  },
+  {
+    "claim_id": "CLM-00189",
+    "date_of_service": "2025-06-03",
+    "diagnoses": [
+      "I10",
+      "M54.50"
+    ],
+    "lines": [
+      {
+        "charge": 118.0,
+        "cpt": "99213",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 34.0,
+        "cpt": "96372",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0012",
+      "sex": "M",
+      "year_of_birth": 1996
+    },
+    "provider": {
+      "name": "Rivertown Physical Therapy",
+      "npi": "1013005556",
+      "specialty": "physical_therapy"
+    },
+    "provider_notes": "Patient seen in clinic today. Brief visit for medication refill. Stable, minimal problem addressed."
+  },
+  {
+    "claim_id": "CLM-00190",
+    "date_of_service": "2025-07-08",
+    "diagnoses": [
+      "Z00.00",
+      "J06.9"
+    ],
+    "lines": [
+      {
+        "charge": 34.0,
+        "cpt": "96372",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 34.0,
+        "cpt": "96372",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0060",
+      "sex": "F",
+      "year_of_birth": 1976
+    },
+    "provider": {
+      "name": "Harbor Cardiology",
+      "npi": "1013003334",
+      "specialty": "cardiology"
+    },
+    "provider_notes": "Return visit for ongoing management. Diagnostics obtained and reviewed with patient."
+  },
+  {
+    "claim_id": "CLM-00191",
+    "date_of_service": "2025-01-22",
+    "diagnoses": [
+      "M17.11"
+    ],
+    "lines": [
+      {
+        "charge": 168.0,
+        "cpt": "97110",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 4
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0001",
+      "sex": "M",
+      "year_of_birth": 1978
+    },
+    "provider": {
+      "name": "Lakeside Internal Medicine",
+      "npi": "1013002223",
+      "specialty": "internal_medicine"
+    },
+    "provider_notes": "Return visit for ongoing management. Procedure performed as documented; patient tolerated well."
+  },
+  {
+    "claim_id": "CLM-00192",
+    "date_of_service": "2025-11-10",
+    "diagnoses": [
+      "R07.9",
+      "R51.9"
+    ],
+    "lines": [
+      {
+        "charge": 128.0,
+        "cpt": "20610",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 34.0,
+        "cpt": "96372",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0044",
+      "sex": "M",
+      "year_of_birth": 2009
+    },
+    "provider": {
+      "name": "Cedar Family Medicine",
+      "npi": "1013001112",
+      "specialty": "family_medicine"
+    },
+    "provider_notes": "Patient seen in clinic today. Procedure performed as documented; patient tolerated well."
+  },
+  {
+    "claim_id": "CLM-00193",
+    "date_of_service": "2025-12-18",
+    "diagnoses": [
+      "E78.5",
+      "R51.9"
+    ],
+    "lines": [
+      {
+        "charge": 235.0,
+        "cpt": "99215",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0010",
+      "sex": "M",
+      "year_of_birth": 2003
+    },
+    "provider": {
+      "name": "Summit Orthopedics",
+      "npi": "1013004445",
+      "specialty": "orthopedics"
+    },
+    "provider_notes": "Patient seen in clinic today. Multiple chronic conditions poorly controlled; high complexity decision-making, total time 45 min."
+  },
+  {
+    "claim_id": "CLM-00194",
+    "date_of_service": "2025-02-02",
+    "diagnoses": [
+      "R07.9"
+    ],
+    "lines": [
+      {
+        "charge": 176.0,
+        "cpt": "99214",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0029",
+      "sex": "F",
+      "year_of_birth": 1991
+    },
+    "provider": {
+      "name": "Rivertown Physical Therapy",
+      "npi": "1013005556",
+      "specialty": "physical_therapy"
+    },
+    "provider_notes": "Patient seen in clinic today. Two chronic problems reviewed with adjustment; moderate complexity decision-making, total time 30 min."
+  },
+  {
+    "claim_id": "CLM-00195",
+    "date_of_service": "2025-12-19",
+    "diagnoses": [
+      "I10",
+      "E78.5"
+    ],
+    "lines": [
+      {
+        "charge": 84.0,
+        "cpt": "97110",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 2
+      },
+      {
+        "charge": 90.0,
+        "cpt": "97140",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [
+          "59"
+        ],
+        "units": 2
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0055",
+      "sex": "F",
+      "year_of_birth": 2001
+    },
+    "provider": {
+      "name": "Lakeside Internal Medicine",
+      "npi": "1013002223",
+      "specialty": "internal_medicine"
+    },
+    "provider_notes": "Scheduled follow-up appointment. Procedure performed as documented; patient tolerated well."
+  },
+  {
+    "claim_id": "CLM-00196",
+    "date_of_service": "2025-10-02",
+    "diagnoses": [
+      "Z00.00",
+      "E11.9"
+    ],
+    "lines": [
+      {
+        "charge": 235.0,
+        "cpt": "99215",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0009",
+      "sex": "M",
+      "year_of_birth": 2010
+    },
+    "provider": {
+      "name": "Summit Orthopedics",
+      "npi": "1013004445",
+      "specialty": "orthopedics"
+    },
+    "provider_notes": "Scheduled follow-up appointment. Extensive review; high medical decision making with new prescription drug management, 40 min spent."
+  },
+  {
+    "claim_id": "CLM-00197",
+    "date_of_service": "2025-07-12",
+    "diagnoses": [
+      "E78.5"
+    ],
+    "lines": [
+      {
+        "charge": 118.0,
+        "cpt": "99213",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0048",
+      "sex": "F",
+      "year_of_birth": 1972
+    },
+    "provider": {
+      "name": "Cedar Family Medicine",
+      "npi": "1013001112",
+      "specialty": "family_medicine"
+    },
+    "provider_notes": "Established patient presents for follow-up. Stable on current regimen. Straightforward, low complexity. No new concerns."
+  },
+  {
+    "claim_id": "CLM-00198",
+    "date_of_service": "2025-03-25",
+    "diagnoses": [
+      "J06.9",
+      "M25.561"
+    ],
+    "lines": [
+      {
+        "charge": 128.0,
+        "cpt": "20610",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      },
+      {
+        "charge": 34.0,
+        "cpt": "96372",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0003",
+      "sex": "M",
+      "year_of_birth": 1981
+    },
+    "provider": {
+      "name": "Lakeside Internal Medicine",
+      "npi": "1013002223",
+      "specialty": "internal_medicine"
+    },
+    "provider_notes": "Scheduled follow-up appointment. Specimen collected and sent to lab. No complications."
+  },
+  {
+    "claim_id": "CLM-00199",
+    "date_of_service": "2025-03-18",
+    "diagnoses": [
+      "E78.5",
+      "M54.50"
+    ],
+    "lines": [
+      {
+        "charge": 118.0,
+        "cpt": "99213",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [
+          "25"
+        ],
+        "units": 1
+      },
+      {
+        "charge": 128.0,
+        "cpt": "20610",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L2",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0006",
+      "sex": "M",
+      "year_of_birth": 1962
+    },
+    "provider": {
+      "name": "Cedar Family Medicine",
+      "npi": "1013001112",
+      "specialty": "family_medicine"
+    },
+    "provider_notes": "Patient seen in clinic today. Procedure performed as documented; patient tolerated well."
+  },
+  {
+    "claim_id": "CLM-00200",
+    "date_of_service": "2025-07-27",
+    "diagnoses": [
+      "R51.9"
+    ],
+    "lines": [
+      {
+        "charge": 118.0,
+        "cpt": "99213",
+        "diagnosis_pointers": [
+          "A"
+        ],
+        "line_id": "L1",
+        "modifiers": [],
+        "units": 1
+      }
+    ],
+    "patient": {
+      "patient_id": "PT-0020",
+      "sex": "M",
+      "year_of_birth": 2004
+    },
+    "provider": {
+      "name": "Rivertown Physical Therapy",
+      "npi": "1013005556",
+      "specialty": "physical_therapy"
+    },
+    "provider_notes": "Scheduled follow-up appointment. Brief visit for medication refill. Stable, minimal problem addressed."
+  }
+]

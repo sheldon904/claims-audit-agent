@@ -1,0 +1,17 @@
+{
+  "defect_category_counts": {
+    "duplicate": 7,
+    "missing_modifier": 6,
+    "unbundling": 10,
+    "units_exceeded": 9,
+    "upcoding": 8
+  },
+  "holdout_clean": 10,
+  "holdout_defective": 15,
+  "holdout_size": 25,
+  "n_claims": 200,
+  "n_clean": 160,
+  "n_defective": 40,
+  "seed": 42,
+  "total_ground_truth_findings": 40
+}
