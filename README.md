@@ -47,7 +47,7 @@ The **deterministic engine** arm is measured on every push in CI and is the row 
 | langgraph | off | claude-sonnet-5 | — | — | — | — | — | — |
 | langgraph | on  | claude-sonnet-5 | — | — | — | — | — | — |
 
-**On honesty:** the LLM rows are `—` because populating them makes real, billable API calls, and this repo does not ship fabricated numbers. They are one command away — `make eval-openrouter` (needs `OPENROUTER_API_KEY`) or `make eval-llm` (native Anthropic) runs both SDKs, thinking on and off, and rewrites the table from measured output. The agents themselves are wired and **run end-to-end offline in CI** against a scripted model (`tests/test_agents_offline.py`), which proves the orchestration works; only the accuracy/latency/cost figures await a funded run. The engine row is the honest, reproducible anchor.
+**On honesty:** the LLM rows are `—` because populating them makes real, billable API calls, and this repo does not ship fabricated numbers. They are one command away — `make eval-openrouter` (needs `OPENROUTER_API_KEY`) or `make eval-llm` (native Anthropic) runs both SDKs, thinking on and off, and rewrites the table from measured output. The whole run path is de-risked: the **entire pipeline** — `run_eval → OpenRouter provider → LangGraph → metrics → results row` — is integration-tested end-to-end in CI with only the network call mocked (`tests/test_openrouter_e2e.py`), so supplying a key populates the table on the first run. The engine row is the honest, reproducible anchor.
 
 The **Model** column is provider-aware: a native run shows `claude-sonnet-5`, an OpenRouter run shows the routed id (e.g. `anthropic/claude-sonnet-4.5`), and the SDK/Arm cell is tagged with the provider (`langgraph · openrouter`).
 

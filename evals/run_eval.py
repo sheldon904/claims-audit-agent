@@ -85,6 +85,9 @@ def run_one(
     claims, gt = _load_dataset(dataset)
     if limit:
         claims = claims[:limit]
+        # Subset ground truth to the evaluated claims so a limited smoke run
+        # doesn't count the dropped claims' defects as false negatives.
+        gt = {c.claim_id: gt.get(c.claim_id, []) for c in claims}
 
     if arm == "engine":
         agent = EngineAgent(ruleset)

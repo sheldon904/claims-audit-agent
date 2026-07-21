@@ -63,5 +63,5 @@ jobs:
           python -m pip install --upgrade pip
           pip install -e ".[dev,sdk,graph,openrouter]"
 
-      - name: Offline agent + provider tests (fake model / dummy key, no network)
-        run: pytest -q tests/test_agents_offline.py tests/test_providers.py
+      - name: Offline agent + provider + run-path tests (mocked model, no network)
+        run: pytest -q tests/test_agents_offline.py tests/test_providers.py tests/test_openrouter_e2e.py
