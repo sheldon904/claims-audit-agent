@@ -58,10 +58,10 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install (core + dev + sdk + graph)
+      - name: Install (core + dev + sdk + graph + openrouter)
         run: |
           python -m pip install --upgrade pip
-          pip install -e ".[dev,sdk,graph]"
+          pip install -e ".[dev,sdk,graph,openrouter]"
 
-      - name: Offline agent tests (fake model, no API key)
-        run: pytest -q tests/test_agents_offline.py
+      - name: Offline agent + provider tests (fake model / dummy key, no network)
+        run: pytest -q tests/test_agents_offline.py tests/test_providers.py

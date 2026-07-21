@@ -37,8 +37,6 @@ from claims_audit.tools import (
 from evals.harness import Usage
 
 DEFAULT_MODEL = "claude-sonnet-5"
-DEFAULT_MAX_TOKENS = 8000
-DEFAULT_THINKING_TOKENS = 4000
 
 
 class AuditState(TypedDict, total=False):
@@ -92,11 +90,13 @@ class LangGraphAuditAgent:
         model: Any | None = None,
         model_name: str = DEFAULT_MODEL,
         thinking: bool = False,
+        provider: str | None = None,
     ):
         self.ruleset = ruleset or load_rules()
         self.ctx = ToolContext.build(claims, self.ruleset)
         self.thinking = thinking
         self.model_name = model_name
+        self.provider = provider
         self.name = "langgraph"
         self._usage = Usage()
         self._model = model if model is not None else self._build_model()
@@ -116,12 +116,14 @@ class LangGraphAuditAgent:
     # ---- model ------------------------------------------------------------
 
     def _build_model(self):
-        from langchain_anthropic import ChatAnthropic
+        """Build the chat model via the provider factory (anthropic | openrouter)."""
+        from providers.chat import build_chat_model, build_config
 
-        kwargs: dict[str, Any] = {"model": self.model_name, "max_tokens": DEFAULT_MAX_TOKENS}
-        if self.thinking:
-            kwargs["thinking"] = {"type": "enabled", "budget_tokens": DEFAULT_THINKING_TOKENS}
-        return ChatAnthropic(**kwargs)
+        cfg = build_config(
+            model=self.model_name, thinking=self.thinking, provider=self.provider
+        )
+        self.provider = cfg.provider
+        return build_chat_model(cfg)
 
     # ---- graph ------------------------------------------------------------
 

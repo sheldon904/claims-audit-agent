@@ -13,10 +13,16 @@ from pathlib import Path
 from evals.harness import ArmResult
 
 # USD per 1M tokens. Update to match current pricing for the model you run.
+# Keys may be canonical names (native Anthropic) or OpenRouter model ids.
 PRICING = {
+    # native Anthropic canonical names
     "claude-opus-4-8": {"input": 15.0, "output": 75.0},
     "claude-sonnet-5": {"input": 3.0, "output": 15.0},
     "claude-haiku-4-5-20251001": {"input": 1.0, "output": 5.0},
+    # OpenRouter model ids (indicative list prices; edit to match your account)
+    "anthropic/claude-sonnet-4.5": {"input": 3.0, "output": 15.0},
+    "anthropic/claude-opus-4.1": {"input": 15.0, "output": 75.0},
+    "anthropic/claude-haiku-4.5": {"input": 1.0, "output": 5.0},
 }
 DEFAULT_MODEL = "claude-sonnet-5"
 
@@ -32,12 +38,17 @@ def arm_row(arm: ArmResult) -> dict:
     """Flatten an ArmResult into a single reporting row."""
     m = arm.metrics.as_dict() if arm.metrics else {}
     model = arm.config.get("model", "")
+    provider = arm.config.get("provider")
     usage = arm.total_usage
     n = max(1, len(arm.predictions))
     total_cost = cost_usd(usage.input_tokens, usage.output_tokens, model)
+    sdk_label = arm.config.get("sdk", arm.name)
+    if provider:
+        sdk_label = f"{sdk_label} · {provider}"
     return {
         "arm": arm.name,
-        "sdk": arm.config.get("sdk", arm.name),
+        "sdk": sdk_label,
+        "provider": provider or "n/a",
         "thinking": arm.config.get("thinking", "n/a"),
         "model": model or "n/a",
         "precision": m.get("precision"),

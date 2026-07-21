@@ -108,14 +108,23 @@ def color_for(text: str):
 
 
 def build():
+    # (display command, argv, max output lines). Env overrides let one step show
+    # the OpenRouter backend being selected without needing a real key.
     steps = [
-        ("python -m data.generate", ["python", "-m", "data.generate"], 12),
-        ("pytest -q", [sys.executable, "-m", "pytest", "-q"], 3),
-        ("python -m evals.gate", [sys.executable, "-m", "evals.gate"], 8),
+        ("python -m data.generate", ["python", "-m", "data.generate"], 12, None),
+        ("pytest -q", [sys.executable, "-m", "pytest", "-q"], 3, None),
+        ("python -m evals.gate", [sys.executable, "-m", "evals.gate"], 8, None),
         (
             "python -m evals.run_eval --arm engine",
             [sys.executable, "-m", "evals.run_eval", "--arm", "engine"],
             10,
+            None,
+        ),
+        (
+            "python -m evals.run_eval --arm graph --provider openrouter",
+            [sys.executable, "-m", "evals.run_eval", "--arm", "graph", "--provider", "openrouter"],
+            3,
+            None,
         ),
     ]
 
@@ -127,23 +136,23 @@ def build():
         frames.append(img)
         durations.append(ms)
 
-    for display_cmd, argv, max_lines in steps:
+    for display_cmd, argv, max_lines, _env in steps:
         # type the command
         step = max(1, len(display_cmd) // 4)
         for i in range(0, len(display_cmd) + 1, step):
-            add(render_frame(history, partial_cmd=display_cmd[:i]), 45)
-        add(render_frame(history, partial_cmd=display_cmd), 350)
+            add(render_frame(history, partial_cmd=display_cmd[:i]), 60)
+        add(render_frame(history, partial_cmd=display_cmd), 800)
         history.append(Line(display_cmd, CMD, prompt=True))
 
         # run + reveal output
         out_lines = run(argv, max_lines=max_lines)
         for text in out_lines:
             history.append(Line(text, color_for(text)))
-            add(render_frame(history), 120)
-        add(render_frame(history), 900)
+            add(render_frame(history), 450)
+        add(render_frame(history), 4800)
 
     # hold the final frame
-    add(render_frame(history), 3000)
+    add(render_frame(history), 18000)
 
     OUT.parent.mkdir(exist_ok=True)
     frames[0].save(

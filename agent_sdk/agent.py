@@ -42,10 +42,17 @@ class ClaudeSDKAuditAgent:
         model: str = DEFAULT_MODEL,
         thinking: bool = False,
         max_turns: int = DEFAULT_MAX_TURNS,
+        provider: str | None = None,
     ):
         self.ruleset = ruleset or load_rules()
         self.ctx = ToolContext.build(claims, self.ruleset)
-        self.model = model
+        # Resolve provider so the CLI can be pointed at OpenRouter's
+        # Anthropic-compatible endpoint (experimental) via env passthrough.
+        from providers.chat import build_config
+
+        self._cfg = build_config(model=model, thinking=thinking, provider=provider)
+        self.provider = self._cfg.provider
+        self.model = self._cfg.model
         self.thinking = thinking
         self.max_turns = max_turns
         self.name = "claude-agent-sdk"
@@ -146,6 +153,17 @@ class ClaudeSDKAuditAgent:
         )
         if self.thinking:
             kwargs["max_thinking_tokens"] = DEFAULT_THINKING_TOKENS
+
+        # Experimental OpenRouter routing: point the Claude Code CLI at
+        # OpenRouter's Anthropic-compatible endpoint via env. The natively
+        # supported path is Anthropic; the guaranteed OpenRouter arm is
+        # LangGraph (agent_graph), which uses OpenRouter's OpenAI-compatible API.
+        if self.provider == "openrouter" and self._cfg.api_key:
+            kwargs["env"] = {
+                "ANTHROPIC_BASE_URL": self._cfg.base_url or "https://openrouter.ai/api/v1",
+                "ANTHROPIC_AUTH_TOKEN": self._cfg.api_key,
+                "ANTHROPIC_API_KEY": self._cfg.api_key,
+            }
         return ClaudeAgentOptions(**kwargs)
 
     async def _audit_async(self, claim: Claim) -> list[Finding]:

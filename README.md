@@ -47,7 +47,9 @@ The **deterministic engine** arm is measured on every push in CI and is the row 
 | langgraph | off | claude-sonnet-5 | — | — | — | — | — | — |
 | langgraph | on  | claude-sonnet-5 | — | — | — | — | — | — |
 
-**On honesty:** the LLM rows are `—` because populating them makes real, billable API calls, and this repo does not ship fabricated numbers. They are one command away — `make eval-llm` (needs `ANTHROPIC_API_KEY`) runs both SDKs, thinking on and off, and rewrites the table from measured output. The agents themselves are wired and **run end-to-end offline in CI** against a scripted model (`tests/test_agents_offline.py`), which proves the orchestration works; only the accuracy/latency/cost figures await a funded run. The engine row is the honest, reproducible anchor.
+**On honesty:** the LLM rows are `—` because populating them makes real, billable API calls, and this repo does not ship fabricated numbers. They are one command away — `make eval-openrouter` (needs `OPENROUTER_API_KEY`) or `make eval-llm` (native Anthropic) runs both SDKs, thinking on and off, and rewrites the table from measured output. The agents themselves are wired and **run end-to-end offline in CI** against a scripted model (`tests/test_agents_offline.py`), which proves the orchestration works; only the accuracy/latency/cost figures await a funded run. The engine row is the honest, reproducible anchor.
+
+The **Model** column is provider-aware: a native run shows `claude-sonnet-5`, an OpenRouter run shows the routed id (e.g. `anthropic/claude-sonnet-4.5`), and the SDK/Arm cell is tagged with the provider (`langgraph · openrouter`).
 
 ### What the reasoning-model arm measures
 
@@ -71,6 +73,7 @@ claims_audit/         shared core (no LLM, no I/O)
   metrics.py          precision / recall / fabrication / citation-validity
 agent_sdk/            Agent v1 — autonomous tool loop on claude-agent-sdk
 agent_graph/          Agent v2 — explicit graph on LangGraph
+providers/            provider factory — Anthropic or OpenRouter, resolved from env
 evals/                harness · deterministic baseline · gate · runner · reporting
 data/ · rules/        synthetic generator + frozen sets · machine-readable rules
 ```
@@ -137,10 +140,30 @@ make eval      # print the engine results table
 Run the LLM arms (needs the extras and a key):
 
 ```bash
-pip install -e ".[dev,sdk,graph]"
+pip install -e ".[dev,sdk,graph,openrouter]"      # or: make install-llm
+cp .env.example .env                               # add your key
+
+# via OpenRouter (recommended — any model, your credits):
+export OPENROUTER_API_KEY=sk-or-...
+make eval-openrouter    # both SDKs, thinking on/off — rewrites the results table
+
+# or native Anthropic:
 export ANTHROPIC_API_KEY=sk-...
-make eval-llm   # both SDKs, thinking on/off — rewrites the results table from measured output
+make eval-llm
 ```
+
+### Inference backend — Anthropic or OpenRouter
+
+The LLM arms are provider-agnostic ([`providers/chat.py`](providers/chat.py)). The backend is resolved from config/env — explicit `--provider` → `$LLM_PROVIDER` → OpenRouter if `$OPENROUTER_API_KEY` is set → Anthropic:
+
+| | native Anthropic | OpenRouter |
+| --- | --- | --- |
+| **LangGraph arm** | `ChatAnthropic` | `ChatOpenAI` → `openrouter.ai/api/v1` (OpenAI-compatible) — **fully supported** |
+| **claude-agent-sdk arm** | Claude Code CLI, native | CLI pointed at OpenRouter's Anthropic-compatible endpoint via `ANTHROPIC_BASE_URL` — experimental |
+| **thinking** | `thinking={budget_tokens}` | OpenRouter unified `reasoning={max_tokens}` |
+| **model id** | `claude-sonnet-5` | `anthropic/claude-sonnet-4.5` (or any OpenRouter id via `$OPENROUTER_MODEL`) |
+
+Canonical names map to OpenRouter ids automatically (`OPENROUTER_MODEL_MAP`); set `$OPENROUTER_MODEL` to run any model OpenRouter serves — including non-Anthropic models — through the same harness. A repo-root `.env` (see [`.env.example`](.env.example)) is auto-loaded.
 
 ## CI regression gate
 
