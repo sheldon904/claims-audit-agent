@@ -15,6 +15,7 @@ from __future__ import annotations
 
 import asyncio
 import json
+import os
 import sys
 
 from claims_audit.models import Claim, Finding
@@ -26,6 +27,12 @@ from evals.harness import Usage
 DEFAULT_MODEL = "claude-sonnet-5"
 DEFAULT_MAX_TURNS = 12
 DEFAULT_THINKING_TOKENS = 4000
+# Per-claim wall-clock ceiling. Each claim spawns a fresh Claude Code CLI
+# subprocess; pointed at a third-party endpoint it can occasionally hang. This
+# bounds a wedged subprocess so it can't stall a whole multi-claim eval. Generous
+# by design (observed latency is ~55 s/claim, more with thinking on) — it's a
+# backstop, not the expected duration. Override with $SDK_CLAIM_TIMEOUT_S.
+DEFAULT_CLAIM_TIMEOUT_S = 300.0
 
 
 def _text_result(payload: dict) -> dict:
@@ -44,6 +51,7 @@ class ClaudeSDKAuditAgent:
         thinking: bool = False,
         max_turns: int = DEFAULT_MAX_TURNS,
         provider: str | None = None,
+        claim_timeout_s: float | None = None,
     ):
         self.ruleset = ruleset or load_rules()
         self.ctx = ToolContext.build(claims, self.ruleset)
@@ -56,18 +64,40 @@ class ClaudeSDKAuditAgent:
         self.model = self._cfg.model
         self.thinking = thinking
         self.max_turns = max_turns
+        self.claim_timeout_s = (
+            claim_timeout_s
+            if claim_timeout_s is not None
+            else float(os.getenv("SDK_CLAIM_TIMEOUT_S", str(DEFAULT_CLAIM_TIMEOUT_S)))
+        )
         self.name = "claude-agent-sdk"
         self._usage = Usage()
 
     # ---- harness interface ------------------------------------------------
 
     def audit(self, claim: Claim) -> list[Finding]:
-        # A single failed claim yields no findings rather than crashing a long
-        # multi-claim run (the CLI spawns a subprocess per claim and can flake).
+        # A single failed OR hung claim yields no findings rather than crashing a
+        # long multi-claim run (the CLI spawns a subprocess per claim and can flake
+        # or hang against a third-party endpoint). The timeout inside
+        # ``_audit_guarded`` bounds a wedged subprocess; this try/except catches the
+        # non-timeout failures. Either way the run survives and the claim scores as
+        # "no findings" — honest, not silently dropped.
         try:
-            return asyncio.run(self._audit_async(claim))
+            return asyncio.run(self._audit_guarded(claim))
         except Exception as exc:  # noqa: BLE001 - resilience over strictness here
             print(f"[claude-agent-sdk] claim {claim.claim_id} errored: {exc}", file=sys.stderr)
+            return []
+
+    async def _audit_guarded(self, claim: Claim) -> list[Finding]:
+        try:
+            return await asyncio.wait_for(
+                self._audit_async(claim), timeout=self.claim_timeout_s
+            )
+        except asyncio.TimeoutError:
+            print(
+                f"[claude-agent-sdk] claim {claim.claim_id} timed out after "
+                f"{self.claim_timeout_s:.0f}s — recorded as no findings",
+                file=sys.stderr,
+            )
             return []
 
     def usage(self) -> Usage:

@@ -39,31 +39,31 @@ The **deterministic engine** arm is measured on every push in CI and is the row 
 
 ### Frozen holdout (25 claims) — measured
 
-The LangGraph arm was benchmarked live through **OpenRouter** on a cheap open-source model (`qwen/qwen3-32b`, ~$0.08/$0.28 per M tokens); the whole run below cost **~$0.011**. The engine row is measured in CI on every push.
+**Both** LLM arms were benchmarked live through **OpenRouter** on a cheap open-source model (`qwen/qwen3-32b`, ~$0.08/$0.28 per M tokens). The two LangGraph runs cost **~$0.008** together; the `claude-agent-sdk` holdout pass costs **~$0.08** on its own (~18× the per-claim cost — see the note below). The engine row is measured in CI on every push.
 
 | SDK / Arm | Thinking | Model | Precision | Recall | F1 | Citation valid. | Fabrication | Latency | $/claim |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | **engine (deterministic)** | n/a | n/a | **1.000** | **1.000** | **1.000** | **1.000** | **0.000** | <1 ms | $0.00000 |
-| langgraph · openrouter | off | qwen/qwen3-32b | 0.737 | 0.933 | 0.824 | **1.000** | **0.000** | 3.7 s | $0.00017 |
-| langgraph · openrouter | on | qwen/qwen3-32b | 1.000 | 0.467 | 0.636 | **1.000** | **0.000** | 10.8 s | $0.00025 |
-| claude-agent-sdk | off | — | — | — | — | — | — | — | — |
-| claude-agent-sdk | on | — | — | — | — | — | — | — | — |
+| langgraph · openrouter | off | qwen/qwen3-32b | 0.750 | **1.000** | 0.857 | **1.000** | **0.000** | 3.6 s | $0.00018 |
+| langgraph · openrouter | on | qwen/qwen3-32b | **1.000** | 0.600 | 0.750 | **1.000** | **0.000** | 1.5 s | $0.00016 |
+| claude-agent-sdk · openrouter | off | qwen/qwen3-32b | **1.000** | **1.000** | **1.000** | **1.000** | **0.000** | 54.3 s | $0.00324 |
+| claude-agent-sdk · openrouter | on | qwen/qwen3-32b | — | — | — | — | — | — | — |
 
 **What's real and what isn't, stated plainly:**
 
-- **Fabrication rate is 0.000 and citation validity 1.000 for the LLM arm in both modes** — even though the raw model over- and under-flags. That is not luck: the LangGraph `evidence_check` node verifies every cited rule id and line span against the claim and drops anything unsupported, so a hallucinated citation can never reach a finding. This is the headline result — the property that matters for a claims auditor is structurally guaranteed, not hoped for.
-- **The `claude-agent-sdk` rows are `—` and honestly so.** That SDK drives the Claude Code CLI, which expects native Anthropic; it would not route cheap OSS models through OpenRouter's Anthropic-compatible endpoint in my environment (it errors), and running it natively means Anthropic spend I was asked to avoid. Its orchestration is proven end-to-end offline in CI (`tests/test_agents_offline.py`); a live benchmark needs `ANTHROPIC_API_KEY` + `make eval-llm`. I'd rather ship an accurate blank than a number I can't stand behind — which is the entire point of the project.
+- **Fabrication rate is 0.000 and citation validity 1.000 for the LangGraph arm in both modes** — even though the raw model over- and under-flags. That is not luck: the LangGraph `evidence_check` node verifies every cited rule id and line span against the claim and drops anything unsupported, so a hallucinated citation can never reach a finding. This is the headline result — the property that matters for a claims auditor is structurally guaranteed, not hoped for.
+- **The `claude-agent-sdk` arm now routes through OpenRouter too — and its honest caveat is cost and stability, not capability.** This arm was blank at first because the Claude Code CLI it drives wouldn't reach OpenRouter's Anthropic-compatible endpoint in my environment. That turned out to be a bug, now fixed: the CLI appends `/v1/messages` to `ANTHROPIC_BASE_URL`, so the base must *not* already end in `/v1`, and auth must be a lone bearer token (`ANTHROPIC_AUTH_TOKEN`, not a conflicting `ANTHROPIC_API_KEY`). With the fix it scored a **perfect holdout** (P/R/F1 = 1.000) on the same `qwen/qwen3-32b` — but at **~54 s/claim (≈15× the LangGraph arm) and ~18× the cost**, because it spawns a fresh Claude Code CLI subprocess per claim. That subprocess is also flaky against a third-party endpoint: on a re-run ~half of the first claims hung, each bounded by a per-claim timeout that degrades a wedged subprocess to *no findings* instead of crashing the run. So this arm is **demonstrated on the holdout, not run at full scale** (and its `thinking on` row is left unmeasured for the same reason) — the trade is cost/latency/stability, not correctness. Full write-up in [`docs/STATUS.md`](docs/STATUS.md).
 
-### The reasoning-model arm — an actual, surprising delta
+### The reasoning-model arm — an actual, measured delta
 
-Turning thinking **on** did **not** uniformly help — it traded recall for precision, and cost 3× the latency:
+Turning thinking **on** did **not** uniformly help — it cleanly traded recall for precision:
 
 | | precision | recall | latency | cost/claim |
 | --- | --- | --- | --- | --- |
-| thinking **off** | 0.737 | **0.933** | 3.7 s | $0.00017 |
-| thinking **on**  | **1.000** | 0.467 | 10.8 s | $0.00025 |
+| thinking **off** | 0.750 | **1.000** | 3.6 s | $0.00018 |
+| thinking **on**  | **1.000** | 0.600 | 1.5 s | $0.00016 |
 
-With reasoning enabled, `qwen/qwen3-32b` became far more conservative: it stopped over-flagging (precision 0.74 → 1.00) but also second-guessed real defects (recall 0.93 → 0.47). For a *first-pass* auditor that feeds human reviewers, the thinking-**off** configuration is the better operating point here — higher recall, one-third the latency, lower cost — which is exactly the kind of finding you only get from measuring rather than assuming. Swapping to Claude is one env var (`OPENROUTER_MODEL=anthropic/claude-sonnet-4.5`, or native `make eval-llm`); this arm is cheap to re-run on any model OpenRouter serves.
+With reasoning enabled, `qwen/qwen3-32b` became far more conservative: it stopped over-flagging (precision 0.75 → 1.00) but also second-guessed real defects (recall 1.00 → 0.60). Latency and cost were a wash here — thinking-*on* even edged out slightly cheaper, because its conservatism emitted fewer findings and therefore fewer tokens (a good reminder that "reasoning = slower and pricier" is not a law). For a *first-pass* auditor that feeds human reviewers, thinking-**off** is the better operating point on this data: it caught **every** defect (recall 1.000), and a downstream human discards the occasional false positive far more cheaply than re-discovering a missed one. That's exactly the kind of finding you only get from measuring rather than assuming. Swapping to Claude is one env var (`OPENROUTER_MODEL=anthropic/claude-sonnet-4.5`, or native `make eval-llm`); this arm is cheap to re-run on any model OpenRouter serves.
 
 ---
 
@@ -165,7 +165,7 @@ The LLM arms are provider-agnostic ([`providers/chat.py`](providers/chat.py)). T
 | | native Anthropic | OpenRouter |
 | --- | --- | --- |
 | **LangGraph arm** | `ChatAnthropic` | `ChatOpenAI` → `openrouter.ai/api/v1` (OpenAI-compatible) — **fully supported** |
-| **claude-agent-sdk arm** | Claude Code CLI, native | CLI pointed at OpenRouter's Anthropic-compatible endpoint via `ANTHROPIC_BASE_URL` — experimental |
+| **claude-agent-sdk arm** | Claude Code CLI, native | CLI pointed at OpenRouter's Anthropic-compatible endpoint via `ANTHROPIC_BASE_URL` (strip a trailing `/v1`; bearer `ANTHROPIC_AUTH_TOKEN`) — works, but ~15× the latency/cost (subprocess per claim) |
 | **thinking** | `thinking={budget_tokens}` | OpenRouter unified `reasoning={max_tokens}` |
 | **model id** | `claude-sonnet-5` | `anthropic/claude-sonnet-4.5` (or any OpenRouter id via `$OPENROUTER_MODEL`) |
 
@@ -183,8 +183,8 @@ The gate is intentionally scored on the deterministic arm: it must be **free and
 ## Limitations (the honest note)
 
 - **The engine's upcoding check is keyword-based.** For the synthetic notes it's exact, which is why the engine is perfect on the holdout. Real notes are where an LLM arm should pull ahead — quantifying that gap is what the reasoning-model arm is for.
-- **The LangGraph arm is benchmarked on a cheap OSS model** (`qwen/qwen3-32b`) to keep the run near-free (~$0.011). A stronger model (Claude, GPT, etc.) is a one-line change; the numbers in the table are that specific model's, not a ceiling.
-- **The `claude-agent-sdk` arm is not benchmarked live** — it requires native Anthropic (its Claude Code CLI doesn't route through OpenRouter). Its orchestration is verified offline in CI; `make eval-llm` with `ANTHROPIC_API_KEY` fills its rows.
+- **The LLM arms are benchmarked on a cheap OSS model** (`qwen/qwen3-32b`) to keep the runs near-free (~$0.008 for both LangGraph modes; ~$0.08 for the pricier SDK holdout pass). A stronger model (Claude, GPT, etc.) is a one-line change; the numbers in the table are that specific model's, not a ceiling.
+- **The `claude-agent-sdk` arm is demonstrated on the holdout, not run at full scale.** It now routes through OpenRouter (perfect on the holdout), but at ~54 s/claim and ~18× the cost, and it's flaky against a third-party endpoint — a per-claim timeout (`SDK_CLAIM_TIMEOUT_S`) keeps a hung CLI subprocess from wedging a run. A `--dataset full` sweep of this arm is impractical for that reason; the cost/latency/stability trade, not correctness, is the story. See [`docs/STATUS.md`](docs/STATUS.md).
 - **Synthetic ≠ production.** 15 rules and 200 claims are a demonstration substrate, not a payer-grade edit library.
 
 ## License
