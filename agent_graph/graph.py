@@ -123,6 +123,7 @@ class LangGraphAuditAgent:
             model=self.model_name, thinking=self.thinking, provider=self.provider
         )
         self.provider = cfg.provider
+        self.model = cfg.model  # resolved id (e.g. OpenRouter's anthropic/claude-sonnet-4.5)
         return build_chat_model(cfg)
 
     # ---- graph ------------------------------------------------------------
@@ -152,9 +153,13 @@ class LangGraphAuditAgent:
     def _rule_scan(self, state: AuditState) -> AuditState:
         """The single LLM call: propose candidate findings via a forced tool."""
         claim = Claim.model_validate(state["claim"])
+        # Force the tool by NAME (a bare string) — LangChain normalises this to
+        # each provider's own forced-tool format, so the same call works on
+        # ChatAnthropic (native) and ChatOpenAI (OpenRouter). A provider-specific
+        # dict like {"type":"tool",...} breaks the OpenAI-compatible path.
         bound = self._model.bind_tools(
             [_report_findings_tool_schema()],
-            tool_choice={"type": "tool", "name": "report_findings"},
+            tool_choice="report_findings",
         )
         messages = [
             ("system", SYSTEM_PROMPT),

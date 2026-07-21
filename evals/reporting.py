@@ -23,6 +23,11 @@ PRICING = {
     "anthropic/claude-sonnet-4.5": {"input": 3.0, "output": 15.0},
     "anthropic/claude-opus-4.1": {"input": 15.0, "output": 75.0},
     "anthropic/claude-haiku-4.5": {"input": 1.0, "output": 5.0},
+    # cheap Chinese open-source models on OpenRouter
+    "qwen/qwen3-32b": {"input": 0.08, "output": 0.28},
+    "qwen/qwen3-14b": {"input": 0.12, "output": 0.24},
+    "z-ai/glm-4.7-flash": {"input": 0.061, "output": 0.40},
+    "deepseek/deepseek-chat": {"input": 0.28, "output": 0.88},
 }
 DEFAULT_MODEL = "claude-sonnet-5"
 

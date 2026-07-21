@@ -118,11 +118,14 @@ def build_chat_model(cfg: ProviderConfig):
         if cfg.app_name:
             headers["X-Title"] = cfg.app_name
 
-        # OpenRouter's unified reasoning field; only sent when thinking is on so
-        # non-reasoning models aren't handed an unsupported parameter.
-        extra_body: dict = {}
-        if cfg.thinking:
-            extra_body["reasoning"] = {"max_tokens": cfg.thinking_tokens}
+        # OpenRouter's unified reasoning field. Sent both ways so the toggle is
+        # explicit: some cheap models (e.g. Qwen3) default reasoning ON, so the
+        # thinking-OFF arm must actively disable it for a clean comparison.
+        extra_body: dict = {
+            "reasoning": (
+                {"max_tokens": cfg.thinking_tokens} if cfg.thinking else {"enabled": False}
+            )
+        }
 
         return ChatOpenAI(
             model=cfg.model,

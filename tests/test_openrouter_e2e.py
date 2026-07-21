@@ -103,7 +103,8 @@ def test_openrouter_graph_run_path_populates_a_scored_row(monkeypatch):
     assert row["provider"] == "openrouter"
     assert row["sdk"] == "langgraph · openrouter"
     assert row["thinking"] == "on"
-    assert row["model"] == "claude-sonnet-5"
+    # the row reports the RESOLVED OpenRouter id, not the canonical name
+    assert row["model"] == "anthropic/claude-sonnet-4.5"
     assert row["precision"] == 1.0
     assert row["cost_per_claim_usd"] is not None
 

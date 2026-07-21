@@ -79,12 +79,13 @@ def test_build_openrouter_chat_model_is_openai_compatible():
     assert (model.extra_body or {}).get("reasoning", {}).get("max_tokens") == 4000
 
 
-def test_build_openrouter_no_reasoning_when_thinking_off():
+def test_build_openrouter_disables_reasoning_when_thinking_off():
     pytest.importorskip("langchain_openai")
     cfg = build_config(model="claude-sonnet-5", thinking=False, provider="openrouter")
     cfg.api_key = "sk-or-test"
     model = build_chat_model(cfg)
-    assert not (model.extra_body or {}).get("reasoning")
+    # thinking OFF must explicitly disable reasoning (models like Qwen3 default it on)
+    assert (model.extra_body or {}).get("reasoning") == {"enabled": False}
 
 
 def test_build_anthropic_chat_model():

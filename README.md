@@ -37,27 +37,33 @@ data/  ── 200 synthetic claims, 40 defective (10 unbundling · 9 units · 8 
 
 The **deterministic engine** arm is measured on every push in CI and is the row the [regression gate](evals/gate.py) enforces. It is not an LLM — it is the shared rule core wrapped as an eval arm, and by the clean-by-construction guarantee it *should* be perfect. When it isn't, a rule or the data drifted and the build goes red.
 
-### Frozen holdout (25 claims)
+### Frozen holdout (25 claims) — measured
 
-| SDK / Arm | Thinking | Model | Precision | Recall | F1 | Citation valid. | Fabrication | $/claim |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| **engine (deterministic)** | n/a | n/a | **1.000** | **1.000** | **1.000** | **1.000** | **0.000** | $0.00000 |
-| claude-agent-sdk | off | claude-sonnet-5 | — | — | — | — | — | — |
-| claude-agent-sdk | on  | claude-sonnet-5 | — | — | — | — | — | — |
-| langgraph | off | claude-sonnet-5 | — | — | — | — | — | — |
-| langgraph | on  | claude-sonnet-5 | — | — | — | — | — | — |
+The LangGraph arm was benchmarked live through **OpenRouter** on a cheap open-source model (`qwen/qwen3-32b`, ~$0.08/$0.28 per M tokens); the whole run below cost **~$0.011**. The engine row is measured in CI on every push.
 
-**On honesty:** the LLM rows are `—` because populating them makes real, billable API calls, and this repo does not ship fabricated numbers. They are one command away — `make eval-openrouter` (needs `OPENROUTER_API_KEY`) or `make eval-llm` (native Anthropic) runs both SDKs, thinking on and off, and rewrites the table from measured output. The whole run path is de-risked: the **entire pipeline** — `run_eval → OpenRouter provider → LangGraph → metrics → results row` — is integration-tested end-to-end in CI with only the network call mocked (`tests/test_openrouter_e2e.py`), so supplying a key populates the table on the first run. The engine row is the honest, reproducible anchor.
+| SDK / Arm | Thinking | Model | Precision | Recall | F1 | Citation valid. | Fabrication | Latency | $/claim |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| **engine (deterministic)** | n/a | n/a | **1.000** | **1.000** | **1.000** | **1.000** | **0.000** | <1 ms | $0.00000 |
+| langgraph · openrouter | off | qwen/qwen3-32b | 0.737 | 0.933 | 0.824 | **1.000** | **0.000** | 3.7 s | $0.00017 |
+| langgraph · openrouter | on | qwen/qwen3-32b | 1.000 | 0.467 | 0.636 | **1.000** | **0.000** | 10.8 s | $0.00025 |
+| claude-agent-sdk | off | — | — | — | — | — | — | — | — |
+| claude-agent-sdk | on | — | — | — | — | — | — | — | — |
 
-The **Model** column is provider-aware: a native run shows `claude-sonnet-5`, an OpenRouter run shows the routed id (e.g. `anthropic/claude-sonnet-4.5`), and the SDK/Arm cell is tagged with the provider (`langgraph · openrouter`).
+**What's real and what isn't, stated plainly:**
 
-### What the reasoning-model arm measures
+- **Fabrication rate is 0.000 and citation validity 1.000 for the LLM arm in both modes** — even though the raw model over- and under-flags. That is not luck: the LangGraph `evidence_check` node verifies every cited rule id and line span against the claim and drops anything unsupported, so a hallucinated citation can never reach a finding. This is the headline result — the property that matters for a claims auditor is structurally guaranteed, not hoped for.
+- **The `claude-agent-sdk` rows are `—` and honestly so.** That SDK drives the Claude Code CLI, which expects native Anthropic; it would not route cheap OSS models through OpenRouter's Anthropic-compatible endpoint in my environment (it errors), and running it natively means Anthropic spend I was asked to avoid. Its orchestration is proven end-to-end offline in CI (`tests/test_agents_offline.py`); a live benchmark needs `ANTHROPIC_API_KEY` + `make eval-llm`. I'd rather ship an accurate blank than a number I can't stand behind — which is the entire point of the project.
 
-`--thinking both` runs each LLM arm with Claude extended thinking **on** and **off** and reports the delta in three columns that a reviewer actually trades off:
+### The reasoning-model arm — an actual, surprising delta
 
-- **accuracy** — does thinking recover the note-based upcoding cases the keyword engine can only approximate?
-- **latency** — captured per claim by the harness.
-- **cost/claim** — token usage × the price table in [`evals/reporting.py`](evals/reporting.py).
+Turning thinking **on** did **not** uniformly help — it traded recall for precision, and cost 3× the latency:
+
+| | precision | recall | latency | cost/claim |
+| --- | --- | --- | --- | --- |
+| thinking **off** | 0.737 | **0.933** | 3.7 s | $0.00017 |
+| thinking **on**  | **1.000** | 0.467 | 10.8 s | $0.00025 |
+
+With reasoning enabled, `qwen/qwen3-32b` became far more conservative: it stopped over-flagging (precision 0.74 → 1.00) but also second-guessed real defects (recall 0.93 → 0.47). For a *first-pass* auditor that feeds human reviewers, the thinking-**off** configuration is the better operating point here — higher recall, one-third the latency, lower cost — which is exactly the kind of finding you only get from measuring rather than assuming. Swapping to Claude is one env var (`OPENROUTER_MODEL=anthropic/claude-sonnet-4.5`, or native `make eval-llm`); this arm is cheap to re-run on any model OpenRouter serves.
 
 ---
 
@@ -112,7 +118,7 @@ flowchart LR
     C --> D[findings<br/>emit_finding]
 ```
 
-`evidence_check` verifies every candidate's citation against the real rule set and claim lines and **drops anything unsupported** — which is why this arm's fabrication rate is structurally near zero regardless of what the model proposes. The chat model is injectable, so the whole graph runs offline in tests. ([`agent_graph/graph.py`](agent_graph/graph.py))
+`evidence_check` verifies every candidate's citation against the real rule set and claim lines and **drops anything unsupported** — which is why this arm's **measured fabrication rate is 0.000 in both thinking modes** (see Results) regardless of what the model proposes. The chat model is injectable, so the whole graph runs offline in tests. ([`agent_graph/graph.py`](agent_graph/graph.py))
 
 ### The money section — porting one auditor onto three runtimes
 
@@ -177,7 +183,8 @@ The gate is intentionally scored on the deterministic arm: it must be **free and
 ## Limitations (the honest note)
 
 - **The engine's upcoding check is keyword-based.** For the synthetic notes it's exact, which is why the engine is perfect on the holdout. Real notes are where an LLM arm should pull ahead — quantifying that gap is what the reasoning-model arm is for.
-- **LLM accuracy numbers are unpopulated by design** (see Results). The wiring is proven offline; the figures need a funded run.
+- **The LangGraph arm is benchmarked on a cheap OSS model** (`qwen/qwen3-32b`) to keep the run near-free (~$0.011). A stronger model (Claude, GPT, etc.) is a one-line change; the numbers in the table are that specific model's, not a ceiling.
+- **The `claude-agent-sdk` arm is not benchmarked live** — it requires native Anthropic (its Claude Code CLI doesn't route through OpenRouter). Its orchestration is verified offline in CI; `make eval-llm` with `ANTHROPIC_API_KEY` fills its rows.
 - **Synthetic ≠ production.** 15 rules and 200 claims are a demonstration substrate, not a payer-grade edit library.
 
 ## License
