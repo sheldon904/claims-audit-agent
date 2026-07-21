@@ -15,6 +15,7 @@ from __future__ import annotations
 
 import asyncio
 import json
+import sys
 
 from claims_audit.models import Claim, Finding
 from claims_audit.prompting import SYSTEM_PROMPT, audit_task_prompt
@@ -61,7 +62,13 @@ class ClaudeSDKAuditAgent:
     # ---- harness interface ------------------------------------------------
 
     def audit(self, claim: Claim) -> list[Finding]:
-        return asyncio.run(self._audit_async(claim))
+        # A single failed claim yields no findings rather than crashing a long
+        # multi-claim run (the CLI spawns a subprocess per claim and can flake).
+        try:
+            return asyncio.run(self._audit_async(claim))
+        except Exception as exc:  # noqa: BLE001 - resilience over strictness here
+            print(f"[claude-agent-sdk] claim {claim.claim_id} errored: {exc}", file=sys.stderr)
+            return []
 
     def usage(self) -> Usage:
         return Usage(self._usage.input_tokens, self._usage.output_tokens)
@@ -154,15 +161,18 @@ class ClaudeSDKAuditAgent:
         if self.thinking:
             kwargs["max_thinking_tokens"] = DEFAULT_THINKING_TOKENS
 
-        # Experimental OpenRouter routing: point the Claude Code CLI at
-        # OpenRouter's Anthropic-compatible endpoint via env. The natively
-        # supported path is Anthropic; the guaranteed OpenRouter arm is
-        # LangGraph (agent_graph), which uses OpenRouter's OpenAI-compatible API.
+        # OpenRouter routing: point the Claude Code CLI at OpenRouter's
+        # Anthropic-compatible endpoint. The CLI appends "/v1/messages" to
+        # ANTHROPIC_BASE_URL, so the base must NOT already end in /v1 — OpenRouter
+        # serves it at https://openrouter.ai/api/v1/messages. Auth is a bearer
+        # token (ANTHROPIC_AUTH_TOKEN), which is what OpenRouter expects.
         if self.provider == "openrouter" and self._cfg.api_key:
+            base = (self._cfg.base_url or "https://openrouter.ai/api/v1").rstrip("/")
+            if base.endswith("/v1"):
+                base = base[:-3].rstrip("/")
             kwargs["env"] = {
-                "ANTHROPIC_BASE_URL": self._cfg.base_url or "https://openrouter.ai/api/v1",
+                "ANTHROPIC_BASE_URL": base,
                 "ANTHROPIC_AUTH_TOKEN": self._cfg.api_key,
-                "ANTHROPIC_API_KEY": self._cfg.api_key,
             }
         return ClaudeAgentOptions(**kwargs)
 
