@@ -65,3 +65,54 @@ jobs:
 
       - name: Offline agent + provider + run-path tests (mocked model, no network)
         run: pytest -q tests/test_agents_offline.py tests/test_providers.py tests/test_openrouter_e2e.py
+
+  # ---------------------------------------------------------------------------
+  # Vercel AI SDK arm (agent_aisdk/): strict TypeScript quality + an OFFLINE
+  # smoke eval. Node for typecheck/lint/tests/build; Python to score the CLI's
+  # findings JSON with the canonical harness — all with an oracle model, so no
+  # API key and no spend. Green here means the TS↔Python↔harness pipeline works.
+  # ---------------------------------------------------------------------------
+  aisdk:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: agent_aisdk/package-lock.json
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install (Node deps, exact lockfile)
+        working-directory: agent_aisdk
+        run: npm ci
+
+      - name: Typecheck (tsc --noEmit, strict)
+        working-directory: agent_aisdk
+        run: npm run typecheck
+
+      - name: Lint (eslint — no-explicit-any is an error)
+        working-directory: agent_aisdk
+        run: npm run lint
+
+      - name: Unit tests (vitest — schemas, loop termination, MCP wiring)
+        working-directory: agent_aisdk
+        run: npm test
+
+      - name: Build (src → dist)
+        working-directory: agent_aisdk
+        run: npm run build
+
+      - name: Install core (for the canonical harness the smoke eval scores with)
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[dev]"
+
+      - name: Offline smoke eval (oracle model, canonical harness, same gate thresholds)
+        run: python agent_aisdk/eval/smoke_eval.py

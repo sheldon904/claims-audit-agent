@@ -1,0 +1,18 @@
+[
+  {
+    "arm": "vercel-ai-sdk",
+    "sdk": "vercel-ai-sdk \u00b7 openrouter",
+    "provider": "openrouter",
+    "thinking": "off",
+    "model": "qwen/qwen3-32b",
+    "precision": 0.7143,
+    "recall": 1.0,
+    "f1": 0.8333,
+    "citation_validity": 1.0,
+    "fabrication_rate": 0.0,
+    "avg_latency_ms": 15315.2,
+    "input_tokens": 118966,
+    "output_tokens": 22341,
+    "cost_per_claim_usd": 0.00063
+  }
+]

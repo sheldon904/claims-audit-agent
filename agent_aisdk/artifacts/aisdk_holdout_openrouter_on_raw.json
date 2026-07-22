@@ -1,0 +1,444 @@
+{
+  "arm": "vercel-ai-sdk",
+  "provider": "openrouter",
+  "model": "qwen/qwen3-32b",
+  "thinking": "on",
+  "dataset": "holdout",
+  "mcp": null,
+  "results": [
+    {
+      "claim_id": "CLM-00001",
+      "findings": [],
+      "usage": {
+        "input_tokens": 2199,
+        "output_tokens": 882
+      },
+      "latency_ms": 11657.925500000001,
+      "steps": 1
+    },
+    {
+      "claim_id": "CLM-00002",
+      "findings": [
+        {
+          "claim_id": "CLM-00002",
+          "rule_id": "R011",
+          "defect_type": "upcoding",
+          "line_refs": [
+            "L1"
+          ],
+          "severity": "high",
+          "rationale": "The provider note states the visit was 'short' and 'straightforward', lacking documentation of high complexity decision-making or 40 minutes of time (required for 99215). This supports upcoding from a lower-level E/M service (e.g., 99213 or 99212)."
+        }
+      ],
+      "usage": {
+        "input_tokens": 4854,
+        "output_tokens": 918
+      },
+      "latency_ms": 12742.315900000001,
+      "steps": 2
+    },
+    {
+      "claim_id": "CLM-00003",
+      "findings": [],
+      "usage": {
+        "input_tokens": 2209,
+        "output_tokens": 321
+      },
+      "latency_ms": 3928.466400000001,
+      "steps": 1
+    },
+    {
+      "claim_id": "CLM-00004",
+      "findings": [
+        {
+          "claim_id": "CLM-00004",
+          "rule_id": "R010",
+          "defect_type": "missing_modifier",
+          "line_refs": [
+            "L1"
+          ],
+          "severity": "medium",
+          "rationale": "Evaluation-and-management code 99213 is billed without modifier 25 despite coexisting with procedure code 93000 per provider note."
+        }
+      ],
+      "usage": {
+        "input_tokens": 5107,
+        "output_tokens": 1111
+      },
+      "latency_ms": 16201.489500000003,
+      "steps": 2
+    },
+    {
+      "claim_id": "CLM-00005",
+      "findings": [],
+      "usage": {
+        "input_tokens": 9579,
+        "output_tokens": 1906
+      },
+      "latency_ms": 22028.690800000004,
+      "steps": 3
+    },
+    {
+      "claim_id": "CLM-00006",
+      "findings": [],
+      "usage": {
+        "input_tokens": 2197,
+        "output_tokens": 664
+      },
+      "latency_ms": 7610.9179,
+      "steps": 1
+    },
+    {
+      "claim_id": "CLM-00007",
+      "findings": [
+        {
+          "claim_id": "CLM-00007",
+          "rule_id": "R002",
+          "defect_type": "unbundling",
+          "line_refs": [
+            "L1",
+            "L2"
+          ],
+          "severity": "high",
+          "rationale": "EKG tracing (93005) is a component of complete EKG (93000) and cannot be separately billed without a distinct-service modifier (59)."
+        }
+      ],
+      "usage": {
+        "input_tokens": 4854,
+        "output_tokens": 628
+      },
+      "latency_ms": 7019.845000000001,
+      "steps": 2
+    },
+    {
+      "claim_id": "CLM-00008",
+      "findings": [
+        {
+          "claim_id": "CLM-00008",
+          "rule_id": "R011",
+          "defect_type": "upcoding",
+          "line_refs": [
+            "L1"
+          ],
+          "severity": "high",
+          "rationale": "Billed 99215 (high-complexity E/M) without documentation of high medical decision-making or 40+ minute visit"
+        }
+      ],
+      "usage": {
+        "input_tokens": 4786,
+        "output_tokens": 777
+      },
+      "latency_ms": 16674.991400000014,
+      "steps": 2
+    },
+    {
+      "claim_id": "CLM-00009",
+      "findings": [
+        {
+          "claim_id": "CLM-00009",
+          "rule_id": "R001",
+          "defect_type": "unbundling",
+          "line_refs": [
+            "L1",
+            "L2"
+          ],
+          "severity": "high",
+          "rationale": "Basic metabolic panel (80048, L2) is a component of comprehensive metabolic panel (80053, L1) billed on the same date without a distinct-service modifier (59)"
+        }
+      ],
+      "usage": {
+        "input_tokens": 5208,
+        "output_tokens": 947
+      },
+      "latency_ms": 12719.582900000009,
+      "steps": 2
+    },
+    {
+      "claim_id": "CLM-00010",
+      "findings": [],
+      "usage": {
+        "input_tokens": 2197,
+        "output_tokens": 485
+      },
+      "latency_ms": 5317.002299999993,
+      "steps": 1
+    },
+    {
+      "claim_id": "CLM-00011",
+      "findings": [],
+      "usage": {
+        "input_tokens": 2254,
+        "output_tokens": 1305
+      },
+      "latency_ms": 20249.415099999984,
+      "steps": 1
+    },
+    {
+      "claim_id": "CLM-00012",
+      "findings": [],
+      "usage": {
+        "input_tokens": 2321,
+        "output_tokens": 771
+      },
+      "latency_ms": 8804.310100000002,
+      "steps": 1
+    },
+    {
+      "claim_id": "CLM-00013",
+      "findings": [],
+      "usage": {
+        "input_tokens": 2210,
+        "output_tokens": 570
+      },
+      "latency_ms": 8733.593999999983,
+      "steps": 1
+    },
+    {
+      "claim_id": "CLM-00014",
+      "findings": [],
+      "usage": {
+        "input_tokens": 2252,
+        "output_tokens": 781
+      },
+      "latency_ms": 8531.92319999999,
+      "steps": 1
+    },
+    {
+      "claim_id": "CLM-00023",
+      "findings": [
+        {
+          "claim_id": "CLM-00023",
+          "rule_id": "R007",
+          "defect_type": "units_exceeded",
+          "line_refs": [
+            "L1"
+          ],
+          "severity": "high",
+          "rationale": "J1885 (Ketorolac injection) is limited to 2 units per day per rule R007, but 3 units were billed on a single date of service."
+        }
+      ],
+      "usage": {
+        "input_tokens": 4860,
+        "output_tokens": 849
+      },
+      "latency_ms": 10103.325200000021,
+      "steps": 2
+    },
+    {
+      "claim_id": "CLM-00024",
+      "findings": [
+        {
+          "claim_id": "CLM-00024",
+          "rule_id": "R010",
+          "defect_type": "missing_modifier",
+          "line_refs": [
+            "L1",
+            "L2"
+          ],
+          "severity": "medium",
+          "rationale": "Evaluation-and-management code 99213 billed on the same date as procedure 96372 without required modifier 25 to indicate a separately identifiable service."
+        }
+      ],
+      "usage": {
+        "input_tokens": 5013,
+        "output_tokens": 1066
+      },
+      "latency_ms": 14619.880800000014,
+      "steps": 2
+    },
+    {
+      "claim_id": "CLM-00027",
+      "findings": [
+        {
+          "claim_id": "CLM-00027",
+          "rule_id": "R005",
+          "defect_type": "units_exceeded",
+          "line_refs": [
+            "L1"
+          ],
+          "severity": "medium",
+          "rationale": "The claim includes 6 units of therapeutic exercise (97110), which exceeds the maximum 4 units per day."
+        }
+      ],
+      "usage": {
+        "input_tokens": 4787,
+        "output_tokens": 752
+      },
+      "latency_ms": 10827.599500000011,
+      "steps": 2
+    },
+    {
+      "claim_id": "CLM-00029",
+      "findings": [
+        {
+          "claim_id": "CLM-00029",
+          "rule_id": "R011",
+          "defect_type": "upcoding",
+          "line_refs": [
+            "L1"
+          ],
+          "severity": "high",
+          "rationale": "Billed 99215 requires high-complexity documentation or >=40 minutes; note describes 'short visit for a single stable issue' with no time or complexity indicators"
+        }
+      ],
+      "usage": {
+        "input_tokens": 4768,
+        "output_tokens": 799
+      },
+      "latency_ms": 8436.234800000006,
+      "steps": 2
+    },
+    {
+      "claim_id": "CLM-00036",
+      "findings": [
+        {
+          "claim_id": "CLM-00036",
+          "rule_id": "R010",
+          "defect_type": "missing_modifier",
+          "line_refs": [
+            "L1"
+          ],
+          "severity": "medium",
+          "rationale": "Evaluation-and-management code 99213 is billed on the same date as procedure 96372 without modifier 25, required per rule R010."
+        }
+      ],
+      "usage": {
+        "input_tokens": 5692,
+        "output_tokens": 1813
+      },
+      "latency_ms": 24013.873700000026,
+      "steps": 2
+    },
+    {
+      "claim_id": "CLM-00040",
+      "findings": [
+        {
+          "claim_id": "CLM-00040",
+          "rule_id": "R005",
+          "defect_type": "units_exceeded",
+          "line_refs": [
+            "L1"
+          ],
+          "severity": "medium",
+          "rationale": "Therapeutic exercise (97110) is limited to 4 units per day, but 8 units were billed."
+        }
+      ],
+      "usage": {
+        "input_tokens": 4672,
+        "output_tokens": 547
+      },
+      "latency_ms": 6870.241200000019,
+      "steps": 2
+    },
+    {
+      "claim_id": "CLM-00041",
+      "findings": [
+        {
+          "claim_id": "CLM-00041",
+          "rule_id": "R013",
+          "defect_type": "unbundling",
+          "line_refs": [
+            "L1",
+            "L2"
+          ],
+          "severity": "high",
+          "rationale": "Therapeutic injection (96372) and arthrocentesis (20610) billed together without required modifier 59 to indicate distinct service."
+        }
+      ],
+      "usage": {
+        "input_tokens": 4977,
+        "output_tokens": 888
+      },
+      "latency_ms": 10787.312999999995,
+      "steps": 2
+    },
+    {
+      "claim_id": "CLM-00051",
+      "findings": [
+        {
+          "claim_id": "CLM-00051",
+          "rule_id": "R010",
+          "defect_type": "missing_modifier",
+          "line_refs": [
+            "L1",
+            "L2"
+          ],
+          "severity": "medium",
+          "rationale": "E/M code 99213 (L1) is billed with procedure code 96372 (L2) on the same date of service without required modifier 25."
+        }
+      ],
+      "usage": {
+        "input_tokens": 5224,
+        "output_tokens": 786
+      },
+      "latency_ms": 9729.6685,
+      "steps": 2
+    },
+    {
+      "claim_id": "CLM-00056",
+      "findings": [
+        {
+          "claim_id": "CLM-00056",
+          "rule_id": "R009",
+          "defect_type": "duplicate",
+          "line_refs": [
+            "L1",
+            "L2"
+          ],
+          "severity": "high",
+          "rationale": "Two lines (L1 and L2) bill identical code 96372 with no distinguishing modifiers on the same date of service."
+        }
+      ],
+      "usage": {
+        "input_tokens": 4886,
+        "output_tokens": 698
+      },
+      "latency_ms": 13844.061599999986,
+      "steps": 2
+    },
+    {
+      "claim_id": "CLM-00060",
+      "findings": [
+        {
+          "claim_id": "CLM-00060",
+          "rule_id": "R009",
+          "defect_type": "duplicate",
+          "line_refs": [
+            "L1",
+            "L2"
+          ],
+          "severity": "high",
+          "rationale": "Same CPT code (96372) with no distinguishing modifiers billed on same date of service across multiple lines."
+        }
+      ],
+      "usage": {
+        "input_tokens": 4916,
+        "output_tokens": 802
+      },
+      "latency_ms": 12439.638399999996,
+      "steps": 2
+    },
+    {
+      "claim_id": "CLM-00108",
+      "findings": [
+        {
+          "claim_id": "CLM-00108",
+          "rule_id": "R009",
+          "defect_type": "duplicate",
+          "line_refs": [
+            "L1",
+            "L2"
+          ],
+          "severity": "high",
+          "rationale": "Two lines (L1, L2) have identical CPT code 96372 with identical modifiers on the same date of service, without any distinguishing modifier."
+        }
+      ],
+      "usage": {
+        "input_tokens": 4925,
+        "output_tokens": 850
+      },
+      "latency_ms": 14275.025699999998,
+      "steps": 2
+    }
+  ]
+}
