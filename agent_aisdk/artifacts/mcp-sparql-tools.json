@@ -1,0 +1,95 @@
+{
+  "server": "sparql-mcp",
+  "transport": "sse",
+  "url": "http://127.0.0.1:4002/sse",
+  "discovered_tools": [
+    "sparql_query",
+    "sparql_ask",
+    "list_graphs",
+    "describe_entity"
+  ],
+  "tool_count": 4,
+  "tools": [
+    {
+      "name": "sparql_query",
+      "description": "Run a SPARQL 1.1 SELECT or ASK query against the configured triple store. Read-only — INSERT/DELETE are rejected.",
+      "inputSchema": {
+        "jsonSchema": {
+          "type": "object",
+          "properties": {
+            "query": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 10000,
+              "description": "SPARQL query string (SELECT or ASK)."
+            },
+            "limit": {
+              "type": "integer",
+              "exclusiveMinimum": 0,
+              "description": "Optional hard cap on returned bindings (default 200)."
+            }
+          },
+          "required": [
+            "query"
+          ],
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        }
+      }
+    },
+    {
+      "name": "sparql_ask",
+      "description": "Convenience wrapper for SPARQL ASK — returns a plain {boolean: true|false}. Use when the agent just needs a yes/no check without parsing bindings.",
+      "inputSchema": {
+        "jsonSchema": {
+          "type": "object",
+          "properties": {
+            "query": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 10000
+            }
+          },
+          "required": [
+            "query"
+          ],
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        }
+      }
+    },
+    {
+      "name": "list_graphs",
+      "description": "Enumerate the named graphs currently present in the store with their approximate triple counts. Useful for exploring what data is available.",
+      "inputSchema": {
+        "jsonSchema": {
+          "type": "object",
+          "properties": {},
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "name": "describe_entity",
+      "description": "Return every triple about an IRI — outgoing edges only. Use to inspect what the store knows about a specific subject.",
+      "inputSchema": {
+        "jsonSchema": {
+          "type": "object",
+          "properties": {
+            "iri": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Fully-qualified IRI to describe (e.g. https://example.org/instance/Item/1)."
+            }
+          },
+          "required": [
+            "iri"
+          ],
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        }
+      }
+    }
+  ]
+}

@@ -9,6 +9,14 @@ dist/
 venv/
 env/
 
+# Node / TypeScript (agent_aisdk arm + web UI)
+node_modules/
+*.tsbuildinfo
+coverage/
+.next/
+out/
+.vercel/
+
 # Tooling
 .pytest_cache/
 .ruff_cache/

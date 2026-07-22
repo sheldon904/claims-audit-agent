@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>claims-audit-agent — three substrates, one eval</title>
+    <meta
+      name="description"
+      content="A medical-claims auditing agent implemented on three orchestration substrates — claude-agent-sdk, LangGraph, and the Vercel AI SDK — scored by one shared, frozen eval."
+    />
+    <style>
+      :root {
+        --bg: #0b0d10;
+        --panel: #14181d;
+        --panel-2: #1b2027;
+        --border: #262d36;
+        --text: #e7ecf1;
+        --muted: #98a4b3;
+        --accent: #38bdf8;
+        --good: #34d399;
+        --warn: #fbbf24;
+        --mono: ui-monospace, "SF Mono", "Cascadia Code", "JetBrains Mono", Consolas, monospace;
+        --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      }
+      @media (prefers-color-scheme: light) {
+        :root {
+          --bg: #f6f8fa;
+          --panel: #ffffff;
+          --panel-2: #f0f3f6;
+          --border: #d9e0e8;
+          --text: #12181f;
+          --muted: #5a6675;
+          --accent: #0284c7;
+        }
+      }
+      * { box-sizing: border-box; }
+      html { -webkit-text-size-adjust: 100%; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family: var(--sans);
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+      }
+      .wrap { max-width: 1040px; margin: 0 auto; padding: 0 20px; }
+      header { padding: 64px 0 28px; border-bottom: 1px solid var(--border); }
+      .eyebrow {
+        font: 600 12px/1 var(--mono);
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin: 0 0 14px;
+      }
+      h1 { font-size: clamp(28px, 5vw, 44px); line-height: 1.1; margin: 0 0 16px; letter-spacing: -0.02em; }
+      h1 .thin { color: var(--muted); font-weight: 500; }
+      .lede { font-size: clamp(16px, 2.4vw, 19px); color: var(--muted); max-width: 74ch; margin: 0; }
+      .links { margin-top: 22px; display: flex; gap: 12px; flex-wrap: wrap; }
+      .btn {
+        display: inline-flex; align-items: center; gap: 8px;
+        font: 600 14px var(--sans);
+        text-decoration: none; color: var(--text);
+        background: var(--panel-2); border: 1px solid var(--border);
+        padding: 9px 15px; border-radius: 9px; transition: border-color .15s, transform .05s;
+      }
+      .btn:hover { border-color: var(--accent); }
+      .btn.primary { background: var(--accent); color: #06121b; border-color: transparent; }
+      section { padding: 44px 0; border-bottom: 1px solid var(--border); }
+      h2 { font-size: 22px; margin: 0 0 6px; letter-spacing: -0.01em; }
+      .sub { color: var(--muted); margin: 0 0 22px; font-size: 15px; }
+      .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; }
+      .stat { background: var(--panel); border: 1px solid var(--border); border-radius: 12px; padding: 18px; }
+      .stat .n { font: 700 30px/1 var(--mono); letter-spacing: -0.02em; }
+      .stat .n.good { color: var(--good); }
+      .stat .n.acc { color: var(--accent); }
+      .stat .l { color: var(--muted); font-size: 13px; margin-top: 8px; }
+      .tablewrap { overflow-x: auto; border: 1px solid var(--border); border-radius: 12px; background: var(--panel); }
+      table { border-collapse: collapse; width: 100%; font-size: 14px; min-width: 760px; }
+      th, td { padding: 11px 13px; text-align: right; border-bottom: 1px solid var(--border); white-space: nowrap; }
+      th:first-child, td:first-child { text-align: left; }
+      thead th { color: var(--muted); font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.04em; position: sticky; top: 0; background: var(--panel); }
+      tbody tr:last-child td { border-bottom: none; }
+      td.mono, th.mono { font-family: var(--mono); }
+      tr.arm-aisdk { background: color-mix(in srgb, var(--accent) 9%, transparent); }
+      tr.arm-engine td { color: var(--muted); }
+      .tag { font: 600 11px var(--mono); padding: 2px 7px; border-radius: 999px; border: 1px solid var(--border); color: var(--muted); }
+      .tag.new { color: #06121b; background: var(--accent); border-color: transparent; }
+      .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+      .card { background: var(--panel); border: 1px solid var(--border); border-radius: 14px; padding: 20px; }
+      .card h3 { margin: 0 0 4px; font-size: 16px; font-family: var(--mono); }
+      .card .role { color: var(--muted); font-size: 13px; margin: 0 0 14px; }
+      .card dl { margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 8px 12px; font-size: 14px; }
+      .card dt { color: var(--accent); font: 600 12px var(--mono); padding-top: 1px; }
+      .card dd { margin: 0; color: var(--text); }
+      .note { color: var(--muted); font-size: 13.5px; margin-top: 18px; }
+      code { font-family: var(--mono); background: var(--panel-2); padding: 1px 6px; border-radius: 5px; font-size: 0.9em; }
+      footer { padding: 34px 0 64px; color: var(--muted); font-size: 13.5px; }
+      footer a { color: var(--accent); text-decoration: none; }
+      .disclaimer { background: var(--panel-2); border: 1px solid var(--border); border-radius: 10px; padding: 12px 16px; font-size: 13px; color: var(--muted); margin-top: 20px; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="wrap">
+        <p class="eyebrow">eval-first · one core · three orchestrations</p>
+        <h1>Claims-audit agent, <span class="thin">measured on three substrates</span></h1>
+        <p class="lede">
+          A medical-claims line-item auditor built <strong>eval-first</strong>: the frozen holdout and
+          metrics came before any agent. The same four tools and one deterministic rule core are then
+          orchestrated three ways — <strong>claude-agent-sdk</strong>, <strong>LangGraph</strong>, and the
+          <strong>Vercel AI SDK</strong> — and scored by the identical harness. Any difference is
+          orchestration, not logic drift.
+        </p>
+        <div class="links">
+          <a class="btn primary" href="https://github.com/sheldon904/claims-audit-agent">View the repo →</a>
+          <a class="btn" href="https://github.com/sheldon904/claims-audit-agent/tree/main/agent_aisdk">agent_aisdk/ (AI SDK arm)</a>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div class="wrap">
+        <h2>What the numbers say</h2>
+        <p class="sub">Frozen 25-claim holdout. Every LLM arm runs the cheap open model <code>qwen/qwen3-32b</code> through OpenRouter, so the comparison is apples-to-apples.</p>
+        <div class="stats">
+          <div class="stat"><div class="n good">0.000</div><div class="l">Fabrication rate — every arm. No finding ever cites a rule or line that doesn't exist.</div></div>
+          <div class="stat"><div class="n good">1.000</div><div class="l">Recall on the Vercel AI SDK arm (both modes) — every injected defect caught.</div></div>
+          <div class="stat"><div class="n acc">0.71 → 0.94</div><div class="l">AI SDK precision, thinking off → on. Reasoning cut false positives 6 → 1 at full recall.</div></div>
+          <div class="stat"><div class="n acc">$0.0006</div><div class="l">Cost per claim for the AI SDK arm — the whole 25-claim holdout for pennies.</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <h2>Results — frozen holdout (25 claims)</h2>
+        <p class="sub">The deterministic <strong>engine</strong> is the CI-gated arm (measured on every push). The LLM arms are reported, not gated.</p>
+        <div class="tablewrap">
+          <table>
+            <thead>
+              <tr>
+                <th>SDK / Arm</th><th>Thinking</th><th class="mono">Model</th>
+                <th>Precision</th><th>Recall</th><th>F1</th>
+                <th>Citation</th><th>Fabrication</th><th>Latency</th><th>$/claim</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="arm-engine">
+                <td>engine (deterministic)</td><td>n/a</td><td class="mono">n/a</td>
+                <td class="mono">1.000</td><td class="mono">1.000</td><td class="mono">1.000</td>
+                <td class="mono">1.000</td><td class="mono">0.000</td><td class="mono">&lt;1 ms</td><td class="mono">$0.00000</td>
+              </tr>
+              <tr>
+                <td>langgraph · openrouter</td><td>off</td><td class="mono">qwen3-32b</td>
+                <td class="mono">0.750</td><td class="mono">1.000</td><td class="mono">0.857</td>
+                <td class="mono">1.000</td><td class="mono">0.000</td><td class="mono">3.6 s</td><td class="mono">$0.00018</td>
+              </tr>
+              <tr>
+                <td>langgraph · openrouter</td><td>on</td><td class="mono">qwen3-32b</td>
+                <td class="mono">1.000</td><td class="mono">0.600</td><td class="mono">0.750</td>
+                <td class="mono">1.000</td><td class="mono">0.000</td><td class="mono">1.5 s</td><td class="mono">$0.00016</td>
+              </tr>
+              <tr>
+                <td>claude-agent-sdk · openrouter</td><td>off</td><td class="mono">qwen3-32b</td>
+                <td class="mono">1.000</td><td class="mono">1.000</td><td class="mono">1.000</td>
+                <td class="mono">1.000</td><td class="mono">0.000</td><td class="mono">54.3 s</td><td class="mono">$0.00324</td>
+              </tr>
+              <tr class="arm-aisdk">
+                <td>vercel-ai-sdk · openrouter <span class="tag new">new</span></td><td>off</td><td class="mono">qwen3-32b</td>
+                <td class="mono">0.714</td><td class="mono">1.000</td><td class="mono">0.833</td>
+                <td class="mono">1.000</td><td class="mono">0.000</td><td class="mono">15.3 s</td><td class="mono">$0.00063</td>
+              </tr>
+              <tr class="arm-aisdk">
+                <td>vercel-ai-sdk · openrouter <span class="tag new">new</span></td><td>on</td><td class="mono">qwen3-32b</td>
+                <td class="mono">0.938</td><td class="mono">1.000</td><td class="mono">0.968</td>
+                <td class="mono">1.000</td><td class="mono">0.000</td><td class="mono">11.9 s</td><td class="mono">$0.00059</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="disclaimer">
+          These are measured numbers on the committed holdout, scored by the repo's canonical Python harness
+          (unchanged). The reasoning delta is <em>orchestration-dependent</em>: on the autonomous AI SDK loop,
+          thinking-on cut over-flagging (precision 0.71 → 0.94) at full recall — the opposite of the LangGraph
+          arm, where thinking-on traded recall for precision.
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <h2>Three substrates, honestly compared</h2>
+        <p class="sub">Same tools, same prompt, same holdout. Here's where each one helps and where each one fights you.</p>
+        <div class="cards">
+          <div class="card">
+            <h3>claude-agent-sdk</h3>
+            <p class="role">Autonomous in-process tool loop</p>
+            <dl>
+              <dt>schema</dt><dd>Python type hints → tool schema; Pydantic <code>Finding</code></dd>
+              <dt>loop</dt><dd>Model-driven; least code, most capability</dd>
+              <dt>observe</dt><dd>Opaque — control flow lives in the model</dd>
+              <dt>fights</dt><dd>Hard to bound / unit-test offline; a CLI subprocess per claim (~54 s, flaky vs 3rd-party endpoints)</dd>
+            </dl>
+          </div>
+          <div class="card">
+            <h3>LangGraph</h3>
+            <p class="role">Explicit, fixed graph</p>
+            <dl>
+              <dt>schema</dt><dd>JSON-schema forced tool; Pydantic core</dd>
+              <dt>loop</dt><dd>Data you can read; an <code>evidence_check</code> node makes fabrication <em>structurally</em> impossible</dd>
+              <dt>observe</dt><dd>Best — every node is inspectable; runs offline with an injected model</dd>
+              <dt>fights</dt><dd>Most wiring; you hand-build the control flow</dd>
+            </dl>
+          </div>
+          <div class="card">
+            <h3>Vercel AI SDK</h3>
+            <p class="role">Autonomous loop, TypeScript</p>
+            <dl>
+              <dt>schema</dt><dd>Zod <code>Finding</code>, field-for-field with Pydantic; <code>.strict()</code> = <code>extra="forbid"</code></dd>
+              <dt>loop</dt><dd><code>generateText</code> + <code>stopWhen: stepCountIs</code> — the bound is one explicit line</dd>
+              <dt>observe</dt><dd>Typed <code>steps[]</code> / usage per call; a first-class offline mock model</dd>
+              <dt>fights</dt><dd>No <code>evidence_check</code> seam (like the SDK arm, it trusts the model + strict schema); an unknown model id trips a maxOutputTokens compat warning</dd>
+            </dl>
+          </div>
+        </div>
+        <p class="note">
+          One tool is also wired through the AI SDK's MCP client to a separate <code>sparql-mcp</code> server
+          (SSE) — proving an external MCP tool drops into this arm through one standard interface, without
+          touching the scored audit loop.
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <div class="wrap">
+        Built eval-first — the scorer is the primary artifact, the agents are swappable arms.
+        No real health data: every claim, code, and note is synthetic. ·
+        <a href="https://github.com/sheldon904/claims-audit-agent">github.com/sheldon904/claims-audit-agent</a>
+      </div>
+    </footer>
+  </body>
+</html>
